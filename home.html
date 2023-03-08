@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="home.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <img class="navbar_logo" src="images/CFGBannerBlack.jpg" alt="Code For Good" style="border: 0;" />
+        <a class="underline" href="#home">HOME</a>
+        <a class="underline" href="#about">ABOUT</a>
+        <a class="underline" href="#projects">PROJECTS</a>
+        <a class="underline" href="#contact">CONTACT</a>
+        <a class="navbar_apply_btn" href="#apply">APPLY</a>
+      </div>
+
+    <div class="blank_space">
+        <h1>I &<;3 Code For Good</h1>
+    </div>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <!-- <h3>Company<span>logo</span></h3> -->
+            <a href="index.html"><img src="images/CFGBannerBlack.jpg" alt="Code For Good" style="border: 0;" /></a>
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Home</a>
+                <a href="#services">About</a>
+                <a href="#about">Team</a>
+                <a href="contact.html">Contact</a>
+            </p>
+            <p class="footer-company-name">Code For Good © 2023</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <p>Contact Us</p>
+                <!-- <i class="fa fa-phone"></i>
+                <p>+1.555.555.5555</p>
+                -->
+            </div>
+            <div class="contact">
+                <div>
+                    <a href="mailto:codeforgoodberkeley@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <p><a class="underline" href="mailto:codeforgoodberkeley@gmail.com">codeforgoodberkeley@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="ocf">
+                <!-- <i class="fa fa-map-marker"></i>
+                <p><span>444 S. Cedros Ave</span> Solana Beach, California</p> -->
+                <a href="https://www.ocf.berkeley.edu">
+                    <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg"
+                        alt="Hosted by the OCF" style="border: 0;" />
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Code For Good is a student group acting independently of the University of California. We take full responsibility for our organization and this website.</span>
+            </p>
+            <div class="footer-icons">
+                <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+                <a href="https://www.instagram.com/codeforgoodcal/?hl=en"><i class="fa fa-instagram"></i></a>
+                <!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
+                <!-- <a href="#"><i class="fa fa-github"></i></a> -->
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+</html>
