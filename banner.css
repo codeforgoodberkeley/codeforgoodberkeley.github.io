@@ -1,0 +1,129 @@
+
+html {
+  height: 100%;
+  width: 100%;
+  background: #111;
+  color: white;
+  font-family: "Source Sans Pro";
+}
+
+.container {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.web_page {
+  position: absolute;
+  top: 2%;
+  left:14%;
+  z-index: -1;
+}
+
+.first-banner {
+  position: relative;
+}
+
+.line__1,
+.line__3 {
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.line__2,
+.line__4 {
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  margin: 0.5rem auto;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1rem;
+}
+
+.line__1 {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+
+  /* define animation types for text + cursor */
+  animation: animated-text__1 500ms steps(30, end) 1s 1 normal both,
+    animated-cursor__1 1000ms steps(30, end) 2;
+}
+
+.line__2 {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+
+  /* define animation types for text + cursor */
+  animation: animated-text__2 2s steps(30, end) 1s 1 normal both,
+    animated-cursor__2 2500ms steps(30, end) normal;
+  /* -webkit-animation-delay: 7s; */
+  animation-delay: 2s;
+}
+
+.line__3 {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+
+  /* define animation types for text + cursor */
+  animation: animated-text__1 500ms steps(30, end) 1s 1 normal both,
+    animated-cursor__1 750ms steps(30, end) 2;
+    animation-delay: 5s;
+}
+
+.line__4 {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+
+  /* define animation types for text + cursor */
+  animation: animated-text__4 2s steps(30, end) 1s 1 normal both,
+    animated-cursor__2 1000ms steps(30, end) infinite;
+  animation-delay: 6.5s;
+}
+
+@keyframes animated-cursor__1 {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.9);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-text__1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 4rem;
+  }
+}
+
+@keyframes animated-cursor__2 {
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-text__2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 41rem;
+  }
+}
+
+@keyframes animated-text__4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 27.5rem;
+  }
+}
