@@ -6,8 +6,9 @@ body {
 #navbar {
     background-color: rgb(0, 0, 0);
     display: flex;
-    width: 100vb;
-    height: auto;
+
+    
+    z-index: 1;
   }
   
   /* Navbar links */
@@ -70,7 +71,7 @@ body {
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-	padding: 55px 50px;
+	padding: 40px 50px;
 }
 
 .footer-distributed .footer-left,
@@ -107,7 +108,7 @@ body {
 
 .footer-distributed .footer-links{
 	color:  #ffffff;
-	margin: 20px 0 12px;
+	margin: 35px 0 12px;
 	padding: 0;
 }
 
@@ -167,8 +168,8 @@ body {
   margin: -0px 0px 0px 0px;
 }
 
-.footer-distributed .footer-center .ocf{
-	margin: 32px 0px 0px 0px;
+.footer-contact-title {
+  font-size: 20px;
 }
 
 .footer-distributed .footer-center p a{
