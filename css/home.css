@@ -74,6 +74,111 @@ body {
 	padding: 40px 50px;
 }
 
+
+/* Apply Now */
+
+#apply-now {
+  background-color: #EEFEFC;
+  text-align: center;
+}
+
+.apply-now-btn {
+  background-image: -moz-linear-gradient(0deg, #21AE9F 0%, #21AE9F 100%);
+  background-image: -webkit-linear-gradient(0deg, #21AE9F 0%, #21AE9F 100%);
+  background-image: -ms-linear-gradient(0deg, #21AE9F 0%, #21AE9F 100%);  
+  font-size: 18px;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 50px;
+  padding: 5px 30px 6px;
+  display: inline-block;
+  text-transform: uppercase;
+  padding-right: 5px;
+  text-decoration: none !important;
+  transition: 0.3s;
+  margin-top: 48px;
+}
+.apply-now-btn .fa {
+  background: #fff;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  color: #21AE9F;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 5px;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.apply-now-btn:hover{
+  color: #000;
+  border-color: #000;
+}
+
+.apply-now-btn:hover .fa{
+  color: #000;
+}
+
+.apply-now-p {
+  max-width: 500px;
+}
+
+.apply-now-textbox {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+
+.teamage {
+  width: 600px;
+  height: 315px;
+  border-radius: 42px;
+  margin-top: 50px;
+}
+
+/* Description */
+
+#description{
+  background: #fff;
+}
+
+.desc-textbox {
+  margin-top: 40px;
+}
+
+.desc-title-textbox {
+  margin-bottom: 30px;
+}
+
+.desc-p-textbox {
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.back-bg {
+  margin-left: -30px !important;
+  margin-top: -20px;
+}
+svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+svg.defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.squircle {
+  width: 100%;
+  height: 450px;
+  background: url(../images/learn-img.jpg) center/cover, #aaa;
+  clip-path: url(#clip-path);
+  background-position-x: 0px;
+}
+
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
