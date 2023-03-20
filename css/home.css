@@ -264,7 +264,7 @@ body {
     font-family: "Source Sans Pro";
   }
   
-  .container {
+  /* .container {
     width: auto;
     height: 100vh;
     display: flex;
@@ -272,7 +272,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-  }
+  } */
   
   .web_page {
     position: absolute;
