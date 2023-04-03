@@ -176,15 +176,15 @@ svg.defs {
     font-family: "Source Sans Pro";
   }
   
-  /* .container {
+  .first-banner {
     width: auto;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-  } */
+  }
   
   .web_page {
     position: absolute;
@@ -193,17 +193,13 @@ svg.defs {
     z-index: -1;
   }
   
-  .first-banner {
-    position: relative;
-  }
-  
   .line__1,
   .line__3 {
     white-space: nowrap; /* keep text in one line */
     overflow: hidden; /* hide text behind the cursor */
     margin: 0.5rem auto;
-    font-size: 1.5rem;
-    font-weight: lighter;
+    /* font-size: 1.5rem;
+    font-weight: lighter; */
   }
   
   .line__2,
@@ -211,13 +207,13 @@ svg.defs {
     white-space: nowrap; /* keep text in one line */
     overflow: hidden; /* hide text behind the cursor */
     margin: 0.5rem auto;
-    font-size: 3rem;
-    font-weight: bold;
+    /* font-size: 3rem;
+    font-weight: bold; */
     letter-spacing: 1rem;
   }
   
   .line__1 {
-    border-right: 2px solid rgba(17, 17, 17, 0.9);
+    border-right: 2px solid white;
   
     /* define animation types for text + cursor */
     animation: animated-text__1 500ms steps(30, end) 1s 1 normal both,
@@ -225,7 +221,7 @@ svg.defs {
   }
   
   .line__2 {
-    border-right: 2px solid rgba(17, 17, 17, 0.9);
+    border-right: 2px solid white;
   
     /* define animation types for text + cursor */
     animation: animated-text__2 2s steps(30, end) 1s 1 normal both,
@@ -235,7 +231,7 @@ svg.defs {
   }
   
   .line__3 {
-    border-right: 2px solid rgba(17, 17, 17, 0.9);
+    border-right: 2px solid white;
   
     /* define animation types for text + cursor */
     animation: animated-text__1 500ms steps(30, end) 1s 1 normal both,
@@ -244,7 +240,7 @@ svg.defs {
   }
   
   .line__4 {
-    border-right: 2px solid rgba(17, 17, 17, 0.9);
+    border-right: 2px solid white;
   
     /* define animation types for text + cursor */
     animation: animated-text__4 2s steps(30, end) 1s 1 normal both,
@@ -254,10 +250,10 @@ svg.defs {
   
   @keyframes animated-cursor__1 {
     from {
-      border-right-color: rgba(0, 0, 0, 0.9);
+      border-right-color: black;
     }
     to {
-      border-right-color: rgba(255, 255, 255, 0.8);
+      border-right-color: white;
     }
   }
   
@@ -266,7 +262,7 @@ svg.defs {
       width: 0;
     }
     to {
-      width: 4rem;
+      width: 2.75rem;
     }
   }
   
@@ -284,7 +280,7 @@ svg.defs {
       width: 0;
     }
     to {
-      width: 41rem;
+      width: 31.5rem;
     }
   }
   
@@ -293,6 +289,6 @@ svg.defs {
       width: 0;
     }
     to {
-      width: 27.5rem;
+      width: 21.5rem;
     }
   }
