@@ -3,13 +3,16 @@ body {
 }
 
 /* Style the navbar */
-#navbar {
-    background-color: rgb(0, 0, 0);
+.navbar {
+    background-color: #D8F2EF;
     display: flex;
-
-    
     z-index: 1;
   }
+
+.footer-custom {
+    background-color: #D8F2EF;
+  }
+
   
   /* Navbar links */
   #navbar a {
@@ -63,7 +66,7 @@ body {
     padding-top: 60px;
   }
 
-  .footer-distributed{
+  /* .footer-distributed{
 	background:  #000;
   opacity: 1;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -72,7 +75,7 @@ body {
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 40px 50px;
-}
+} */
 
 /* Apply Now */
 
@@ -183,27 +186,27 @@ svg.defs {
   background-position-x: 0px;
 }
 
-.footer-distributed .footer-left,
+/* .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
 	display: inline-block;
 	vertical-align: top;
     font-family: "Open Sans";
-}
+} */
 
 /* Footer left */
 
-.footer-distributed .footer-left{
+/* .footer-distributed .footer-left{
 	width: 40%;
-}
+} */
 
 /* The company logo */
 
-.footer-distributed .footer-left img{
+/* .footer-distributed .footer-left img{
   width:300px;
-}
+} */
 
-.footer-distributed h3{
+/* .footer-distributed h3{
 	color:  #ffffff;
 	font: normal 36px 'Open Sans', cursive;
 	margin: 0;
@@ -211,11 +214,11 @@ svg.defs {
 
 .footer-distributed h3 span{
 	color:  lightseagreen;
-}
+} */
 
 /* Footer links */
 
-.footer-distributed .footer-links{
+/* .footer-distributed .footer-links{
 	color:  #ffffff;
 	margin: 35px 0 12px;
 	padding: 0;
@@ -234,11 +237,11 @@ svg.defs {
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
-}
+} */
 
 /* Footer Center */
 
-.footer-distributed .footer-center{
+/* .footer-distributed .footer-center{
 	width: 35%;
 }
 
@@ -258,36 +261,35 @@ svg.defs {
 .footer-distributed .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
-}
+} */
 
-.fa-envelope:hover + a {
+/* .fa-envelope:hover + a {
   text-decoration: underline;
-}
+} */
 
-.footer-distributed .footer-center p{
+/* .footer-distributed .footer-center p{
 	display: inline-block;
 	color: #ffffff;
   
   font-weight: 400;
 	vertical-align: middle;
 	margin:0;
-}
+} */
 
-.footer-distributed .footer-center .contact{
+/* .footer-distributed .footer-center .contact{
   margin: -0px 0px 0px 0px;
 }
 
 .footer-contact-title {
   font-size: 20px;
-}
+} */
 
-.footer-distributed .footer-center p a{
-	/*color:  lightseagreen;*/
+/* .footer-distributed .footer-center p a{
   color: #ffffff;
 	text-decoration: none;;
-}
+} */
 
-.footer-distributed .footer-links a:before {
+/* .footer-distributed .footer-links a:before {
   content: "|";
   font-weight:300;
   font-size: 20px;
@@ -299,11 +301,11 @@ svg.defs {
 
 .footer-distributed .footer-links .link-1:before {
   content: none;
-}
+} */
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
+/* .footer-distributed .footer-right{
 	width: 20%;
 }
 
@@ -320,12 +322,8 @@ svg.defs {
 	color:  #ffffff;
 	font-size: 16px;
 	/*font-weight: bold;*/
-	margin-bottom: 20px;
-}
 
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
+
 
 .footer-distributed .footer-icons a{
 	display: inline-block;
@@ -342,7 +340,7 @@ svg.defs {
 
 	margin-right: 30px;
 	margin-bottom: 5px;
-}
+} */
 
 .underline {
   position: relative;
@@ -368,7 +366,6 @@ svg.defs {
   html {
     height: 100%;
     width: 100%;
-    background: #111;
     color: white;
     font-family: "Source Sans Pro";
   }
