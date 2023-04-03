@@ -77,12 +77,12 @@ body {
 	padding: 40px 50px;
 } */
 
-
 /* Apply Now */
 
 #apply-now {
   background-color: #EEFEFC;
   text-align: center;
+  padding: 80px 0px;
 }
 
 .apply-now-btn {
@@ -129,26 +129,30 @@ body {
 }
 
 .apply-now-textbox {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 
 .teamage {
-  width: 600px;
-  height: 315px;
+  width: 450px;
+  height: 90%;
   border-radius: 42px;
-  margin-top: 50px;
 }
 
 /* Description */
 
 #description{
   background: #fff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .desc-textbox {
   margin-top: 40px;
+  min-height: 300px;
+  margin-bottom: 130px
 }
 
 .desc-title-textbox {
