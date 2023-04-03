@@ -1,0 +1,237 @@
+#navbar {
+    background-color: #D8F2EF;
+}
+
+
+
+/*      TITLE BANNER      */
+
+#about-title {
+    position: relative;
+    width:100%;
+    aspect-ratio: 3/1;
+    background-image: url("images/about-banner.jpg");
+    background-size: 100%;
+}
+
+#about-title-overlay {
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.3)
+}
+
+#about-title-box {
+    position: relative;
+    top:40%;
+    left:25%;
+    width:50%;
+    height:30%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#about-title-box h1 {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-size: 7vw;
+    text-align: center;
+}
+
+#about-title-blurb {
+    padding: 2vw 20% 1vw;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: calc(1vh + 1vw);
+    line-height: 170%;
+    text-align: center;
+}
+
+
+
+/*   SUBHEADINGS   */
+
+.about-subheading {
+    padding: 2% calc(50% - 21vh);
+}
+
+.about-subheading h2{
+    padding: 2% 0;
+    /*background-color: #D8F2EF;*/
+    background-image: url("images/subtitle-bubble.png");
+    background-size: 100% 100%;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 3.8vh;
+    text-align: center;
+}
+
+/*uline no longer exists, keeping just in case 
+
+.about-subheading .about-subheading-uline {
+    position: relative;
+    width: 50%;
+    height: 0px;
+    left: 25%;
+    border: 2px solid #F5F5F5;
+}*/
+
+
+
+/*   CARD HOLDERS   */
+
+#about-officers, #about-team {
+    padding: 5% 10%;
+}
+
+
+
+/*      CARDS       */
+
+.about-card-holder {
+    perspective: 1000px;
+    aspect-ratio: 9 / 13;
+}
+
+.about-card {
+    position:relative;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.about-card-holder:hover .about-card {
+    transform: rotateY(180deg);
+}
+
+.about-card .card-front, .about-card .card-back {
+    border-radius: 5%;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+
+    backface-visibility: hidden;
+    
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.about-card .card-front {
+    background: rgb(244, 244, 244);
+    text-align: center;
+}
+
+.about-card .card-back {
+    background: rgba(203, 229, 250);
+    transform: rotateY(180deg);
+}
+
+.about-card .card-face-holder {
+    position:absolute;
+    width: 80%;
+    aspect-ratio: 1/1;
+    left:10%;
+    border-radius: 50%;
+    top:10%;
+    background: rgba(203, 229, 250, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-card .card-face {
+    position:absolute;
+    width: 90%;
+    aspect-ratio: 1/1;
+    top:5%;
+    left:5%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-back .card-bio {
+    padding: 12% 5%;
+    overflow: visible;
+    background-clip: inherit;
+    text-align: center;
+    text-justify: auto;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 40%;
+    left: 50%;
+    font-size: calc(4.75vw / var(--cols));
+    transform: translate(-50%, -50%);
+    background-image: url("images/quote-top.png"), url("images/quote-bottom.png");
+    background-size: cover;
+    background-position: top left, bottom right;
+}
+
+.card-back .card-link {
+    position: absolute;
+    width: 20%;
+    aspect-ratio: 1/1;
+    bottom: 5%;
+    background-size: 100%;
+}
+
+.card-back .card-link-li {
+    left: 20%;
+    background-image: url("images/linkedin.png");
+}
+
+.card-back .card-link-em {
+    right: 20%;
+    background-image: url("images/email.png");
+}
+
+.card-front .card-title {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 65%;
+}
+
+.card-front .card-title p {
+    position:absolute;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(6vw / var(--cols));
+    line-height: 140%;
+    text-align: center;
+}
+
+#about-officer-row p {
+    --cols: 1;
+}
+#about-team-row p {
+    --cols: 2;
+}
+
+@media (min-width: 576px) { /* sm */
+    #about-officer-row p {
+        --cols: 2;
+    }
+    #about-team-row p {
+        --cols: 4;
+    }
+}
+
+@media (min-width: 768px) { /* md */
+    #about-officer-row p {
+        --cols: 4;
+    }
+}
+
+@media (min-width: 992px) { /* lg */
+    #about-team-row p {
+        --cols: 6;
+    }
+}
+
