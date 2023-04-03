@@ -1,0 +1,81 @@
+h1 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 88px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 50px;
+}
+
+.line-container {
+    display: flex;
+    flex: 1;
+}
+
+hr {
+    /*position: absolute;
+    width: 931px;
+    height: 0px;
+    left: 50px;
+    top: 100px;*/
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.tabs {
+    /**
+     * Setting display to flex makes this container lay
+     * out its children using flexbox, the exact same
+     * as in the above "Stepper input" example.
+     */
+    display: flex;
+    background-color: #d8f2ef;
+    flex-direction: row;
+    height: 40px;
+    align-items: center stretch;
+    justify-content: center;
+    margin-left: 65px;
+    margin-right: 65px;
+  }
+  
+.tab {
+    cursor: pointer;
+    padding: 5px 30px;
+    font-size: 18px;
+    flex: 1;
+    text-align: center;
+}
+  
+.tab.is-tab-selected {
+    background-color: #A7D6D0;
+}
+
+.mainbox-wrapper {
+    margin: 0 auto;
+    background-color: #EEFEFC;
+    align-content: center;
+}
+
+.border {
+    padding-top: 30px;
+    background-color: #EEFEFC;
+    align-content: center;
+    padding-bottom: 15px;
+}
+
+iframe {
+    margin: 50px;
+    display: block;
+    border-style: none;    
+}
