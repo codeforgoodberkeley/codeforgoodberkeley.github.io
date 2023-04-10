@@ -34,11 +34,6 @@ hr {
 }
 
 .tabs {
-    /**
-     * Setting display to flex makes this container lay
-     * out its children using flexbox, the exact same
-     * as in the above "Stepper input" example.
-     */
     display: flex;
     background-color: #d8f2ef;
     flex-direction: row;
@@ -57,9 +52,10 @@ hr {
     text-align: center;
 }
   
-.tab.is-tab-selected {
+
+/*.tab.is-tab-selected {
     background-color: #A7D6D0;
-}
+}*/
 
 .mainbox-wrapper {
     margin: 0 auto;
@@ -78,4 +74,8 @@ iframe {
     margin: 50px;
     display: block;
     border-style: none;    
+}
+
+#student {
+    background-color: #A7D6D0;
 }
