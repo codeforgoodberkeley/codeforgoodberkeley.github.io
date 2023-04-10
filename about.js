@@ -64,6 +64,8 @@ function make(tag, classes, children) {
 }
 
 /*
+Card Template
+
 <div class="col about-card-holder">
     <div class="about-card">
         <div class="card-front">

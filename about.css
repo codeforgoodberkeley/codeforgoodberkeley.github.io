@@ -67,22 +67,17 @@
     text-align: center;
 }
 
-/*uline no longer exists, keeping just in case 
-
-.about-subheading .about-subheading-uline {
-    position: relative;
-    width: 50%;
-    height: 0px;
-    left: 25%;
-    border: 2px solid #F5F5F5;
-}*/
-
 
 
 /*   CARD HOLDERS   */
 
 #about-officers, #about-team {
-    padding: 5% 10%;
+    margin: 5% 10%;
+}
+
+.about-section-bubble {
+    background-color: #F2FFFD;
+    border-radius: 3vw;
 }
 
 
