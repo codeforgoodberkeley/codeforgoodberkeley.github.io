@@ -83,6 +83,7 @@ body {
   background-color: #EEFEFC;
   text-align: center;
   padding: 80px 0px;
+  padding-left: 40px;
 }
 
 .apply-now-btn {
@@ -185,6 +186,34 @@ svg.defs {
   clip-path: url(#clip-path);
   background-position-x: 0px;
 }
+
+/* Projects */
+
+#projects {
+  background-color: #EEFEFC;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.proj-textbox{
+  margin-top: 40px;
+  padding-left: 70px;
+  margin-bottom: 20px;
+}
+
+.proj-h2{
+  margin-bottom: 30px;
+}
+
+.proj-p-textbox{
+  max-width: 480px;
+}
+
+.proj-image {
+  width: 500px;
+}
+
+
 
 /* .footer-distributed .footer-left,
 .footer-distributed .footer-center,
