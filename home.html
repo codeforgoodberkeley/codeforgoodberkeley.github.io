@@ -15,6 +15,8 @@
     
 </head>
 <body>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
     <nav class="navbar navbar-expand-md sticky-top">
         <div class="container-fluid">
             <img class="navbar-brand ps-2 pe-4" height="60" src="images/cfglogo_transparent.png" alt="Code For Good"/>
@@ -32,14 +34,23 @@
             </div>
         </div>
     </nav>
-    
 
-    <div class="first-banner">
+    <div class="animation">
+        <span id="myElement"></span>
+
+        <!-- The script itself, loaded AFTER your root element. -->
+        <script>
+          new TypeIt("#myElement", {
+            strings: "This is what will be typed!",
+          }).go();
+        </script>
+    </div>
+    <!-- <div class="first-banner">
         <p class="line__1 fs-6 ">where</p>
         <p class="line__2 fs-3 fw-bold ps-2">COMPUTER SCIENCE</p>
         <p class="line__3 fs-6">meets</p>
         <p class="line__4 fs-3 fw-bold ps-2">SOCIAL GOOD</p>
-    </div>
+    </div> -->
         
     <!-- for the image of the web page -->
     <!-- <div class="web_page">

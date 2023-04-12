@@ -176,7 +176,7 @@ svg.defs {
     font-family: "Source Sans Pro";
   }
   
-  .first-banner {
+  /* .first-banner {
     width: auto;
     height: 90vh;
     display: flex;
@@ -184,7 +184,7 @@ svg.defs {
     align-items: center;
     justify-content: center;
     position: relative;
-  }
+  } */
   
   .web_page {
     position: absolute;
@@ -193,47 +193,39 @@ svg.defs {
     z-index: -1;
   }
   
-  .line__1,
+  /* .line__1,
   .line__3 {
-    white-space: nowrap; /* keep text in one line */
-    overflow: hidden; /* hide text behind the cursor */
+    white-space: nowrap; 
+    overflow: hidden; 
     margin: 0.5rem auto;
-    /* font-size: 1.5rem;
-    font-weight: lighter; */
+
   }
   
   .line__2,
   .line__4 {
-    white-space: nowrap; /* keep text in one line */
-    overflow: hidden; /* hide text behind the cursor */
+    white-space: nowrap;
+    overflow: hidden; 
     margin: 0.5rem auto;
-    /* font-size: 3rem;
-    font-weight: bold; */
+ 
     letter-spacing: 1rem;
   }
   
   .line__1 {
     border-right: 2px solid white;
-  
-    /* define animation types for text + cursor */
-    animation: animated-text__1 500ms steps(30, end) 1s 1 normal both,
+      animation: animated-text__1 500ms steps(30, end) 1s 1 normal both,
       animated-cursor__1 1000ms steps(30, end) 2;
   }
   
   .line__2 {
     border-right: 2px solid white;
-  
-    /* define animation types for text + cursor */
-    animation: animated-text__2 2s steps(30, end) 1s 1 normal both,
+      animation: animated-text__2 2s steps(30, end) 1s 1 normal both,
       animated-cursor__2 2500ms steps(30, end) normal;
-    /* -webkit-animation-delay: 7s; */
     animation-delay: 2s;
   }
   
   .line__3 {
     border-right: 2px solid white;
   
-    /* define animation types for text + cursor */
     animation: animated-text__1 500ms steps(30, end) 1s 1 normal both,
       animated-cursor__1 750ms steps(30, end) 2;
       animation-delay: 5s;
@@ -241,9 +233,7 @@ svg.defs {
   
   .line__4 {
     border-right: 2px solid white;
-  
-    /* define animation types for text + cursor */
-    animation: animated-text__4 2s steps(30, end) 1s 1 normal both,
+      animation: animated-text__4 2s steps(30, end) 1s 1 normal both,
       animated-cursor__2 1000ms steps(30, end) infinite;
     animation-delay: 6.5s;
   }
@@ -291,4 +281,31 @@ svg.defs {
     to {
       width: 21.5rem;
     }
+  } */
+  /* .typewriter{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .animation p{
+    color: #D64933; 
+    font-family: 'Lato', cursive;
+    font-size: 10vh; 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: title 7s steps(70, end); 
+    margin-bottom: 40px;
+  
+  }
+  
+  @keyframes title{ 
+    from { width: 0; opacity: 0.0;}
+    to { opacity: 1.0; } 
+  }  */
+
+  .animation {
+    height: 90vh;
   }
