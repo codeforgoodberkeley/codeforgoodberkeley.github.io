@@ -10,7 +10,7 @@
     position: relative;
     width:100%;
     aspect-ratio: 3/1;
-    background-image: url("images/about-banner.jpg");
+    background-image: url("../images/about-banner.jpg");
     background-size: 100%;
 }
 
@@ -59,7 +59,7 @@
 .about-subheading h2{
     padding: 2% 0;
     /*background-color: #D8F2EF;*/
-    background-image: url("images/subtitle-bubble.png");
+    background-image: url("../images/subtitle-bubble.png");
     background-size: 100% 100%;
     font-family: 'Open Sans';
     font-weight: 700;
@@ -67,22 +67,17 @@
     text-align: center;
 }
 
-/*uline no longer exists, keeping just in case 
-
-.about-subheading .about-subheading-uline {
-    position: relative;
-    width: 50%;
-    height: 0px;
-    left: 25%;
-    border: 2px solid #F5F5F5;
-}*/
-
 
 
 /*   CARD HOLDERS   */
 
 #about-officers, #about-team {
-    padding: 5% 10%;
+    margin: 5% 10%;
+}
+
+.about-section-bubble {
+    background-color: #F2FFFD;
+    border-radius: 3vw;
 }
 
 
@@ -163,7 +158,7 @@
     left: 50%;
     font-size: calc(4.75vw / var(--cols));
     transform: translate(-50%, -50%);
-    background-image: url("images/quote-top.png"), url("images/quote-bottom.png");
+    background-image: url("../images/quote-top.png"), url("../images/quote-bottom.png");
     background-size: cover;
     background-position: top left, bottom right;
 }
@@ -178,12 +173,12 @@
 
 .card-back .card-link-li {
     left: 20%;
-    background-image: url("images/linkedin.png");
+    background-image: url("../images/linkedin.png");
 }
 
 .card-back .card-link-em {
     right: 20%;
-    background-image: url("images/email.png");
+    background-image: url("../images/email.png");
 }
 
 .card-front .card-title {

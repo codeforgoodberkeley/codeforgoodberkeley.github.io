@@ -11,7 +11,11 @@ data_strings = [
     "Esha Puri	eshapuri@berkeley.edu	https://www.linkedin.com/in/esha-puri	OneSky	emilynoellephotography-2970 - Esha Puri.jpg	hi! i like to spend my free time playing tennis, baking, and listening to true crime podcasts ",
     "Dhruv Chowdhary	dhruvchowdhary@berkeley.edu	https://www.linkedin.com/in/dhruv-chowdhary/	Internal	IMG_7842_Original - Dhruv Chowdhary.heic	Hi, I'm Dhruv! I love playing spikeball and eating croutons :)",
     "Joanne Tran 	tranjoanne@berkeley.edu	https://www.linkedin.com/in/tranjoanne/	MESA	IMG_1296 - Joanne Tran.JPG	What's up? I'm Joanne, and in my free time I love going on spontaneous adventures and playing video games like LoL, VALORANT, and Overwatch.",
-    "Matteo Keller	matteo.keller@berkeley.edu	https://www.linkedin.com/in/matteokeller/	MESA	MK_Photo - Matteo Keller.png	Hey!! I'm a business student with strong interest in AI technology :) I'm from Switzerland and I enjoy playing golf, the bass guitar, and spending quality time with friends."
+    "Matteo Keller	matteo.keller@berkeley.edu	https://www.linkedin.com/in/matteokeller/	MESA	MK_Photo - Matteo Keller.png	Hey!! I'm a business student with strong interest in AI technology :) I'm from Switzerland and I enjoy playing golf, the bass guitar, and spending quality time with friends.",
+    "Tanya Agrawal	tanya.agrawal@berkeley.edu	 	SFSYO	profile pic - Tanya Agrawal.jpg	Hi! I enjoy reading, drawing, trying out new food places, and exploring places in and around Berkeley!",
+    "Buvi Vinothasha 	buvinnash@berkeley.edu	https://www.linkedin.com/in/buvinnash	SFSYO	CFGpic - Buvi Vinothasha.jpg	Hey everyone, my name is Buvi. I love playing tennis, trying new food, travelling, and hanging out with friends.",
+    "Pranitha Rao	pranitha_rao@berkeley.edu	linkedin.com/in/pranitha-r-3129541b0	Internal	IMG_2462 - Pranitha Rao.JPG	hi i'm Pranitha! in my free time i like watching basketball, crocheting, and cooking :) ",
+    "Nazar Ospanov	aimogenius@berkeley.edu	https://www.linkedin.com/in/nazar-ospanov-860694205	Internal	EBD2251B-EA25-43E9-9E73-194D99029670 - Nazar Ospanov.jpeg	Hi, I’m Nazar, and I like getting absolutely obliterated by every CS midterm and getting over this pain by playing lots of video games🥶🥶"
 ]
 
 /*
@@ -64,6 +68,8 @@ function make(tag, classes, children) {
 }
 
 /*
+Card Template
+
 <div class="col about-card-holder">
     <div class="about-card">
         <div class="card-front">
