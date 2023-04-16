@@ -15,6 +15,8 @@
     
 </head>
 <body>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
     <nav class="navbar navbar-expand-md sticky-top">
         <div class="container-fluid">
             <img class="navbar-brand ps-2 pe-4" height="60" src="images/cfglogo_transparent.png" alt="Code For Good"/>
@@ -32,21 +34,55 @@
             </div>
         </div>
     </nav>
-    
 
-    <!-- <div class="first-banner">
-        <div class="container">
-            <p class="line__1">where</p>
-            <p class="line__2">COMPUTER SCIENCE</p>
-            <p class="line__3">meets</p>
-            <p class="line__4">SOCIAL GOOD</p>
-        </div>
-    </div> -->
-        
-    <!-- for the image of the web page -->
-    <!-- <div class="web_page">
-        <img src="images/web_window.png"/>
-    </div> -->
+    <div class="animation">
+        <span id="line1">where</span>
+        <span id="line2" class="fs-1 fw-bold">SOCIAL GOOD</span>
+        <span id="line3">meets</span>
+        <span id="line4" class="fs-1 fw-bold">COMPUTER SCIENCE</span>
+
+        <script>
+          new TypeIt("#line1", {
+            startDelay: 400,
+            afterComplete: function (instance) {
+            instance.destroy();
+                },
+            beforeStep: async (instance) => {
+                setTimeout(() => {
+            const e = document.getElementById('line2');
+            e.style.visibility = 'visible';
+            }, 1300)
+            }
+            }).go();
+          new TypeIt("#line2", {
+            startDelay: 1300,
+            afterComplete: function (instance) {
+            instance.destroy();
+                },
+            beforeStep: async (instance) => {
+            setTimeout(() => {
+            const e = document.getElementById('line3');
+            e.style.visibility = 'visible';
+            }, 2500)
+            }
+          }).go()
+          new TypeIt("#line3", {
+            startDelay: 2500,
+            afterComplete: function (instance) {
+            instance.destroy();
+                },
+            beforeStep: async (instance) => {
+            setTimeout(() => {
+            const e = document.getElementById('line4');
+            e.style.visibility = 'visible';
+            }, 3200)
+            }
+          }).go();
+          new TypeIt("#line4", {
+            startDelay: 3200,
+          }).go();
+        </script>
+    </div>
     
     <!-- Apply-now and description pages -->
     
