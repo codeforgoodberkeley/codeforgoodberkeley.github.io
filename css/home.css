@@ -191,13 +191,20 @@ svg.defs {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10vh;
   }
 
   #line1, #line3 {
     font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 3vh;
+  }
+
+  #line3 {
+    visibility: hidden;
   }
 
   #line2, #line4 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+    padding-top: 3vh;
+    visibility: hidden;
   }

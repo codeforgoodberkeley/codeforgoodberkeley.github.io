@@ -37,35 +37,49 @@
 
     <div class="animation">
         <span id="line1">where</span>
-        <span id="line2" class="fs-1">SOCIAL GOOD</span>
+        <span id="line2" class="fs-1 fw-bold">SOCIAL GOOD</span>
         <span id="line3">meets</span>
-        <span id="line4" class="fs-1">COMPUTER SCIENCE</span>
+        <span id="line4" class="fs-1 fw-bold">COMPUTER SCIENCE</span>
 
-        <!-- The script itself, loaded AFTER your root element. -->
         <script>
           new TypeIt("#line1", {
             startDelay: 400,
             afterComplete: function (instance) {
             instance.destroy();
-                }
+                },
+            beforeStep: async (instance) => {
+                setTimeout(() => {
+            const e = document.getElementById('line2');
+            e.style.visibility = 'visible';
+            }, 1200)
+            }
             }).go();
           new TypeIt("#line2", {
             startDelay: 1200,
             afterComplete: function (instance) {
             instance.destroy();
-                }
-          }).go();
+                },
+            beforeStep: async (instance) => {
+            setTimeout(() => {
+            const e = document.getElementById('line3');
+            e.style.visibility = 'visible';
+            }, 2500)
+            }
+          }).go()
           new TypeIt("#line3", {
             startDelay: 2500,
             afterComplete: function (instance) {
             instance.destroy();
-                }
+                },
+            beforeStep: async (instance) => {
+            setTimeout(() => {
+            const e = document.getElementById('line4');
+            e.style.visibility = 'visible';
+            }, 3200)
+            }
           }).go();
           new TypeIt("#line4", {
             startDelay: 3200,
-            afterComplete: function (instance) {
-            instance.destroy();
-                }
           }).go();
         </script>
     </div>
