@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
 body {
     margin: 0px;
 }
@@ -176,136 +178,26 @@ svg.defs {
     font-family: "Source Sans Pro";
   }
   
-  /* .first-banner {
-    width: auto;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  } */
-  
   .web_page {
     position: absolute;
     top: 2%;
     left:14%;
     z-index: -1;
   }
-  
-  /* .line__1,
-  .line__3 {
-    white-space: nowrap; 
-    overflow: hidden; 
-    margin: 0.5rem auto;
-
-  }
-  
-  .line__2,
-  .line__4 {
-    white-space: nowrap;
-    overflow: hidden; 
-    margin: 0.5rem auto;
- 
-    letter-spacing: 1rem;
-  }
-  
-  .line__1 {
-    border-right: 2px solid white;
-      animation: animated-text__1 500ms steps(30, end) 1s 1 normal both,
-      animated-cursor__1 1000ms steps(30, end) 2;
-  }
-  
-  .line__2 {
-    border-right: 2px solid white;
-      animation: animated-text__2 2s steps(30, end) 1s 1 normal both,
-      animated-cursor__2 2500ms steps(30, end) normal;
-    animation-delay: 2s;
-  }
-  
-  .line__3 {
-    border-right: 2px solid white;
-  
-    animation: animated-text__1 500ms steps(30, end) 1s 1 normal both,
-      animated-cursor__1 750ms steps(30, end) 2;
-      animation-delay: 5s;
-  }
-  
-  .line__4 {
-    border-right: 2px solid white;
-      animation: animated-text__4 2s steps(30, end) 1s 1 normal both,
-      animated-cursor__2 1000ms steps(30, end) infinite;
-    animation-delay: 6.5s;
-  }
-  
-  @keyframes animated-cursor__1 {
-    from {
-      border-right-color: black;
-    }
-    to {
-      border-right-color: white;
-    }
-  }
-  
-  @keyframes animated-text__1 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 2.75rem;
-    }
-  }
-  
-  @keyframes animated-cursor__2 {
-    from {
-      border-right-color: rgba(17, 17, 17, 0.9);
-    }
-    to {
-      border-right-color: rgba(255, 255, 255, 0.8);
-    }
-  }
-  
-  @keyframes animated-text__2 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 31.5rem;
-    }
-  }
-  
-  @keyframes animated-text__4 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 21.5rem;
-    }
-  } */
-  /* .typewriter{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .animation p{
-    color: #D64933; 
-    font-family: 'Lato', cursive;
-    font-size: 10vh; 
-    white-space: nowrap;
-    overflow: hidden;
-    width: 30em;
-    animation: title 7s steps(70, end); 
-    margin-bottom: 40px;
-  
-  }
-  
-  @keyframes title{ 
-    from { width: 0; opacity: 0.0;}
-    to { opacity: 1.0; } 
-  }  */
 
   .animation {
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #line1, #line3 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  #line2, #line4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
   }

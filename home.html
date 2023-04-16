@@ -36,26 +36,39 @@
     </nav>
 
     <div class="animation">
-        <span id="myElement"></span>
+        <span id="line1">where</span>
+        <span id="line2" class="fs-1">SOCIAL GOOD</span>
+        <span id="line3">meets</span>
+        <span id="line4" class="fs-1">COMPUTER SCIENCE</span>
 
         <!-- The script itself, loaded AFTER your root element. -->
         <script>
-          new TypeIt("#myElement", {
-            strings: "This is what will be typed!",
+          new TypeIt("#line1", {
+            startDelay: 400,
+            afterComplete: function (instance) {
+            instance.destroy();
+                }
+            }).go();
+          new TypeIt("#line2", {
+            startDelay: 1200,
+            afterComplete: function (instance) {
+            instance.destroy();
+                }
+          }).go();
+          new TypeIt("#line3", {
+            startDelay: 2500,
+            afterComplete: function (instance) {
+            instance.destroy();
+                }
+          }).go();
+          new TypeIt("#line4", {
+            startDelay: 3200,
+            afterComplete: function (instance) {
+            instance.destroy();
+                }
           }).go();
         </script>
     </div>
-    <!-- <div class="first-banner">
-        <p class="line__1 fs-6 ">where</p>
-        <p class="line__2 fs-3 fw-bold ps-2">COMPUTER SCIENCE</p>
-        <p class="line__3 fs-6">meets</p>
-        <p class="line__4 fs-3 fw-bold ps-2">SOCIAL GOOD</p>
-    </div> -->
-        
-    <!-- for the image of the web page -->
-    <!-- <div class="web_page">
-        <img src="images/web_window.png"/>
-    </div> -->
     
     <!-- Apply-now and description pages -->
     
