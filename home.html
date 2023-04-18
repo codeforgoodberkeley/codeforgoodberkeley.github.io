@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code for Good Home</title>
+    <title>Code for Good</title>
+    <link rel="icon" href="images/CFGIcon.png">
+
     <!-- Google fonts CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,63 +14,118 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/home.css">
-    
+    <script defer src="animation.js"></script>
 </head>
 <body>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <!-- Nav Bar -->
     <nav class="navbar navbar-expand-md sticky-top">
         <div class="container-fluid">
-            <img class="navbar-brand ps-2 pe-4" height="60" src="images/cfglogo_transparent.png" alt="Code For Good"/>
+            <a href="home.html"><img class="ps-2 pe-4" height="60" src="images/cfglogo_transparent.png" alt="Code For Good"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <div class="navbar-nav">
                     <a class="nav-link pe-lg-4 pe-xxl-5 active" href="#home">HOME</a>
-                    <a class="nav-link pe-lg-4 pe-xxl-5" href="#about">ABOUT</a>
-                    <a class="nav-link pe-lg-4 pe-xxl-5" href="#projects">PROJECTS</a>
-                    <a class="nav-link pe-lg-4 pe-xxl-5" href="#contact">CONTACT</a>
-                    <a class="nav-link pe-lg-4 pe-xxl-5" href="#apply">APPLY</a>
+                    <a class="nav-link pe-lg-4 pe-xxl-5" href="about.html">ABOUT</a>
+                    <a class="nav-link pe-lg-4 pe-xxl-5" href="projects.html">PROJECTS</a>
+                    <a class="nav-link pe-lg-4 pe-xxl-5" href="contact.html">CONTACT</a>
+                    <a class="nav-link pe-lg-4 pe-xxl-5" href="apply.html">APPLY</a>
                 </div>
             </div>
         </div>
     </nav>
-    
 
-    <!-- <div class="first-banner">
-        <div class="container">
-            <p class="line__1">where</p>
-            <p class="line__2">COMPUTER SCIENCE</p>
-            <p class="line__3">meets</p>
-            <p class="line__4">SOCIAL GOOD</p>
+    <!-- <div>
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div> -->
+
+
+    <!-- Animated Typing Banner -->
+    <div class="animation">
+        <div class="computerscreen flex pt-4 pt-md-5">
+            <img src="./images/comptuerscreen.svg" class="img-fluid"/>
         </div>
-    </div> -->
-        
-    <!-- for the image of the web page -->
-    <!-- <div class="web_page">
-        <img src="images/web_window.png"/>
-    </div> -->
+        <span id="line1">where</span>
+        <span id="line2" class="fs-1 fw-bold">SOCIAL GOOD</span>
+        <span id="line3">meets</span>
+        <span id="line4" class="fs-1 fw-bold">COMPUTER SCIENCE</span>
+
+        <script>
+          new TypeIt("#line1", {
+            startDelay: 400,
+            afterComplete: function (instance) {
+            instance.destroy();
+                },
+            beforeStep: async (instance) => {
+                setTimeout(() => {
+            const e = document.getElementById('line2');
+            e.style.visibility = 'visible';
+            }, 1300)
+            }
+            }).go();
+          new TypeIt("#line2", {
+            startDelay: 1300,
+            afterComplete: function (instance) {
+            instance.destroy();
+                },
+            beforeStep: async (instance) => {
+            setTimeout(() => {
+            const e = document.getElementById('line3');
+            e.style.visibility = 'visible';
+            }, 2500)
+            }
+          }).go()
+          new TypeIt("#line3", {
+            startDelay: 2500,
+            afterComplete: function (instance) {
+            instance.destroy();
+                },
+            beforeStep: async (instance) => {
+            setTimeout(() => {
+            const e = document.getElementById('line4');
+            e.style.visibility = 'visible';
+            }, 3200)
+            }
+          }).go();
+          new TypeIt("#line4", {
+            startDelay: 3200,
+          }).go();
+        </script>
+    </div>
     
     <!-- Apply-now and description pages -->
     
-    <section id="apply-now">
+    <section id="apply-now" class="hidden">
         <div class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 apply-now-textbox">
-                        <p class="">Hi! We’re a student club at UC Berkeley that works with non-profit organizations to help</p>
-                        <h2 class="">BRING POSITIVE CHANGE</h2>
-                        <p class="">in our communities through technology solutions.</p>
-                        <a class="apply-now-btn" href="timeline.html">Apply Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="teamage" src="./images/IMG_0487 (1).jpeg" alt="">
-                    </div>
+            <div class="row">
+                <div class="col-md-6 apply-now-textbox">
+                    <p class="">Hi! We’re a student club at UC Berkeley that works with non-profit organizations to help</p>
+                    <h2 class="">BRING POSITIVE CHANGE</h2>
+                    <p class="">in our communities through technology solutions.</p>
+                    <a class="apply-now-btn" href="timeline.html">Apply Now<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-6">
+                    <img class="teamage" src="./images/IMG_0487 (1).jpeg" alt="">
                 </div>
             </div>
 
         </div>
     </section>
-    <section id="description">
+    <section id="description" class="hidden">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 desc-textbox">
@@ -114,10 +171,30 @@
         </div>
     </section>
 
+    <!-- Last section -->
+    <section id="projects" class="hidden">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 proj-textbox">
+                    <h2 class="proj-h2">How We Create Social Good</h2>
+                    <div class="proj-p-textbox">
+                        <p>We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals.</p>
+                        <p>We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need.</p>
+                        <p>See our current projects below:</p>
+                    </div>
+                    <a class="apply-now-btn" href="timeline.html">PROJECTS<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-6">
+                    <img class="proj-image" src="./images/homepage.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <footer>
         <div class="footer-custom container-fluid text-dark">
-            <div class="row gx-3 pb-3 pt-4 text-center text-md-start">
+            <div class="row gx-3 pb-4 pt-4 text-center text-md-start">
                 <!-- first column -->
                 <div class="col-12 col-md-3 ps-md-3">
                     <a href="home.html"><img src="images/cfglogo_transparent.png"  height="48" alt="Code For Good"/></a>
@@ -148,7 +225,7 @@
                     </div>
                 </div>
                 <!-- third column -->
-                <div class="col-12 col-md-5 pt-5 pt-md-0 d-flex justify-content-center px-5 px-md-0 px-md-3">
+                <div class="col-12 col-md-5 pt-5 pt-md-0 d-flex justify-content-center px-5 px-md-0 px-md-5">
                     <p class="fs-6 fw-lighter">
                         <span>Code For Good is a student group acting independently of the University of California. We take full responsibility for our organization and this website.</span>
                     </p>        
