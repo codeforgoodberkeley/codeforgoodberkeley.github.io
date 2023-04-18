@@ -1,6 +1,45 @@
+var tl_contents = $('.tl-content').toArray();
+var tl_sections = $('.tl-section').toArray();
+
+function hoverSection(hover_index) {
+    old_index = tl_contents[hover_index].getAttribute("hover_index")
+    if(old_index != hover_index) {
+        let W = 0.75
+        let offset = 0.35
+        for ( i = 0; i < 4; i++ ) {
+            tl_contents[i].setAttribute("hover_index", hover_index)
+            if(i == hover_index) {
+                tl_contents[i].style.left = (1 + offset) * -100 * W * i / (5+W) + "%";
+            } else if(i <= hover_index) {
+                tl_contents[i].style.left = -100*W*i/(5+W) + "%";
+            } else {
+                tl_contents[i].style.left = 100*((5-i)*W/(5 + W)) + "%"
+            }
+        }
+    }
+}
+
+function leaveSection(hover_index) {
+    old_index = tl_contents[hover_index].getAttribute("hover_index")
+    if(old_index != null) {
+        for ( i = 0; i < 4; i++ ) {
+            tl_contents[i].setAttribute("hover_index", null);
+            tl_contents[i].style.left = 0;
+        }
+    }
+}
+
+for ( i = 0; i < 5; i++ ) {
+    ((i) => {
+        tl_contents[i].setAttribute("hover_index", null)
+        tl_sections[i].addEventListener("mouseover", () => hoverSection(i))
+        tl_sections[i].addEventListener("mouseleave", () => leaveSection(i))
+    })(i)
+}
+
 $(document).ready(function(){
     //console.log($('.carousel'))
-    $('.carousel').carousel("cycle")
+    $('.carousel').carousel("cycle");
 });
 
 project_data = {
