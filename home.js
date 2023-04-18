@@ -15,3 +15,6 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+// var height = document.getElementsByTagName('body').style.height;
+// console.log()
