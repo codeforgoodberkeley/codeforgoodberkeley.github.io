@@ -11,7 +11,7 @@ h1 {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 50px;
+    margin: 65px;
 }
 
 .line-container {
@@ -50,12 +50,8 @@ hr {
     font-size: 18px;
     flex: 1;
     text-align: center;
+    /*need to make text responsive*/
 }
-  
-
-/*.tab.is-tab-selected {
-    background-color: #A7D6D0;
-}*/
 
 .mainbox-wrapper {
     margin: 0 auto;
