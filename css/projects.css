@@ -10,7 +10,7 @@
     position: relative;
     width:100%;
     aspect-ratio: 3/1;
-    background-image: url("images/about-banner.jpg");
+    background-image: url("../images/about-banner.jpg");
     background-size: 100%;
 }
 
@@ -39,7 +39,7 @@
     text-align: center;
 }
 
-#proj-title-blurb {
+#proj-title-blurb, #proj-timeline-blurb {
     padding: 2vw 20% 1vw;
     font-family: 'Open Sans';
     font-weight: 400;
@@ -59,12 +59,160 @@
 .proj-subheading h2{
     padding: 2% 0;
     /*background-color: #D8F2EF;*/
-    background-image: url("images/subtitle-bubble.png");
+    background-image: url("../images/subtitle-bubble.png");
     background-size: 100% 100%;
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 3.8vh;
     text-align: center;
+}
+
+
+
+/*   TIMELINE   */
+
+#proj-timeline {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/1;
+    margin: 5% 0%;
+}
+
+#proj-timeline .tl-section {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: calc((var(--tl-pos) - 1) * 20%);
+}
+
+#proj-timeline .tl-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    transition: left 0.5s ease;
+}
+
+#tl-stage-1 .tl-pin { background-image: url("../images/proj-pin-1.png"); }
+#tl-stage-1 .tl-pin-line { border-color: #53b5b1; }
+
+#tl-stage-2 .tl-pin { background-image: url("../images/proj-pin-2.png"); }
+#tl-stage-2 .tl-pin-line { border-color: #87be4a; }
+
+#tl-stage-3 .tl-pin { background-image: url("../images/proj-pin-3.png"); }
+#tl-stage-3 .tl-pin-line { border-color: #d76931; }
+
+#tl-stage-4 .tl-pin { background-image: url("../images/proj-pin-4.png"); }
+#tl-stage-4 .tl-pin-line { border-color: #ae5979; }
+
+#tl-stage-5 .tl-pin { background-image: url("../images/proj-pin-5.png"); }
+#tl-stage-5 .tl-pin-line { border-color: #a563a4; }
+
+.tl-section .tl-pin {
+    position: absolute;
+    height: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    aspect-ratio: 3/4;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: top 0.5s ease;
+}
+
+.tl-section:hover .tl-pin {
+    top: 5%;
+}
+
+.tl-section .tl-pin-line {
+    position: absolute;
+    width: 0px;
+    left: calc(50% - 0.2vw);
+    height: 40%;
+    bottom: 25%;
+    border-style: none dashed none none;
+    border-width: 0.4vw;
+}
+
+.tl-section .tl-pin-line-cover {
+    position: absolute;
+    width: 4%;
+    left: 48%;  
+    height: 50%;
+    top: 25%;
+    background-color: white;
+    transition: height 0.5s ease;
+}
+
+.tl-section:hover .tl-pin-line-cover {
+    height: 0%;
+}
+
+.tl-section .tl-dot {
+    position: absolute;
+    bottom: 20%;
+    left: 47.5%;
+    width: 5%;
+    aspect-ratio: 1/1;
+    background-color: #0c9d8e;
+    border-radius: 50%;
+}
+
+#tl-bottom-line {
+    position: absolute;
+    width: 80%;
+    aspect-ratio: 250/1;
+    bottom: 21.5%;
+    left: 10%;
+    border-radius: 100px;
+    background-color: black;
+}
+
+.tl-section-title {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 2vw;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    transition-delay: 0.4s;
+}
+
+.tl-section:hover .tl-section-title {
+    opacity: 0;
+    transition-delay: 0.1s;
+}
+
+.tl-section-text {
+    position: relative;
+    left: 65%;
+    top: 30%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    transition-delay: 0;
+    font-family: "Source Sans Pro";
+}
+
+#tl-stage-5 .tl-section-text {
+    left: -55%;
+}
+
+.tl-section-text p {
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+.tl-section-text h1 {
+    font-weight: 700;
+    font-size: 3vw;
+}
+
+.tl-section:hover .tl-section-text {
+    opacity: 1;
+    transition-delay: 0.4s;
 }
 
 
@@ -85,15 +233,20 @@
     background-clip: content-box;
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: min(4vw, 2rem);
+    height: min(4vw, 2rem);
+}
+
 #proj-carousels-section .carousel .carousel-indicators button {
-    width: min(2vw, 12px);
-    height: min(2vw, 12px);
+    width: min(1.5vw, 12px);
+    height: min(1.5vw, 12px);
     border-radius: 50%;
     background-color: #797979;
 }
 
 #proj-carousels-section .carousel .carousel-indicators {
-    margin-bottom: 0.5rem;
+    margin-bottom: 2%;
 }
 
 #proj-carousels-section .carousel button {
@@ -122,7 +275,8 @@
     font-family: 'Source Sans Pro';
     font-weight: 700;
     font-size: 3vw;
-    top: 15%;
+    top: 20%;
+    transform: translate(0%, -50%)
 }
 
 .proj-item-left p {
@@ -136,7 +290,7 @@
 
 .proj-item-bkg-blob {
     position: absolute;
-    background-image: url(images/Rectangle\ 25.png);
+    background-image: url("../images/proj-blob.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 60%;
@@ -146,20 +300,28 @@
 }
 .proj-item-img1 {
     position: absolute;
-    background-image: url(images/Rectangle\ 26.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: #5D5F5F;
+    mask-image: url("../images/blob1.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url("../images/blob1.svg");
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
     width: 33%;
     top: 20%;
     left: 12%;
-    aspect-ratio: 4/3;
+    aspect-ratio: 10/8.1;
 }
 
 .proj-item-img2 {
     position: absolute;
-    background-image: url(images/Rectangle\ 27.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: #5D5F5F;
+    mask-image: url("../images/blob2.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url("../images/blob2.svg");
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
     width: 33%;
     top: 50%;
     left: 10%;
@@ -168,11 +330,15 @@
 
 .proj-item-img3 {
     position: absolute;
-    background-image: url(images/Rectangle\ 28.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: #5D5F5F;
+    mask-image: url("../images/blob3.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url("../images/blob3.svg");
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
     width: 33%;
     top: 35%;
     left: 45%;
-    aspect-ratio: 4/3;
+    aspect-ratio: 5/4;
 }
