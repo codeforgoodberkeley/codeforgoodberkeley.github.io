@@ -74,10 +74,17 @@ body {
 
 /* Animation part for Home page */
 
-.hidden {
+.hidden-fast {
   opacity: 0;
-  transform: translateY(9%);
-  transition: all 1s;
+  transform: translateY(19%);
+  transition: all 0.8s;
+}
+
+.hidden-slow {
+  opacity: 0;
+  transform: translateY(19%);
+  transition: all 0.8s;
+  transition-delay: 0.1s;
 }
 
 @media(prefers-reduced-motion) {
