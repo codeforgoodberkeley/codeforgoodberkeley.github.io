@@ -291,13 +291,17 @@ svg.defs {
     visibility: hidden;
   }
 
+  :root {
+    --height: 1000px
+  }
+  
   /* Background */
 .circles{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 500%;
+  height: var(--height);
   overflow: hidden;
   z-index: 1;
 }
