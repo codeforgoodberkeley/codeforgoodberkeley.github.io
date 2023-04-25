@@ -163,6 +163,11 @@ body {
   width: 450px;
   height: 90%;
   border-radius: 42px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.teamage:hover {
+  transform: rotate(3deg)
 }
 
 /* Description */
@@ -192,7 +197,23 @@ body {
 .back-bg {
   margin-left: -30px !important;
   margin-top: -20px;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center bottom;
 }
+
+.card:hover .back-bg{
+  transform: rotate(-3deg)
+}
+
+.svg__image {
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center bottom;
+}
+
+.card:hover .svg__image {
+  transform: rotate(-3deg);
+}
+
 svg {
   display: block;
   margin-left: auto;
@@ -235,6 +256,12 @@ svg.defs {
 
 .proj-image {
   width: 500px;
+  transition: transform 0.5s ease-in-out;
+  clip-path: inset(0 0 6px 0);
+}
+
+.proj-image:hover {
+  transform: rotate(3deg);
 }
 
 
