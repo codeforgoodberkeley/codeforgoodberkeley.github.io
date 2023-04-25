@@ -1,7 +1,8 @@
 
 .footer-custom {
     background-color: #D8F2EF;
-    z-index: 9;
+    z-index: 2;
+    position: relative;
 }
 
 .footer-distributed .footer-icons a{
