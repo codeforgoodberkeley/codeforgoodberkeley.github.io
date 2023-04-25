@@ -1,20 +1,13 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+function setHeight(){
+  var body = document.body,
+  html = document.documentElement;
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
+  var docheight = Math.max( body.scrollHeight, body.offsetHeight, 
+                     html.clientHeight, html.scrollHeight, html.offsetHeight );
+  const root = document.querySelector(':root');
+  root.style.setProperty('--height', `${docheight}px`)
+  let height = getComputedStyle(root).getPropertyValue('--height')
+  console.log(height);
+};
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
-// var height = document.getElementsByTagName('body').style.height;
-// console.log()
+window.addEventListener('DOMContentLoaded', setHeight);
