@@ -175,24 +175,6 @@ svg.defs {
   width: 500px;
 }
 
-
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 30px;
-	margin-bottom: 5px;
-} */
-
 .underline {
   position: relative;
   display: inline-block;

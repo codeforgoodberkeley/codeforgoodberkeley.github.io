@@ -140,7 +140,7 @@ function populate_row_with_cards(node, card_data) {
             email_element = card_element.getElementsByClassName("card-link-em")[0]
 
             front_text_element.innerHTML = "<b>" + name + "</b> <br>" + title
-            face_element.setAttribute("src", "team_images/" + img_src)
+            face_element.setAttribute("src", "images/team/" + img_src)
             bio_element.innerHTML = bio
             linkedin_element.setAttribute("href", linkedin)
             email_element.setAttribute("href", email)
