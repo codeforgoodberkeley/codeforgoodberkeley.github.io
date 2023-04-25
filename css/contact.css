@@ -9,9 +9,25 @@ h1 {
     margin-bottom: 0;
 }
 
+/*h1 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 88px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}*/
+
+/*.block {
+    background-color: rgba(131, 200, 187, 0.33);;
+}*/
+
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 50px;
+    margin: 65px;
 }
 
 .line-container {
@@ -47,15 +63,11 @@ hr {
 .tab {
     cursor: pointer;
     padding: 5px 30px;
-    font-size: 18px;
+    font-size: 4.2vw;
     flex: 1;
     text-align: center;
+    /*need to make text responsive*/
 }
-  
-
-/*.tab.is-tab-selected {
-    background-color: #A7D6D0;
-}*/
 
 .mainbox-wrapper {
     margin: 0 auto;
@@ -78,4 +90,9 @@ iframe {
 
 #student {
     background-color: #A7D6D0;
+    font-size: 1.6vw;
+}
+
+#nonprofit {
+    font-size: 1.6vw;
 }

@@ -72,6 +72,31 @@ body {
     padding-top: 60px;
   }
 
+/* Animation part for Home page */
+
+.hidden-fast {
+  opacity: 0;
+  transform: translateY(19%);
+  transition: all 0.8s;
+}
+
+.hidden-slow {
+  opacity: 0;
+  transform: translateY(19%);
+  transition: all 0.8s;
+  transition-delay: 0.1s;
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Apply Now */
 
@@ -89,7 +114,7 @@ body {
   background-image: -webkit-linear-gradient(0deg, #21AE9F 0%, #21AE9F 100%);
   background-image: -ms-linear-gradient(0deg, #21AE9F 0%, #21AE9F 100%);  
   font-size: 18px;
-  font-family: "OpenSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #fff;
   border-radius: 50px;

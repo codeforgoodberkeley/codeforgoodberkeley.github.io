@@ -15,8 +15,22 @@ data_strings = [
     "Tanya Agrawal	tanya.agrawal@berkeley.edu	 	SFSYO	profile pic - Tanya Agrawal.jpg	Hi! I enjoy reading, drawing, trying out new food places, and exploring places in and around Berkeley!",
     "Buvi Vinothasha 	buvinnash@berkeley.edu	https://www.linkedin.com/in/buvinnash	SFSYO	CFGpic - Buvi Vinothasha.jpg	Hey everyone, my name is Buvi. I love playing tennis, trying new food, travelling, and hanging out with friends.",
     "Pranitha Rao	pranitha_rao@berkeley.edu	linkedin.com/in/pranitha-r-3129541b0	Internal	IMG_2462 - Pranitha Rao.JPG	hi i'm Pranitha! in my free time i like watching basketball, crocheting, and cooking :) ",
-    "Nazar Ospanov	aimogenius@berkeley.edu	https://www.linkedin.com/in/nazar-ospanov-860694205	Internal	EBD2251B-EA25-43E9-9E73-194D99029670 - Nazar Ospanov.jpeg	Hi, I’m Nazar, and I like getting absolutely obliterated by every CS midterm and getting over this pain by playing lots of video games🥶🥶"
+    "Nazar Ospanov	aimogenius@berkeley.edu	https://www.linkedin.com/in/nazar-ospanov-860694205	Internal	EBD2251B-EA25-43E9-9E73-194D99029670 - Nazar Ospanov.jpeg	Hi, I’m Nazar, and I like getting absolutely obliterated by every CS midterm and getting over this pain by playing lots of video games🥶🥶",
+    "Yixin Huang	yixinhuang1@berkeley.edu 	https://www.linkedin.com/in/yixin-huang-91b7781aa/	SFSYO	IMG_0849 - Yixin Huang.HEIC	Hi! I enjoy running as well as playing ping pong. ",
+    "Kay Wee Tan	kay_wee@berkeley.edu	https://www.linkedin.com/in/kay-wee-tan/	Internal	photo_2023-04-17_09-42-35 - Tan Kay Wee.jpg	hi! i like rock climbing, skating, and playing the guitar/piano! i also really love boba tea, so hmu if you're a fellow boba tea lover :)",
+    "Shivan Patel	shivanpatel@berkeley.edu	www.linkedin.com/in/shivan-patel	OneSky	IMG_0015 - Code For Good.HEIC	hi, I'm Shivan! I love cats, sushi, and napping -- in no particular order :)"
 ]
+
+function shuffle( arr ) { //array,placeholder,placeholder,placeholder
+    ct = arr.length;
+    while(ct) {
+        b = Math.random() * ct-- | 0
+        d = arr[ct]
+        arr[ct] = arr[b]
+        arr[b] = d
+    }
+}
+shuffle(data_strings)
 
 /*
 
@@ -46,8 +60,8 @@ const officer_names = ["Dhruv Chowdhary", "Esha Puri", "Kristy Chu", "Shivan Pat
 
 for (const data_string of data_strings) {
     split_data = data_string.split('\t')
-    if(split_data[4].includes(".heic")) {
-        split_data[4] = split_data[4].replace("\.heic", ".jpg").replaceAll(" ", "_");
+    if(split_data[4].includes(".heic") || split_data[4].includes(".HEIC")) {
+        split_data[4] = split_data[4].replace("\.heic", ".jpg").replace("\.HEIC", ".jpg").replaceAll(" ", "_");
     }
     if(officer_names.includes(split_data[0])) {
         officer_data.push(split_data)
