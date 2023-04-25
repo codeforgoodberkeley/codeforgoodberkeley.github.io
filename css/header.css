@@ -1,0 +1,57 @@
+/* Style the navbar */
+.navbar {
+    background-color: #D8F2EF;
+    display: flex;
+    z-index: 1;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    z-index: 10;
+  }
+
+  
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    align-self: center;
+    margin: 27px;
+
+    text-decoration: none;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.navbar_logo {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    max-width: 300px;
+    height: auto;
+    margin-right: 26%;
+}
+
+.navbar_apply_btn {
+    background: linear-gradient(90deg, #10887B -26.14%, #22F3F1 151.89%);
+
+    padding: 10px 20px;
+
+    border: 3px solid #FFFFFF;
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+    
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
