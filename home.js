@@ -10,4 +10,4 @@ function setHeight(){
   console.log(height);
 };
 
-window.addEventListener('resize', setHeight);
+window.addEventListener('DOMContentLoaded', setHeight);
