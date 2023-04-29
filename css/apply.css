@@ -69,10 +69,26 @@
 }
 
 .timeline {
-    width: 80vw;
+    width: 85vw;
     background-color: #EEFEFC;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 20px;
+    min-height: 100vh;
+}
+
+.vertical-line {
+    width: 0.1vw;
+    opacity: 10%;
+    height: 25vh;
+    background-color: black;
+    position: absolute;
+    left:23%
+}
+
+.timeline-date {
+    color: #0c9d8f5d;
 }
