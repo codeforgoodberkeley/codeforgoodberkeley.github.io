@@ -246,8 +246,13 @@ svg.defs {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 10vh;
-    
+    padding-bottom: 10vh; 
+  }
+
+  @include media-breakpoint-up(md) {
+    .animation {
+      line-height: 5em
+    }
   }
 
   #line1, #line3 {
