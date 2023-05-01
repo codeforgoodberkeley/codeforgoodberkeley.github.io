@@ -37,11 +37,6 @@
     text-align: center;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0px;
-}
-
 .container {
     height: 50px;
     position: relative;
@@ -89,13 +84,16 @@ iframe {
     border-style: none;    
 }
 
+
 #student {
     background-color: #A7D6D0;
     font-size: 1.6vw;
+    font-family: 'Open Sans';
 }
 
 #nonprofit {
     font-size: 1.6vw;
+    font-family: 'Open Sans';
 }
 
 .container {
