@@ -1,3 +1,7 @@
+#navbar {
+    background-color: #D8F2EF;
+}
+
 /*      TITLE BANNER      */
 
 #contact-title {
@@ -92,4 +96,8 @@ iframe {
 
 #nonprofit {
     font-size: 1.6vw;
+}
+
+.container {
+    margin-top: 40px;
 }
