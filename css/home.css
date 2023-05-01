@@ -249,7 +249,7 @@ svg.defs {
     padding-bottom: 10vh; 
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 600px) {
     .animation {
       line-height: 1rem;
     }
@@ -261,7 +261,7 @@ svg.defs {
     }
   }
 
-  @media screen and (min-width: 577px) {
+  @media screen and (min-width: 601px) {
     .animation {
       line-height: 2.5rem;
     }
