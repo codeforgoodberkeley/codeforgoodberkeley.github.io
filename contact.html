@@ -14,24 +14,24 @@
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/contact.css">
 
+
+
     <!--Airtable Link-->
     <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
 </head>
 <body>
-    <div class ="title">
-        <div class="block">
-        <h1 style="height: 50px !important;">Contact Us</h1>
-        <div class="line-container">
-            <hr>
+    <div id="contact-title">
+        <div id="contact-title-overlay">
+            <div id="contact-title-box">
+                <h1>CONTACT</h1>
+            </div>
         </div>
-        <p1>Do you have any general questions or concerns for us? Email us at codeforgoodberkeley@gmail.com, and we'll get back to you as soon as possible!</p1>
+        <div class="container">
+            <div class="tabs">
+                <div class="tab" id="student">For Students</div>
+                <div class="tab" id="nonprofit">For Nonprofits & Organizations</div>
+              </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="tabs">
-            <div class="tab" id="student">For Students</div>
-            <div class="tab" id="nonprofit">For Nonprofits & Organizations</div>
-          </div>
     </div>
     <div class="mainbox-wrapper">
         <div class="border">
@@ -39,6 +39,8 @@
             <div id ="contactForm"><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrNgB1ni6VFvbGcz?backgroundColor=cyan" frameborder="10" onmousewheel="" width="70%" height="755" style="background-color: transparent; border: 1px solid #ccc; margin-top: 0px !important; margin-right: auto; margin-bottom: 50px; margin-left: auto;"></iframe></div>
         </div>
     </div>
+
     <script src="contact.js"></script>
+    
 </body>
 </html>
