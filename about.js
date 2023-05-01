@@ -18,7 +18,8 @@ data_strings = [
     "Nazar Ospanov	aimogenius@berkeley.edu	https://www.linkedin.com/in/nazar-ospanov-860694205	Internal	EBD2251B-EA25-43E9-9E73-194D99029670 - Nazar Ospanov.jpeg	Hi, I’m Nazar, and I like getting absolutely obliterated by every CS midterm and getting over this pain by playing lots of video games🥶🥶",
     "Yixin Huang	yixinhuang1@berkeley.edu 	https://www.linkedin.com/in/yixin-huang-91b7781aa/	SFSYO	IMG_0849 - Yixin Huang.HEIC	Hi! I enjoy running as well as playing ping pong. ",
     "Kay Wee Tan	kay_wee@berkeley.edu	https://www.linkedin.com/in/kay-wee-tan/	Internal	photo_2023-04-17_09-42-35 - Tan Kay Wee.jpg	hi! i like rock climbing, skating, and playing the guitar/piano! i also really love boba tea, so hmu if you're a fellow boba tea lover :)",
-    "Shivan Patel	shivanpatel@berkeley.edu	www.linkedin.com/in/shivan-patel	OneSky	IMG_0015 - Code For Good.HEIC	hi, I'm Shivan! I love cats, sushi, and napping -- in no particular order :)"
+    "Shivan Patel	shivanpatel@berkeley.edu	www.linkedin.com/in/shivan-patel	OneSky	IMG_0015 - Code For Good.HEIC	hi, I'm Shivan! I love cats, sushi, and napping -- in no particular order :)",
+    "Thien Le	thienle1942@berkeley.edu	https://www.linkedin.com/in/thien-le-91aab21aa/	SFSYO	323880832_2293072247526691_7239492967362149279_n - Thien Le.jpg	Hi! I'm a sophomore studying EECS from right outside the Bay Area! I like anything music-related, basketball, and lion-dancing!!! \ (•◡•) /"
 ]
 
 function shuffle( arr ) { //array,placeholder,placeholder,placeholder

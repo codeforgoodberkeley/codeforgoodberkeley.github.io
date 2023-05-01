@@ -53,7 +53,7 @@
 /*   SUBHEADINGS   */
 
 .proj-subheading {
-    padding: 2% calc(50% - 21vh);
+    padding: 0 calc(50% - 21vh);
 }
 
 .proj-subheading h2{
@@ -193,9 +193,10 @@
 .tl-section-text {
     position: relative;
     left: 65%;
-    top: 15%;
+    top: 45%;
+    transform: translateY(-50%);
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
     transition-delay: 0;
     font-family: "Source Sans Pro";
 }
@@ -206,7 +207,7 @@
 
 .tl-section-text p {
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 1.4vw;
 }
 
 .tl-section-text h1 {
@@ -223,8 +224,17 @@
 
 /*     Carousels     */
 
-#proj-sp23-carousel {
-    margin: 4% 10% 5%;
+.carousel-title {
+    position: relative;
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 2.5vw;
+    left: 15%;
+    margin-bottom: 0;
+}
+
+#proj-carousels-section .carousel {
+    margin: 0 10% 5%;
 }
 
 .carousel-item {
@@ -233,7 +243,7 @@
     aspect-ratio: 2/1;
     overflow-x: visible;
     overflow-y: visible;
-    padding: 2%;
+    padding: 1%;
     background-clip: content-box;
 }
 
@@ -327,6 +337,7 @@
     left: 12%;
     aspect-ratio: 10/8.1;
     background-size: contain;
+    background-color: white;
 }
 
 .proj-item-img2 {
@@ -337,6 +348,7 @@
     top: 50%;
     left: 10%;
     aspect-ratio: 4/3;
+    background-color: white;
 }
 
 .proj-item-img3 {
@@ -346,10 +358,11 @@
     top: 35%;
     left: 45%;
     aspect-ratio: 5/4;
+    background-color: white;
 }
 
 #mesa .proj-item-img1 {
-    background-image: url("../images/projects/mesa1alt.png");
+    background-image: url("../images/projects/mesa1.png");
 }
 #mesa .proj-item-img2 {
     background-image: url("../images/projects/mesa2.png");

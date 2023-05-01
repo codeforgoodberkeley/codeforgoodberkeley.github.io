@@ -4,8 +4,8 @@ var tl_sections = $('.tl-section').toArray();
 function hoverSection(hover_index) {
     old_index = tl_contents[hover_index].getAttribute("hover_index")
     if(old_index != hover_index) {
-        let W = 0.75
-        let offset = 0.35
+        let W = 0.65
+        let offset = 0.5
         for ( i = 0; i < 4; i++ ) {
             tl_contents[i].setAttribute("hover_index", hover_index)
             if(i == hover_index) {
@@ -42,15 +42,11 @@ $(document).ready(function(){
     $('.carousel').carousel("cycle");
 });
 
-project_data = {
-    "Spring 2023": [
-        ["MESA", "Description", "url1", "url2", "url3"]
-    ]
-};
-
 function make(tag, classes, children) {
     var node = document.createElement(tag);
-    node.setAttribute("class", classes)
+    if(classes) {
+        node.setAttribute("class", classes)
+    }
     if(children) {
         for(const child of children) {
             node.appendChild(child)
@@ -60,10 +56,66 @@ function make(tag, classes, children) {
 }
 
 /*
+
+CAROUSEL ITEM TEMPLATE
+
+<div class="carousel-item">
+    <div class="proj-item-left">
+        <h1> [Project Name] </h1>
+        <p>
+            [Project Description]
+        </p>
+    </div>
+    <div class="proj-item-right">
+        <div class="proj-item-bkg-blob">
+            
+        </div>
+        <div class="proj-item-img1">
+        </div>
+        <div class="proj-item-img2">
+            
+        </div>
+        <div class="proj-item-img3">
+            
+        </div>
+    </div>
+</div>
+
+*/
+
+project_item_template = make("div", "carousel-item", [
+    make("div", "proj-item-left", [
+        make("h1"),
+        make("p")
+    ]),
+    make("div", "proj-item-right", [
+        make("div", "proj-item-bkg-blob"),
+        make("div", "proj-item-img1"),
+        make("div", "proj-item-img2"),
+        make("div", "proj-item-img3")
+    ])
+
+])
+
+function make_project_item(project_data) {
+    element = project_item_template.cloneNode(true);
+    let left = element.getElementsByClassName("proj-item-left")[0]
+    left.children[0].innerHTML = project_data[0]
+    left.children[1].innerHTML = project_data[4]
+    let right = element.getElementsByClassName("proj-item-right")[0]
+    right.children[1].style.backgroundImage = "url('" + project_data[1] + "')"
+    right.children[2].style.backgroundImage = "url('" + project_data[2] + "')"
+    right.children[3].style.backgroundImage = "url('" + project_data[3] + "')"
+    return element
+}
+
+/*
+
 Carousel Template
 
 For each semester:
 
+<p class="carousel-title">Spring 2023</p>
 <div class="carousel slide" data-ride="carousel" data-pause="false">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#proj-sp23-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -72,22 +124,8 @@ For each semester:
     </div>
     <div class="carousel-inner">
         
-        For each project:
+        PROJECT ITEMS
 
-        <div class="carousel-item active">
-            <div class="proj-item-left">
-                <h1> [ Title ]</h1>
-                <p>
-                    [ Description ]
-                </p>
-            </div>
-            <div class="proj-item-right">
-                <div class="proj-item-bkg-blob"></div>
-                <div class="proj-item-img1"></div>
-                <div class="proj-item-img2"></div>
-                <div class="proj-item-img3"></div>
-            </div>
-        </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#proj-sp23-carousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -100,4 +138,86 @@ For each semester:
 </div>
 */
 
+var carousel_template_element = make("div", "carousel slide", [
+    make("div", "carousel-indicators", [
+        make("button", "active needsTarget"),
+        make("button", "needsTarget"),
+        make("button", "needsTarget")
+    ]),
+    make("div", "carousel-inner"),
+    make("button", "carousel-control-prev needsTarget", [
+        make("span", "carousel-control-prev-icon"),
+        make("span", "visually-hidden")
+    ]),
+    make("button", "carousel-control-next needsTarget", [
+        make("span", "carousel-control-next-icon"),
+        make("span", "visually-hidden")
+    ])
+]);
 
+carousel_template_element.setAttribute("data-ride", "carousel");
+carousel_template_element.setAttribute("data-pause", "false");
+i = 0
+for(indicator of carousel_template_element.children[0].children) {
+    indicator.setAttribute("type", "button");
+    indicator.setAttribute("data-bs-slide-to", i);
+    indicator.setAttribute("aria-label", "Slide " + i);
+    if(i == 0) indicator.setAttribute("aria-current", "true");
+    i++;
+}
+let prev = carousel_template_element.getElementsByClassName("carousel-control-prev")[0];
+prev.setAttribute("type", "button");
+prev.setAttribute("data-bs-slide", "prev");
+prev.children[0].setAttribute("aria-hidden", "true");
+prev.children[1].innerHTML = "Previous";
+let next = carousel_template_element.getElementsByClassName("carousel-control-next")[0];
+next.setAttribute("type", "button");
+next.setAttribute("data-bs-slide", "next");
+next.children[0].setAttribute("aria-hidden", "true");
+next.children[1].innerHTML = "Next";
+
+var idNum = 0;
+
+function make_semester_carousel(semester_data) {
+    carousel = carousel_template_element.cloneNode(true);
+
+    carousel_id = "proj-carousel-" + idNum;
+    idNum++;
+
+    carousel.id = carousel_id;
+
+    inner = carousel.getElementsByClassName("carousel-inner")[0];
+    for(proj of semester_data) {
+        inner.appendChild(make_project_item(proj))
+    }
+    inner.children[0].className += " active"
+
+    allNeedsTarget = carousel.getElementsByClassName("needsTarget")
+    for(elem of allNeedsTarget) {
+        elem.setAttribute("data-bs-target", "#" + carousel_id)
+    }
+
+    return carousel;
+}
+
+project_data = {
+    "Spring 2023": [
+        ["MESA", "/images/projects/mesa1.png", "/images/projects/mesa2.png", "/images/projects/mesa3.png", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"],
+        ["Onesky", "/images/projects/onesky1.jpg", "/images/projects/onesky2.jpg", "/images/projects/onesky3.jpg", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"],
+        ["SF Symphony Youth Orchestra", "/images/projects/sfsyo1.png", "/images/projects/sfsyo2.png", "/images/projects/sfsyo3.png", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"]
+    ],
+    "Fall 2022": [
+        ["Savanna", "/images/projects/mesa1.png", "/images/projects/mesa2.png", "/images/projects/mesa3.png", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"],
+        ["ZeroGround", "/images/projects/onesky1.jpg", "/images/projects/onesky2.jpg", "/images/projects/onesky3.jpg", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"],
+        ["NYC Ensemble Senior Band", "/images/projects/sfsyo1.png", "/images/projects/sfsyo2.png", "/images/projects/sfsyo3.png", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"]
+    ]
+};
+
+carousels_section = document.getElementById("proj-carousels-section")
+for(semester in project_data) {
+    semester_data = project_data[semester]
+    title_text = make("p", "carousel-title")
+    title_text.innerHTML = semester
+    carousels_section.appendChild(title_text)
+    carousels_section.appendChild(make_semester_carousel(semester_data))
+}
