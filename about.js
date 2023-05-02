@@ -1,3 +1,24 @@
+/*
+
+Instructions for adding team member data from the google form:
+
+If not already done, select column G (picture link) of all new entries, right click, and select Smart Chips -> File.
+Select and copy the relevant rows for members to add from columns B-G (name to bio).
+
+Paste in a new line inside the data_strings array. (Works best in my VSCode if this is pasted in a line with no indentation)
+
+Add quotation marks onto the beginning and end of each new line and add commas to the ends (except the last element of the list).
+    \-> this can be done in VSCode by selecting the start of the lines with Alt + click or Alt + Shift + click, and then getting to the end of the lines by navigating left and one down
+Make sure to add a comma to the string before the one(s) you pasted in.
+
+Go to the form's image folder in google drive (can be accessed through the form) and then copy all relevant images into the team_images folder
+
+If applicable, run any HEIC files through this converter:
+https://heictojpg.com/
+Don't update the file names in the strings, this will be done automatically. 
+
+*/
+
 data_strings = [
     "Abram Tan	abramtan@berkeley.edu	https://www.linkedin.com/in/abramtan	OneSky	photo_2023-03-15 16.24.35 - Abram Jia Han Tan.jpeg	Hey there! I love rock climbing, photography and the outdoors!",
     "Warren Lim	warrenlim_@berkeley.edu	https://www.linkedin.com/in/warren-lim-735605242/	OneSky	IMG_6213 - Warren Lim.JPG	Hey there! I like hanging out with friends, dancing, playing volleyball & basketball, working out, roller coasters, anything really (except coconuts).",
@@ -32,27 +53,6 @@ function shuffle( arr ) { //array,placeholder,placeholder,placeholder
     }
 }
 shuffle(data_strings)
-
-/*
-
-Instructions for adding team member data from the google form:
-
-If not already done, select column G (picture link) of all new entries, right click, and select Smart Chips -> File.
-Select and copy the relevant rows for members to add from columns B-G (name to bio).
-
-Paste in a new line inside the data_strings array. (Works best in my VSCode if this is pasted in a line with no indentation)
-
-Add quotation marks onto the beginning and end of each new line and add commas to the ends (except the last element of the list).
-    \-> this can be done in VSCode by selecting the start of the lines with Alt + click or Alt + Shift + click, and then getting to the end of the lines by navigating left and one down
-Make sure to add a comma to the string before the one(s) you pasted in.
-
-Go to the form's image folder in google drive (can be accessed through the form) and then copy all relevant images into the team_images folder
-
-If applicable, run any HEIC files through this converter:
-https://heictojpg.com/
-Don't update the file names in the strings, this will be done automatically. 
-
-*/
 
 team_data = []
 officer_data = []

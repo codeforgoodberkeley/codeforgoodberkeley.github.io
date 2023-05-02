@@ -1,3 +1,27 @@
+
+/*
+Instructions for adding new semesters:
+
+Add another entry into the project_data dictionary with the semester name as the key and an array as the value
+    e.g. add "Fall 2024": []
+
+For each project, add a sublist. Each list is of the form:
+    [Project Name, Image URL 1, Image URL 2, Image URL 3, Description]
+    Each entry is a string. Do not include the url() css command.
+
+Make sure there are commas between each semester entry and each project sublist.
+*/
+
+
+project_data = {
+    "Spring 2023": [
+        ["MESA", "/images/projects/mesa1.png", "/images/projects/mesa2.png", "/images/projects/mesa3.png", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"],
+        ["OneSky", "/images/projects/onesky1.jpg", "/images/projects/onesky2.jpg", "/images/projects/onesky3.jpg", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"],
+        ["SF Symphony Youth Orchestra", "/images/projects/sfsyo1.png", "/images/projects/sfsyo2.png", "/images/projects/sfsyo3.png", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"]
+    ]
+};
+
+
 var tl_contents = $('.tl-content').toArray();
 var tl_sections = $('.tl-section').toArray();
 
@@ -199,14 +223,6 @@ function make_semester_carousel(semester_data) {
 
     return carousel;
 }
-
-project_data = {
-    "Spring 2023": [
-        ["MESA", "/images/projects/mesa1.png", "/images/projects/mesa2.png", "/images/projects/mesa3.png", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"],
-        ["OneSky", "/images/projects/onesky1.jpg", "/images/projects/onesky2.jpg", "/images/projects/onesky3.jpg", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"],
-        ["SF Symphony Youth Orchestra", "/images/projects/sfsyo1.png", "/images/projects/sfsyo2.png", "/images/projects/sfsyo3.png", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"]
-    ]
-};
 
 carousels_section = document.getElementById("proj-carousels-section")
 for(semester in project_data) {
