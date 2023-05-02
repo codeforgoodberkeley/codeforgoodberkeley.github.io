@@ -32,7 +32,7 @@ transform: translateY(0);
     position: relative;
     width:100%;
     aspect-ratio: 3/1;
-    background-image: url("../images/title-banner.jpg");
+    background-image: url("../images/about-banner.jpg");
     background-size: 100%;
 }
 
@@ -48,7 +48,7 @@ transform: translateY(0);
     left:25%;
     width:50%;
     height:30%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 #about-title-box h1 {
