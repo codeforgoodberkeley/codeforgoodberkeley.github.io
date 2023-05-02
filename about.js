@@ -131,7 +131,14 @@ function populate_row_with_cards(node, card_data) {
             let img_src = data[4]
             let bio = data[5]
             let linkedin = data[2]
-            let email = data[1]
+            if(linkedin.length > 2 && !linkedin.startsWith("https://")) {
+                if(!linkedin.startsWith("www.")) {
+                    linkedin = "www." + linkedin
+                }
+                linkedin = "https://" + linkedin
+            }
+
+            let email = "mailto: " + data[1]
 
             card_element = template_element.cloneNode(true)
             front_text_element = card_element.getElementsByClassName("card-title-text")[0]
@@ -139,6 +146,12 @@ function populate_row_with_cards(node, card_data) {
             bio_element = card_element.getElementsByClassName("card-bio")[0]
             linkedin_element = card_element.getElementsByClassName("card-link-li")[0]
             email_element = card_element.getElementsByClassName("card-link-em")[0]
+            
+            if(linkedin.length < 3) {
+                console.log("hiii")
+                card_element.firstChild.lastChild.removeChild(linkedin_element);
+                email_element.className += " link-center"
+            }
 
             front_text_element.innerHTML = "<b>" + name + "</b> <br>" + title
             face_element.setAttribute("src", "images/team/" + img_src)

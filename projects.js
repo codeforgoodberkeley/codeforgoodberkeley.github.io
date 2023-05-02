@@ -1,5 +1,5 @@
-
 /*
+
 Instructions for adding new semesters:
 
 Add another entry into the project_data dictionary with the semester name as the key and an array as the value
@@ -10,6 +10,7 @@ For each project, add a sublist. Each list is of the form:
     Each entry is a string. Do not include the url() css command.
 
 Make sure there are commas between each semester entry and each project sublist.
+
 */
 
 
@@ -163,11 +164,7 @@ For each semester:
 */
 
 var carousel_template_element = make("div", "carousel slide", [
-    make("div", "carousel-indicators", [
-        make("button", "active needsTarget"),
-        make("button", "needsTarget"),
-        make("button", "needsTarget")
-    ]),
+    make("div", "carousel-indicators", []),
     make("div", "carousel-inner"),
     make("button", "carousel-control-prev needsTarget", [
         make("span", "carousel-control-prev-icon"),
@@ -181,14 +178,7 @@ var carousel_template_element = make("div", "carousel slide", [
 
 carousel_template_element.setAttribute("data-ride", "carousel");
 carousel_template_element.setAttribute("data-pause", "false");
-i = 0
-for(indicator of carousel_template_element.children[0].children) {
-    indicator.setAttribute("type", "button");
-    indicator.setAttribute("data-bs-slide-to", i);
-    indicator.setAttribute("aria-label", "Slide " + i);
-    if(i == 0) indicator.setAttribute("aria-current", "true");
-    i++;
-}
+
 let prev = carousel_template_element.getElementsByClassName("carousel-control-prev")[0];
 prev.setAttribute("type", "button");
 prev.setAttribute("data-bs-slide", "prev");
@@ -215,6 +205,24 @@ function make_semester_carousel(semester_data) {
         inner.appendChild(make_project_item(proj))
     }
     inner.children[0].className += " active"
+
+    indicators = carousel.getElementsByClassName("carousel-indicators")[0];
+    for(i = 0; i < semester_data.length; i++) {
+        indicator = make("button", "needsTarget");
+        if(i == 0)
+        indicator.setAttribute("type", "button");
+        indicator.setAttribute("data-bs-slide-to", i);
+        indicator.setAttribute("aria-label", "Slide " + i);
+        if(i == 0) {
+            indicator.setAttribute("aria-current", "true");
+            indicator.className += " active"
+        }
+        indicators.appendChild(indicator);
+    }
+    make("button", "active needsTarget"),
+    make("button", "needsTarget"),
+    make("button", "needsTarget")
+
 
     allNeedsTarget = carousel.getElementsByClassName("needsTarget")
     for(elem of allNeedsTarget) {

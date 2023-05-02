@@ -203,6 +203,10 @@ transform: translateY(0);
     background-image: url("../images/email.png");
 }
 
+.card-back .link-center {
+    left: 40%;
+}
+
 .card-front .card-title {
     position: absolute;
     width: 100%;
