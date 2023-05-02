@@ -89,8 +89,13 @@
     border: none;
     width: 15vw;
     padding: 10px 0;
-    margin: 10px 25px;
+    margin: 10px 100px;
 }
+
+.apply-btns button:hover{
+    color: #000;
+    border-color: #000;
+  }
 
 .timeline {
     width: 85vw;
@@ -104,13 +109,18 @@
     min-height: 100vh;
 }
 
+.row {
+    margin-bottom: 15px;
+    min-height: 145px;
+}
+
 .vertical-line {
     width: 0.1vw;
     opacity: 10%;
-    height: 25vh;
+    height: 11vh;
     background-color: black;
     position: absolute;
-    left:23%
+    left:21.5%
 }
 
 .timeline-date {
