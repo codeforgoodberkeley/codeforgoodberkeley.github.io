@@ -16,7 +16,7 @@ Make sure there are commas between each semester entry and each project sublist.
 
 project_data = {
     "Spring 2023": [
-        ["MESA", "/images/projects/mesa1.png", "/images/projects/mesa2.png", "/images/projects/mesa3.png", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"],
+        ["MESA", "/images/projects/mesa1.png", "/images/projects/mesa2.png", "/images/projects/mesa3.png", "Year-round, MESA sponsors international trainees (“Stewards”) to learn and share sustainable agriculture practices with U.S. Host mentors. MESA matches Stewards with suitable U.S. hosts to create unique experiences. To help with this application matchmaking process, we built and integrated two features: an interview scheduler and a steward-host express interest option."],
         ["OneSky", "/images/projects/onesky1.jpg", "/images/projects/onesky2.jpg", "/images/projects/onesky3.jpg", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"],
         ["SF Symphony Youth Orchestra", "/images/projects/sfsyo1.png", "/images/projects/sfsyo2.png", "/images/projects/sfsyo3.png", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"]
     ]
@@ -63,7 +63,6 @@ for ( i = 0; i < 5; i++ ) {
 }
 
 $(document).ready(function(){
-    //console.log($('.carousel'))
     $('.carousel').carousel("cycle");
 });
 
