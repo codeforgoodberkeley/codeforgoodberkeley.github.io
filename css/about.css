@@ -229,7 +229,7 @@ transform: translateY(0);
 }
 
 #about-officer-row p {
-    --cols: 1;
+    --cols: 2;
 }
 #about-team-row p {
     --cols: 2;
