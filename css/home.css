@@ -121,7 +121,13 @@ body {
 .desc-textbox {
   margin-top: 40px;
   min-height: 300px;
-  margin-bottom: 130px
+  margin-bottom: 130px;
+}
+
+.img-box {
+  margin-top: 40px;
+  height: calc(40vw + 120px);
+  max-height: 500px;
 }
 
 .desc-title-textbox {

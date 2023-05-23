@@ -148,7 +148,6 @@ function populate_row_with_cards(node, card_data) {
             email_element = card_element.getElementsByClassName("card-link-em")[0]
             
             if(linkedin.length < 3) {
-                console.log("hiii")
                 card_element.firstChild.lastChild.removeChild(linkedin_element);
                 email_element.className += " link-center"
             }
