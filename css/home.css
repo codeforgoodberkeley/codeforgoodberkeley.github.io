@@ -120,14 +120,23 @@ body {
 
 .desc-textbox {
   margin-top: 40px;
-  min-height: 300px;
   margin-bottom: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  min-height: 300px;
+}
+
+.desc-image {
+  flex-wrap: wrap-reverse;
+  align-content: center;
 }
 
 .img-box {
   margin-top: 40px;
   height: calc(40vw + 120px);
   max-height: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .desc-title-textbox {
@@ -187,8 +196,10 @@ svg.defs {
 
 .proj-textbox{
   margin-top: 40px;
-  padding-left: 70px;
   margin-bottom: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  min-height: 300px;
 }
 
 .proj-h2{
@@ -196,11 +207,12 @@ svg.defs {
 }
 
 .proj-p-textbox{
-  max-width: 480px;
+  max-width: 500px;
 }
 
 .proj-image {
   width: 85%;
+  height: fit-content;
   transition: transform 0.5s ease-in-out;
   clip-path: inset(0 0 6px 0);
 }
