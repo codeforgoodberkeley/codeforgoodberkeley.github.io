@@ -41,8 +41,7 @@ body {
 #apply-now {
   background-color: #EEFEFC;
   text-align: center;
-  padding: 80px 0px;
-  padding-left: 40px;
+  padding: 80px 25px;
   position: relative;
   z-index: 0;
 }
@@ -96,10 +95,12 @@ body {
   padding-bottom: 40px;
 }
 
+.row-center {
+  align-items: center;
+}
 
 .teamage {
-  width: 450px;
-  height: 90%;
+  width: 90%;
   border-radius: 42px;
   z-index:2;
   transition: transform 0.5s ease-in-out;
@@ -113,15 +114,14 @@ body {
 
 #description{
   background: #fff;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .desc-textbox {
   margin-top: 40px;
   min-height: 300px;
-  margin-bottom: 130px;
+  margin-bottom: 40px;
 }
 
 .img-box {
@@ -188,7 +188,7 @@ svg.defs {
 .proj-textbox{
   margin-top: 40px;
   padding-left: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .proj-h2{
@@ -200,7 +200,7 @@ svg.defs {
 }
 
 .proj-image {
-  width: 500px;
+  width: 85%;
   transition: transform 0.5s ease-in-out;
   clip-path: inset(0 0 6px 0);
 }
