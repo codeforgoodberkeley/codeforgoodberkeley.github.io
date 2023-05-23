@@ -211,10 +211,9 @@ svg.defs {
 }
 
 .proj-image {
+  object-fit:contain;
   width: 85%;
-  height: fit-content;
   transition: transform 0.5s ease-in-out;
-  clip-path: inset(0 0 6px 0);
 }
 
 .proj-image:hover {
