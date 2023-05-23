@@ -175,7 +175,7 @@
 .tl-section-title {
     position: absolute;
     left: 50%;
-    bottom: 0%;
+    bottom: calc(3% - 10px);
     transform: translateX(-50%);
     font-family: "Source Sans Pro";
     font-weight: 700;

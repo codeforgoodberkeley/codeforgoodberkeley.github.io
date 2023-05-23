@@ -4,13 +4,13 @@
 
 .hidden-fast {
     opacity: 0;
-    transform: translateY(19%);
+    transform: translateY(15%);
     transition: all 0.8s;
 }
 
 .hidden-slow {
 opacity: 0;
-transform: translateY(19%);
+transform: translateY(15%);
 transition: all 0.8s;
 transition-delay: 0.1s;
 }
