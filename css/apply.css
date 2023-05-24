@@ -115,19 +115,20 @@
 }
 
 .timeline-row {
-    margin-bottom: 15px;
     min-height: 145px;
 }
 
 .vertical-line {
-    width: 0.1vw;
+    width: 2px;
     opacity: 10%;
-    height: 11vh;
+    height: 55%;
     background-color: black;
-    position: absolute;
-    left:21.5%
+    display: inline-block;
 }
 
 .timeline-date {
     color: #0c9d8f5d;
+    margin-bottom: 0.35rem;
+    font-size: calc(2.6vw + 6px);
+    /* font-size: calc(1.375rem + 1.5vw)!important; */
 }
