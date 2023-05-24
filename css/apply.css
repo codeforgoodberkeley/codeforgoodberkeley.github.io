@@ -77,6 +77,10 @@
     border-radius: 10px;
 }
 
+.apply-btns-row {
+    --bs-gutter-x: 12vw;
+}
+
 .apply-btns {
     background-image: -moz-linear-gradient(0deg, #21AE9F 0%, #21AE9F 100%);
     background-image: -webkit-linear-gradient(0deg, #21AE9F 0%, #21AE9F 100%);
