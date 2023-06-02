@@ -57,18 +57,20 @@
   
 .tab {
     cursor: pointer;
-    padding: 5px 30px;
-    font-size: 4.2vw;
+    padding: 5px 1vw;
+    font-size: calc(1vw + 8px);
+    font-family: 'Open Sans';
     flex: 1;
     text-align: center;
-    /*need to make text responsive*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mainbox-wrapper {
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 7vw;
+    margin-right: 7vw;
     background-color: #EEFEFC;
-    align-content: center;
 }
 
 .border {
@@ -84,16 +86,8 @@ iframe {
     border-style: none;    
 }
 
-
 #student {
     background-color: #A7D6D0;
-    font-size: 1.6vw;
-    font-family: 'Open Sans';
-}
-
-#nonprofit {
-    font-size: 1.6vw;
-    font-family: 'Open Sans';
 }
 
 .container {
