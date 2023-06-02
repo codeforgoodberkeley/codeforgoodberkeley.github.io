@@ -125,7 +125,7 @@
 .vertical-line {
     width: 2px;
     opacity: 10%;
-    height: 55%;
+    height: calc(75% - 2vw);
     background-color: black;
     display: inline-block;
 }
@@ -133,6 +133,6 @@
 .timeline-date {
     color: #0c9d8f5d;
     margin-bottom: 0.35rem;
-    font-size: calc(2.6vw + 6px);
+    font-size: calc(1vw + 21px);
     /* font-size: calc(1.375rem + 1.5vw)!important; */
 }
