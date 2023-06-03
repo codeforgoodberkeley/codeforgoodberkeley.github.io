@@ -47,7 +47,7 @@
 
 .divider {
     background-color: #0C9D8E;
-    opacity: 13%;
+    opacity: 13%!important;
     height: 1vh;
     width: 60vw;
     border-radius: 10px;
