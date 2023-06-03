@@ -1,27 +1,3 @@
-.hidden-fast {
-    opacity: 0;
-    transform: translateY(15%);
-    transition: all 0.8s;
-}
-
-.hidden-slow {
-    opacity: 0;
-    transform: translateY(15%);
-    transition: all 0.8s;
-    transition-delay: 0.1s;
-}
-
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-}
-}
-
-.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* apply banner */
 #apply-title {
     position: relative;
