@@ -9,10 +9,10 @@
 }
 
 .hidden-slow {
-opacity: 0;
-transform: translateY(15%);
-transition: all 0.8s;
-transition-delay: 0.1s;
+    opacity: 0;
+    transform: translateY(15%);
+    transition: all 0.8s;
+    transition-delay: 0.1s;
 }
 
 @media(prefers-reduced-motion) {
