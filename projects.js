@@ -234,7 +234,7 @@ function make_semester_carousel(semester_data) {
 carousels_section = document.getElementById("proj-carousels-section")
 for(semester in project_data) {
     semester_data = project_data[semester]
-    title_text = make("p", "carousel-title")
+    title_text = make("p", "carousel-title hidden-fast")
     title_text.innerHTML = semester
     carousels_section.appendChild(title_text)
     carousels_section.appendChild(make_semester_carousel(semester_data))

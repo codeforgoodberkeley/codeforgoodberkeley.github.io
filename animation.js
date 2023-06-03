@@ -16,6 +16,7 @@ const observer = new IntersectionObserver((entries) => {
 }, {threshold: 0.1});
 const hiddenElementsFast = document.querySelectorAll('.hidden-fast');
 const hiddenElementsSlow = document.querySelectorAll('.hidden-slow');
+
 hiddenElementsFast.forEach((el) => {
     observer.observe(el);
     el.style.transform = 'translateY(15%)';
