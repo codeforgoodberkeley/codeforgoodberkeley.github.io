@@ -17,7 +17,7 @@ Make sure there are commas between each semester entry and each project sublist.
 project_data = {
     "Spring 2023": [
         ["MESA", "/images/projects/mesa1.png", "/images/projects/mesa2.png", "/images/projects/mesa3.png", "Year-round, MESA sponsors international trainees (“Stewards”) to learn and share sustainable agriculture practices with U.S. Host mentors. MESA matches Stewards with suitable U.S. hosts to create unique experiences. To help with this application matchmaking process, we built and integrated two features: an interview scheduler and a steward-host express interest option."],
-        ["OneSky", "/images/projects/onesky1.jpg", "/images/projects/onesky2.jpg", "/images/projects/onesky3.jpg", "We consult with a diverse set of nonprofit organizations, building web projects that enable them to better achieve their goals. We provide our services free of charge, enabling us to support nonprofits that may not have the resources or access to the technical expertise they need. See our current projects below:"],
+        ["OneSky", "/images/projects/onesky1.jpg", "/images/projects/onesky2.jpg", "/images/projects/onesky3.jpg", "OneSky is an international nonprofit that envisions a world where every young child has access to quality care and education. OneSky partners with communities and caregivers to provide nurturing responsive care and early education that unlocks the vast hidden potential in our world’s vulnerable children. We redesigned and updated their website to improve overall usability  and navigation."],
         ["SF Symphony Youth Orchestra", "/images/projects/sfsyo1.png", "/images/projects/sfsyo2.png", "/images/projects/sfsyo3.png", "The SFSYO provides pre-professional training to Bay Area’s most talented young musicians free of cost. The ensemble has toured around the world, from Berlin’s Philharmonie to Amsterdam’s Concertgebouw. We assisted them by building an internal platform for rehearsal and concert calendars, video audition submissions, and orchestra policies."]
     ]
 };
@@ -234,7 +234,7 @@ function make_semester_carousel(semester_data) {
 carousels_section = document.getElementById("proj-carousels-section")
 for(semester in project_data) {
     semester_data = project_data[semester]
-    title_text = make("p", "carousel-title")
+    title_text = make("p", "carousel-title hidden-fast")
     title_text.innerHTML = semester
     carousels_section.appendChild(title_text)
     carousels_section.appendChild(make_semester_carousel(semester_data))
