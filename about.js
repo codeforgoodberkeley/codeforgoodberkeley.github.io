@@ -181,7 +181,7 @@ function populate_row_with_cards(node, card_data) {
       }
 
       front_text_element.innerHTML = "<b>" + name + "</b> <br>" + title;
-      face_element.setAttribute("src", "images/fa23team/" + img_src);
+      face_element.setAttribute("src", "images/fa23teamcompress/" + img_src);
       bio_element.innerHTML = bio;
       linkedin_element.setAttribute("href", linkedin);
       email_element.setAttribute("href", email);
