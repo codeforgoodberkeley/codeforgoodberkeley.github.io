@@ -20,66 +20,97 @@ Don't update the file names in the strings, this will be done automatically.
 */
 
 data_strings = [
-    "Abram Tan	abramtan@berkeley.edu	https://www.linkedin.com/in/abramtan	OneSky	photo_2023-03-15 16.24.35 - Abram Jia Han Tan.jpeg	Hey there! I love rock climbing, photography and the outdoors!",
-    "Warren Lim	warrenlim_@berkeley.edu	https://www.linkedin.com/in/warren-lim-735605242/	OneSky	IMG_6213 - Warren Lim.JPG	Hey there! I like hanging out with friends, dancing, playing volleyball & basketball, working out, roller coasters, anything really (except coconuts).",
-    "Alexander DeRouen	aderouen@berkeley.edu	https://www.linkedin.com/in/alexander-derouen/	SFSYO	20220511_172130_2 - Alexander DeRouen.jpg	hello there, i'm on a journey to make the world a better place while exploring everything life has to offer: from anime, music, and puzzles to building cool stuff, coding, and more.",
-    "Kevin Chandra	kepin@berkeley.edu	https://www.linkedin.com/in/kevin-chandraa	MESA	99AE591E-932D-473C-83D8-6C1328EFC26D - Kevin Chandra.jpeg	hi! i love meeting new people, playing sports, seeing LeBron James, and not thinking about bios.",
-    "Kelly Tang	ygtang@berkeley.edu	https://www.linkedin.com/in/kelly-tang-ba0149261/	OneSky	IMG_8796 - Kelly Tang.JPG	Hi! I like dancing (Chinese traditional dance, jazz, and tap), mystery movies, traveling, and trying all types of cuisine.  ",
-    "Thomas Culhane	thomasjculhane@berkeley.edu	https://www.linkedin.com/in/thomas-culhane-904836231	Internal	PXL_20211124_065937553~2 - Thomas Culhane.jpg	Hi, I'm Thomas! You can find me procrastinating homework by playing games with friends, watching TV, exploring new music, or all of the above!",
-    "Alex Pease	alexpease04@berkeley.edu	https://www.linkedin.com/in/alexpease04/	SFSYO	IMG_4016 - Alex Pease.heic	Hi, I'm Alex! I enjoy singing, eating at Crossroads Dining Hall, sleeping, and spending time with friends.",
-    "Boris Tomov	boristomov@berkeley.edu	https://www.linkedin.com/in/boris-tomov-b45a53238/	OneSky	IMG_20230314_221740 - Boris Tomov.jpg	Hi there! I am a second year software development enthusiast, passionate about playing the guitar, participating in sport activities and going to music festivals and concerts.",
-    "Kristy Chu	kristyc@berkeley.edu	https://www.linkedin.com/in/kristy-chu-769a8b1b3	SFSYO	3411B55A-9378-4EF1-9066-7FD4A3485D8D - Kristy Chu.jpeg	hi i’m Kristy i live laugh CFG and nap. i also like broccoli, playing piano and violin, my dog Zuko, and my rooster Snowball",
-    "Esha Puri	eshapuri@berkeley.edu	https://www.linkedin.com/in/esha-puri	OneSky	emilynoellephotography-2970 - Esha Puri.jpg	hi! i like to spend my free time playing tennis, baking, and listening to true crime podcasts ",
-    "Dhruv Chowdhary	dhruvchowdhary@berkeley.edu	https://www.linkedin.com/in/dhruv-chowdhary/	MESA & Internal	IMG_7842_Original - Dhruv Chowdhary.heic	Hi, I'm Dhruv! I love playing spikeball and eating croutons :)",
-    "Joanne Tran 	tranjoanne@berkeley.edu	https://www.linkedin.com/in/tranjoanne/	MESA	IMG_1296 - Joanne Tran.JPG	What's up? I'm Joanne, and in my free time I love going on spontaneous adventures and playing video games like LoL, VALORANT, and Overwatch.",
-    "Matteo Keller	matteo.keller@berkeley.edu	https://www.linkedin.com/in/matteokeller/	MESA	MK_Photo - Matteo Keller.png	Hey!! I'm a business student with strong interest in AI technology :) I'm from Switzerland and I enjoy playing golf, the bass guitar, and spending quality time with friends.",
-    "Tanya Agrawal	tanya.agrawal@berkeley.edu	 	SFSYO	profile pic - Tanya Agrawal.jpg	Hi! I enjoy reading, drawing, trying out new food places, and exploring places in and around Berkeley!",
-    "Buvi Vinothasha 	buvinnash@berkeley.edu	https://www.linkedin.com/in/buvinnash	SFSYO	CFGpic - Buvi Vinothasha.jpg	Hey everyone, my name is Buvi. I love playing tennis, trying new food, travelling, and hanging out with friends.",
-    "Pranitha Rao	pranitha_rao@berkeley.edu	linkedin.com/in/pranitha-r-3129541b0	Internal	IMG_2462 - Pranitha Rao.JPG	hi i'm Pranitha! in my free time i like watching basketball, crocheting, and cooking :) ",
-    "Nazar Ospanov	aimogenius@berkeley.edu	https://www.linkedin.com/in/nazar-ospanov-860694205	Internal	EBD2251B-EA25-43E9-9E73-194D99029670 - Nazar Ospanov.jpeg	Hi, I’m Nazar, and I like getting absolutely obliterated by every CS midterm and getting over this pain by playing lots of video games🥶🥶",
-    "Yixin Huang	yixinhuang1@berkeley.edu 	https://www.linkedin.com/in/yixin-huang-91b7781aa/	SFSYO	IMG_0849 - Yixin Huang.HEIC	Hi! I enjoy running as well as playing ping pong. ",
-    "Kay Wee Tan	kay_wee@berkeley.edu	https://www.linkedin.com/in/kay-wee-tan/	Internal	photo_2023-04-17_09-42-35 - Tan Kay Wee.jpg	hi! i like rock climbing, skating, and playing the guitar/piano! i also really love boba tea, so hmu if you're a fellow boba tea lover :)",
-    "Shivan Patel	shivanpatel@berkeley.edu	www.linkedin.com/in/shivan-patel	OneSky	IMG_0015 - Code For Good.HEIC	hi, I'm Shivan! I love cats, sushi, and napping -- in no particular order :)",
-    "Thien Le	thienle1942@berkeley.edu	https://www.linkedin.com/in/thien-le-91aab21aa/	SFSYO	323880832_2293072247526691_7239492967362149279_n - Thien Le.jpg	Hi! I'm a sophomore studying EECS from right outside the Bay Area! I like anything music-related, basketball, and lion-dancing!!! \ (•◡•) /"
+  "Riley Horita	rileyhorita@berkeley.edu	linkedin.com/rileyhorita	Artist Magnet	DSCN0374 - Riley Horita.JPEG	HI, im Riley. I love cats, clothes, and chumming",
+  "Saarth Gaonkar	saarthgao@berkeley.edu	www.linkedin.com/in/saarth-gaonkar-0495b0286	Artist Magnet	profile - Saarth Gaonkar.jpg	Hi, I'm Saarth! I enjoy playing tennis, working out, listening to music, and hanging out with friends.",
+  "Mira Ercingöz	dercingoz@berkeley.edu	https://www.linkedin.com/in/mira-ercing%C3%B6z-68518b248/	Artist Magnet	4000X3000 - Mira Ercingoz.png	Hi, I'm Mira! I love experimental music and shows, anything related to the verb “making” (with some exceptions), and learning a new thing or two. I also like cats =^._.^= !!",
+  "Kelly Tang	ygtang@berkeley.edu	www.linkedin.com/in/kelly-yuguo-tang	Artist Magnet	IMG_0947 - Kelly Tang.jpeg	Hi, I'm Kelly:) I like dancing and watching detective movies/TV series. My favorite is Dial M for Murder, directed by Alfred Hitchcock.",
+  "Nirathi Cherukuri	nirathicherukuri@berkeley.edu	https://www.linkedin.com/in/nirathi-cherukuri/	Artist Magnet	Screenshot 2023-08-23 at 9.26.38 AM - Nirathi Cherukuri.png	I'm Nirathi, a freshman at Cal. I joined Code For Good to explore the real applications of my work and to explore the website/app side of it all. For fun, I enjoy singing and watching movies.",
+  "Xay Hanmonty	Visitxay_hanmonty@berkeley.edu	https://www.linkedin.com/in/visitxay-hanmonty	Artist Magnet	IMG_5917 - Xay Hanmonty.jpeg	I love cooking, basketball and volleyball",
+  "Nazar Ospanov	aimogenius@berkeley.edu	https://www.linkedin.com/in/nazar-ospanov-860694205	Artist Magnet	IMG_5080 - Nazar Ospanov.jpeg	Hi, I’m Nazar! I love playing soccer, coding, drumming, and helping people! Hit me up if you are up to play soccer / jazz something up ;)",
+  "Emi Sakamoto	esakamoto@berkeley.edu	www.linkedin.com/in/emi-sakamoto-113506271	BABEC	IMG_9490 - Emi Sakamoto.png	I'm Emi! I like good weather, learning random facts, and video games.",
+  "Hyojeong Emily Yoon	emilyyoon3107@berkeley.edu	https://www.linkedin.com/in/hyojeong-yoon-b72628280	BABEC	1690019897301 - Hyojeong Yoon.jpg	Hi, I'm Hyojeong! People usually know me as Emily. I like escape rooms, cat videos, and vibing to music :)",
+  "Alexander DeRouen	aderouen@berkeley.edu	https://www.linkedin.com/in/alexander-derouen/	BABEC	20220511_172130_2 (2) - Alexander DeRouen.jpg	Hello! My name is Alexander. I love to learn and always aim to give back to others, especially through my passions in STEM and education.",
+  "Calvin Duong	calvinduong11@berkeley.edu	https://www.linkedin.com/in/calvinduong11/	BABEC	CalvinPFP - Calvin Duong.JPG	Hello, I'm Calvin ! I love going to the gym,  spending time with friends, and playing ARAM.",
+  "Matteo Keller	matteo.keller@berkeley.edu	https://www.linkedin.com/in/matteokeller/	BABEC	MK_Photo - Matteo Stephen Keller.jpeg	Hey!! I'm a business student with strong interest in AI technology :) I'm from Switzerland, and I enjoy playing golf, the bass guitar, and spending quality time with friends.",
+  // "Abdalla Eltayeb	a.eltayeb@berkeley.edu	https://www.linkedin.com/in/abdalla-mahgoub-eltayeb	BABEC	c00aca3e-9bff-4066-afed-cc6c812eea9e - Abdalla Eltayeb.JPG	Hi, I'm Abdalla! I like hiking, soccer, table tennis and eating good food.",
+  "Chami Sagara	chamisagara260@gmail.com	https://www.linkedin.com/in/chamisagara/	BABEC	20221104_181844~4 - Chami Sagara.jpg	Hi I'm Chami and in my free time I like to (attempt to) bake, watch movies, and sleep :)",
+  "Jun-Hyung Lee 	meatjun@berkeley.edu	https://www.linkedin.com/in/meatjun	BABEC	20230919_184116 - Jun Hyung Lee.jpg	Aloha, I'm Jun Hyung! When I'm not hard at work you can find me practicing ukulele and guitar, headbanging at metal concerts, programming video games, bodysurfing at the beach, or playing board games with friends.",
+  "Sophia Sung	sophiasung@berkeley.edu	www.linkedin.com/in/sophiasung000	Beat The Streets	IMG_2491 - Sophia Sung.jpg	Hi, I'm Sophia! I love spontaneous adventures, skateboarding, traveling, drawing, and concerts.",
+  "Jason Chan	jcshun@berkeley.edu	https://www.linkedin.com/in/jason-lok-c/	Beat The Streets	jason - Jason Chan.jpg	Hey! I love listening to music, playing video games, and trying out new places to eat, so hmu!",
+  "Alex Luu	alexluu@berkeley.edu	https://www.linkedin.com/in/alexluu8/	Beat The Streets	AlexLuu - Alex Luu.png	Hey there, I'm Alex! I enjoy camping, hiking, swimming, and being outdoors.",
+  "Nirali Shah	nirali.shah@berkeley.edu	www.linkedin.com/in/niralishah05	Beat The Streets	IMG_9866 - Nirali Shah.JPEG	Hi, I'm Nirali! I like working out, going to coffee shops with friends, and watching New Girl!",
+  "Miranda Zhu	mirandazhu@berkeley.edu	no linkin	Beat The Streets	IMG_4046 2 - Miranda Zhu.jpg	Hi, I'm Miranda! I like dancing, singing, listening to Kpop, and napping!",
+  "Stone Wu	yixuanstonewu@berkeley.edu	www.linkedin.com/in/yixuan-stone-wu-2b751025b	Beat The Streets	66ac8d_9d2d3ee270c142c19bf8748dfc0cc4a8_mv2 - Stone Wu.jpg	An ordinary kid who loves a good poem.",
+  "Tanya Agrawal	tanya.agrawal@berkeley.edu	https://www.linkedin.com/in/tanya-agrawal-2b58b5214/	Beat The Streets	Headshot - Tanya Agrawal.jpg	Hi, I'm Tanya! I enjoy reading books, watching sitcoms, going on hikes and drawing.",
+  "Buvi Vinothasha	Buvinnash@berkeley.edu	http://linkedin.com/in/buvinnash	Beat The Streets	FullSizeRender - Buvi Vinothasha.jpeg	Hi, I’m Buvi! I love playing tennis, trying new food, travelling, going on late night drives, and hanging out with friends.",
+  "Dhruv Chowdhary	dhruvchowdhary@berkeley.edu	https://www.linkedin.com/in/dhruv-chowdhary/	Executive Officer	IMG_7842_Original_-_Dhruv_Chowdhary.jpg	Hi, I'm Dhruv! I'm studying CS and DS, and I love playing pickleball, eating croutons, and exploring!",
+  "Shivan Patel	shivanpatel@berkeley.edu	www.linkedin.com/in/shivan-patel	Executive Officer	DSC_8739 - Shivan Rahil Patel.jpg	hi, I'm Shivan! I love cats, sushi, and napping -- in no particular order :)",
+  "Esha Puri	eshapuri@berkeley.edu	www.linkedin.com/in/esha-puri	Executive Officer	7614A71B-2FB2-4F77-AFAF-FF31F3608E8E - Esha Puri.jpeg	hi! I'm Esha am an exec officer for CFG! I enjoy playing zelda, making new recipes, and exploring local coffee shops.",
+  "Kevin Chandra	kepin@berkeley.edu	www.linkedin.com/in/kevin-chandraa	Project Manager	DSC_8749 - Kevin Chandra.jpg	Hi I'm Kevin! I love playing badminton, basketball, scrolling through TikTok, going on spontaneous trips, and going to the gym (I bench 135 🫣).",
+  "Alex Pease	alexpease04@berkeley.edu	https://www.linkedin.com/in/alexpease04/	Project Manager	20230829_194104 - Alex Pease.jpg	Hi, I'm Alex! I like singing, martial arts, playing video games, and being the only CoC student in CFG (for now...)",
+  "Thomas Culhane	thomasjculhane@berkeley.edu	www.linkedin.com/in/tculhane	Project Manager	thomas-culhane - Thomas Culhane.jpg	Hii, I'm Thomas! You can find me teaching, playing games with friends, exploring new music, stressing over cs162 projects, or all of the above! :3",
+  "Boris Tomov	boristomov@berkeley.edu	https://www.linkedin.com/in/boris-tomov-b45a53238/	Project Manager	IMG_20230314_221740 - Boris Tomov.jpeg	Hello, hello! I am a third year CS & DS enthusiast from Bulgaria. I am passionate about playing the guitar, swimming and any sort of outdoor adventures!",
+  "Joanne Tran	tranjoanne@berkeley.edu	https://www.linkedin.com/in/tranjoanne/	Social Chair	IMG_1296 (1) - Joanne Tran.JPG	Hey, I'm Joanne! I'm from SoCal and in my free time I like to play video games like League of Legends and VALORANT. I've recently been into cars and am slowly migrating towards motorcycles. Maybe you'll see me riding one someday!",
+  "Tyler Lam	tylerlam@berkeley.edu	https://www.linkedin.com/in/tylerlam/	Strength 'N Me	tyler-lam(1) - Tyler Lam.png	Hello everybody! I'm Tyler. Catch me running, playing strategy games, or sleeping.",
+  "Cameron Leung	cameronleung@berkeley.edu	https://www.linkedin.com/in/cameron-leung-7a826717a/ 	Strength 'N Me	IMG_7593 - Cameron Leung.jpeg	I'm a sophomore in CS and <3 food! (cooking), TRAVELING, art, meeting people, & fashion ✈️🌎👩🏻‍🎨👩🏻‍🍳🤘",
+  "Johan Ko	drjoyo@berkeley.edu	https://www.linkedin.com/in/kojohan/	Strength 'N Me	IMG_0383 - Johan Ko.heic	Hi, I'm Johan! In my free time, I enjoy playing poker, programming simple games, and binge eating chips and salsa.",
+  "Pranitha Rao	pranitha_rao@berkeley.edu	https://www.linkedin.com/in/pranitharao/	Strength 'N Me	IMG_2094 - Pranitha Rao.JPG	hi i'm Pranitha! in my free time i like watching basketball, crocheting, and cooking :)",
+  "Prisha Raj	merisa.prisha.raj@berkeley.edu	www.linkedin.com/in/prisha-raj-70b63b277	Strength 'N Me	pic - Prisha Raj.jpg	hi, i'm prisha! i like collecting blind boxes, baking, and playing video games!",
+  "Amitesh Gargapati	amitgarg9@berkeley.edu	https://www.linkedin.com/in/amitg1235/	Strength 'N Me	0 - Amitesh Gargapati.jpeg	Hi, I'm Amitesh! I enjoy tennis, rejuvenating naps, and discovering new and exciting food places to eat. Additionally, I'm a big fan of board games for some fun and friendly competition.",
+  "Seungyeon Kim	sykim@berkeley.edu	n/a	Strength 'N Me	IMG_5566 - Seungyeon Kim.jpg	Hi I'm Kimmy! I love movies, music, decorating, and bonding with my cat!"
 ]
 
-function shuffle( arr ) { //array,placeholder,placeholder,placeholder
-    ct = arr.length;
-    while(ct) {
-        b = Math.random() * ct-- | 0
-        d = arr[ct]
-        arr[ct] = arr[b]
-        arr[b] = d
-    }
+function shuffle(arr) {
+  //array,placeholder,placeholder,placeholder
+  ct = arr.length;
+  while (ct) {
+    b = (Math.random() * ct--) | 0;
+    d = arr[ct];
+    arr[ct] = arr[b];
+    arr[b] = d;
+  }
 }
-shuffle(data_strings)
+shuffle(data_strings);
 
-team_data = []
-officer_data = []
+team_data = [];
+officer_data = [];
 
-const officer_names = ["Dhruv Chowdhary", "Esha Puri", "Kristy Chu", "Shivan Patel"]
+const officer_names = [
+  "Dhruv Chowdhary",
+  "Esha Puri",
+  "Kristy Chu",
+  "Shivan Patel",
+  "Kevin Chandra",
+  "Alex Pease",
+  "Thomas Culhane",
+  "Boris Tomov",
+  "Joanne Tran",
+];
 
 for (const data_string of data_strings) {
-    split_data = data_string.split('\t')
-    if(split_data[4].includes(".heic") || split_data[4].includes(".HEIC")) {
-        split_data[4] = split_data[4].replace("\.heic", ".jpg").replace("\.HEIC", ".jpg").replaceAll(" ", "_");
-    }
-    if(officer_names.includes(split_data[0])) {
-        officer_data.push(split_data)
-    } else {
-        team_data.push(split_data)
-    }
+  split_data = data_string.split("\t");
+  if (split_data[4].includes(".heic") || split_data[4].includes(".HEIC")) {
+    split_data[4] = split_data[4]
+      .replace(".heic", ".jpg")
+      .replace(".HEIC", ".jpg")
+      .replaceAll(" ", "_");
+  }
+  if (officer_names.includes(split_data[0])) {
+    officer_data.push(split_data);
+  } else {
+    team_data.push(split_data);
+  }
 }
 
 function make(tag, classes, children) {
-    var node = document.createElement(tag);
-    node.setAttribute("class", classes)
-    if(children) {
-        for(const child of children) {
-            node.appendChild(child)
-        }
+  var node = document.createElement(tag);
+  node.setAttribute("class", classes);
+  if (children) {
+    for (const child of children) {
+      node.appendChild(child);
     }
-    return node
+  }
+  return node;
 }
 
 /*
@@ -106,64 +137,64 @@ Card Template
 */
 
 template_element = make("div", "col about-card-holder", [
-    make("div", "about-card", [
-        make("div", "card-front", [
-            make("div", "card-face-holder", [
-                make("img", "card-face")
-            ]),
-            make("div", "card-title", [
-                make("p", "card-title-text")
-            ])
-        ]),
-        make("div", "card-back", [
-            make("p", "card-bio"),
-            make("a", "card-link-li card-link"),
-            make("a", "card-link-em card-link")
-        ])
-    ])
-])
+  make("div", "about-card", [
+    make("div", "card-front", [
+      make("div", "card-face-holder", [make("img", "card-face")]),
+      make("div", "card-title", [make("p", "card-title-text")]),
+    ]),
+    make("div", "card-back", [
+      make("p", "card-bio"),
+      make("a", "card-link-li card-link"),
+      make("a", "card-link-em card-link"),
+    ]),
+  ]),
+]);
 
 function populate_row_with_cards(node, card_data) {
-    for (const data of card_data) {
-        if(data.length == 6) {
-            let name = data[0]
-            let title = data[3]
-            let img_src = data[4]
-            let bio = data[5]
-            let linkedin = data[2]
-            if(linkedin.length > 2 && !linkedin.startsWith("https://")) {
-                if(!linkedin.startsWith("www.")) {
-                    linkedin = "www." + linkedin
-                }
-                linkedin = "https://" + linkedin
-            }
-
-            let email = "mailto: " + data[1]
-
-            card_element = template_element.cloneNode(true)
-            front_text_element = card_element.getElementsByClassName("card-title-text")[0]
-            face_element = card_element.getElementsByClassName("card-face")[0]
-            bio_element = card_element.getElementsByClassName("card-bio")[0]
-            linkedin_element = card_element.getElementsByClassName("card-link-li")[0]
-            email_element = card_element.getElementsByClassName("card-link-em")[0]
-            
-            if(linkedin.length < 3) {
-                card_element.firstChild.lastChild.removeChild(linkedin_element);
-                email_element.className += " link-center"
-            }
-
-            front_text_element.innerHTML = "<b>" + name + "</b> <br>" + title
-            face_element.setAttribute("src", "images/team/" + img_src)
-            bio_element.innerHTML = bio
-            linkedin_element.setAttribute("href", linkedin)
-            email_element.setAttribute("href", email)
-
-            node.appendChild(card_element)
-        } else {
-            console.error("Malformed card data: " + data)
+  for (const data of card_data) {
+    if (data.length == 6) {
+      let name = data[0];
+      let title = data[3];
+      let img_src = data[4];
+      let bio = data[5];
+      let linkedin = data[2];
+      if (linkedin.length > 2 && !linkedin.startsWith("https://")) {
+        if (!linkedin.startsWith("www.")) {
+          linkedin = "www." + linkedin;
         }
+        linkedin = "https://" + linkedin;
+      }
+
+      let email = "mailto: " + data[1];
+
+      card_element = template_element.cloneNode(true);
+      front_text_element =
+        card_element.getElementsByClassName("card-title-text")[0];
+      face_element = card_element.getElementsByClassName("card-face")[0];
+      bio_element = card_element.getElementsByClassName("card-bio")[0];
+      linkedin_element = card_element.getElementsByClassName("card-link-li")[0];
+      email_element = card_element.getElementsByClassName("card-link-em")[0];
+
+      if (linkedin.length < 3) {
+        card_element.firstChild.lastChild.removeChild(linkedin_element);
+        email_element.className += " link-center";
+      }
+
+      front_text_element.innerHTML = "<b>" + name + "</b> <br>" + title;
+      face_element.setAttribute("src", "images/fa23team/" + img_src);
+      bio_element.innerHTML = bio;
+      linkedin_element.setAttribute("href", linkedin);
+      email_element.setAttribute("href", email);
+
+      node.appendChild(card_element);
+    } else {
+      console.error("Malformed card data: " + data);
     }
+  }
 }
 
-populate_row_with_cards(document.getElementById("about-officer-row"), officer_data)
-populate_row_with_cards(document.getElementById("about-team-row"), team_data)
+populate_row_with_cards(
+  document.getElementById("about-officer-row"),
+  officer_data
+);
+populate_row_with_cards(document.getElementById("about-team-row"), team_data);
