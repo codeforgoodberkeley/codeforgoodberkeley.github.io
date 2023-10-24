@@ -20,7 +20,7 @@ Don't update the file names in the strings, this will be done automatically.
 */
 
 data_strings = [
-  "Riley Horita	rileyhorita@berkeley.edu	linkedin.com/rileyhorita	Artist Magnet	DSCN0374 - Riley Horita.JPEG	HI, im Riley. I love cats, clothes, and chumming",
+  "Riley Horita	rileyhorita@berkeley.edu	linkedin.com/rileyhorita	Artist Magnet	DSCN0374 - Riley Horita.jpeg	HI, im Riley. I love cats, clothes, and chumming",
   "Saarth Gaonkar	saarthgao@berkeley.edu	www.linkedin.com/in/saarth-gaonkar-0495b0286	Artist Magnet	profile - Saarth Gaonkar.jpg	Hi, I'm Saarth! I enjoy playing tennis, working out, listening to music, and hanging out with friends.",
   "Mira Ercingöz	dercingoz@berkeley.edu	https://www.linkedin.com/in/mira-ercing%C3%B6z-68518b248/	Artist Magnet	4000X3000 - Mira Ercingoz.png	Hi, I'm Mira! I love experimental music and shows, anything related to the verb “making” (with some exceptions), and learning a new thing or two. I also like cats =^._.^= !!",
   "Kelly Tang	ygtang@berkeley.edu	www.linkedin.com/in/kelly-yuguo-tang	Artist Magnet	IMG_0947 - Kelly Tang.jpeg	Hi, I'm Kelly:) I like dancing and watching detective movies/TV series. My favorite is Dial M for Murder, directed by Alfred Hitchcock.",
@@ -30,7 +30,7 @@ data_strings = [
   "Emi Sakamoto	esakamoto@berkeley.edu	www.linkedin.com/in/emi-sakamoto-113506271	BABEC	IMG_9490 - Emi Sakamoto.png	I'm Emi! I like good weather, learning random facts, and video games.",
   "Hyojeong Emily Yoon	emilyyoon3107@berkeley.edu	https://www.linkedin.com/in/hyojeong-yoon-b72628280	BABEC	1690019897301 - Hyojeong Yoon.jpg	Hi, I'm Hyojeong! People usually know me as Emily. I like escape rooms, cat videos, and vibing to music :)",
   "Alexander DeRouen	aderouen@berkeley.edu	https://www.linkedin.com/in/alexander-derouen/	BABEC	20220511_172130_2 (2) - Alexander DeRouen.jpg	Hello! My name is Alexander. I love to learn and always aim to give back to others, especially through my passions in STEM and education.",
-  "Calvin Duong	calvinduong11@berkeley.edu	https://www.linkedin.com/in/calvinduong11/	BABEC	CalvinPFP - Calvin Duong.JPG	Hello, I'm Calvin ! I love going to the gym,  spending time with friends, and playing ARAM.",
+  "Calvin Duong	calvinduong11@berkeley.edu	https://www.linkedin.com/in/calvinduong11/	BABEC	CalvinPFP - Calvin Duong.jpg	Hello, I'm Calvin ! I love going to the gym,  spending time with friends, and playing ARAM.",
   "Matteo Keller	matteo.keller@berkeley.edu	https://www.linkedin.com/in/matteokeller/	BABEC	MK_Photo - Matteo Stephen Keller.jpeg	Hey!! I'm a business student with strong interest in AI technology :) I'm from Switzerland, and I enjoy playing golf, the bass guitar, and spending quality time with friends.",
   // "Abdalla Eltayeb	a.eltayeb@berkeley.edu	https://www.linkedin.com/in/abdalla-mahgoub-eltayeb	BABEC	c00aca3e-9bff-4066-afed-cc6c812eea9e - Abdalla Eltayeb.JPG	Hi, I'm Abdalla! I like hiking, soccer, table tennis and eating good food.",
   "Chami Sagara	chamisagara260@gmail.com	https://www.linkedin.com/in/chamisagara/	BABEC	20221104_181844~4 - Chami Sagara.jpg	Hi I'm Chami and in my free time I like to (attempt to) bake, watch movies, and sleep :)",
@@ -38,7 +38,7 @@ data_strings = [
   "Sophia Sung	sophiasung@berkeley.edu	www.linkedin.com/in/sophiasung000	Beat The Streets	IMG_2491 - Sophia Sung.jpg	Hi, I'm Sophia! I love spontaneous adventures, skateboarding, traveling, drawing, and concerts.",
   "Jason Chan	jcshun@berkeley.edu	https://www.linkedin.com/in/jason-lok-c/	Beat The Streets	jason - Jason Chan.jpg	Hey! I love listening to music, playing video games, and trying out new places to eat, so hmu!",
   "Alex Luu	alexluu@berkeley.edu	https://www.linkedin.com/in/alexluu8/	Beat The Streets	AlexLuu - Alex Luu.png	Hey there, I'm Alex! I enjoy camping, hiking, swimming, and being outdoors.",
-  "Nirali Shah	nirali.shah@berkeley.edu	www.linkedin.com/in/niralishah05	Beat The Streets	IMG_9866 - Nirali Shah.JPEG	Hi, I'm Nirali! I like working out, going to coffee shops with friends, and watching New Girl!",
+  "Nirali Shah	nirali.shah@berkeley.edu	www.linkedin.com/in/niralishah05	Beat The Streets	IMG_9866 - Nirali Shah.jpeg	Hi, I'm Nirali! I like working out, going to coffee shops with friends, and watching New Girl!",
   "Miranda Zhu	mirandazhu@berkeley.edu	no linkin	Beat The Streets	IMG_4046 2 - Miranda Zhu.jpg	Hi, I'm Miranda! I like dancing, singing, listening to Kpop, and napping!",
   "Stone Wu	yixuanstonewu@berkeley.edu	www.linkedin.com/in/yixuan-stone-wu-2b751025b	Beat The Streets	66ac8d_9d2d3ee270c142c19bf8748dfc0cc4a8_mv2 - Stone Wu.jpg	An ordinary kid who loves a good poem.",
   "Tanya Agrawal	tanya.agrawal@berkeley.edu	https://www.linkedin.com/in/tanya-agrawal-2b58b5214/	Beat The Streets	Headshot - Tanya Agrawal.jpg	Hi, I'm Tanya! I enjoy reading books, watching sitcoms, going on hikes and drawing.",
