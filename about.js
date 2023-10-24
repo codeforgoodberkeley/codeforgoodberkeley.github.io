@@ -70,7 +70,6 @@ function shuffle(arr) {
     arr[b] = d;
   }
 }
-shuffle(data_strings);
 
 team_data = [];
 officer_data = [];
@@ -101,6 +100,8 @@ for (const data_string of data_strings) {
     team_data.push(split_data);
   }
 }
+
+shuffle(team_data);
 
 function make(tag, classes, children) {
   var node = document.createElement(tag);
@@ -193,8 +194,5 @@ function populate_row_with_cards(node, card_data) {
   }
 }
 
-populate_row_with_cards(
-  document.getElementById("about-officer-row"),
-  officer_data
-);
+populate_row_with_cards(document.getElementById("about-officer-row"), officer_data);
 populate_row_with_cards(document.getElementById("about-team-row"), team_data);
