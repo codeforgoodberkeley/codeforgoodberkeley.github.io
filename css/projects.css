@@ -2,15 +2,13 @@
     background-color: #D8F2EF;
 }
 
-
-
 /*      TITLE BANNER      */
 
 #proj-title {
     position: relative;
     width:100%;
     aspect-ratio: 3/1;
-    background-image: url("../images/title-banner.jpg");
+    background-image: url("../images/projects-banner.jpg");
     background-size: 100%;
 }
 
