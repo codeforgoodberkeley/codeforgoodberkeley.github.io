@@ -51,7 +51,7 @@ data_strings = [
   "Alex Pease	alexpease04@berkeley.edu	https://www.linkedin.com/in/alexpease04/	Project Manager	20230829_194104 - Alex Pease.jpg	Hi, I'm Alex! I like singing, martial arts, playing video games, and being the only CoC student in CFG (for now...)",
   "Thomas Culhane	thomasjculhane@berkeley.edu	www.linkedin.com/in/tculhane	Project Manager	thomas-culhane - Thomas Culhane.jpg	Hii, I'm Thomas! You can find me teaching, playing games with friends, exploring new music, stressing over cs162 projects, or all of the above! :3",
   "Boris Tomov	boristomov@berkeley.edu	https://www.linkedin.com/in/boris-tomov-b45a53238/	Project Manager	IMG_20230314_221740 - Boris Tomov.jpeg	Hello, hello! I am a third year CS & DS enthusiast from Bulgaria. I am passionate about playing the guitar, swimming and any sort of outdoor adventures!",
-  "Joanne Tran	tranjoanne@berkeley.edu	https://www.linkedin.com/in/tranjoanne/	Social Chair	IMG_1296 (1) - Joanne Tran.jpg	Hey, I'm Joanne! I'm from SoCal and in my free time I like to play video games like League of Legends and VALORANT. I've recently been into cars and am slowly migrating towards motorcycles. Maybe you'll see me riding one someday!",
+  "Joanne Tran	tranjoanne@berkeley.edu	https://www.linkedin.com/in/tranjoanne/	Social Chair	IMG_1296 (1) - Joanne Tran.jpg	Hey, I'm Joanne! I'm from SoCal, and I like to play video games like LoL and VALORANT. I've recently been into cars and am slowly migrating towards motorcycles. Maybe you'll see me riding one!",
   "Tyler Lam	tylerlam@berkeley.edu	https://www.linkedin.com/in/tylerlam/	Strength 'N Me	tyler-lam(1) - Tyler Lam.png	Hello everybody! I'm Tyler. Catch me running, playing strategy games, or sleeping.",
   "Cameron Leung	cameronleung@berkeley.edu	https://www.linkedin.com/in/cameron-leung-7a826717a/ 	Strength 'N Me	IMG_7593 - Cameron Leung.jpeg	I'm a sophomore in CS and <3 food! (cooking), TRAVELING, art, meeting people, & fashion ✈️🌎👩🏻‍🎨👩🏻‍🍳🤘",
   "Johan Ko	drjoyo@berkeley.edu	https://www.linkedin.com/in/kojohan/	Strength 'N Me	IMG_0383 - Johan Ko.heic	Hi, I'm Johan! In my free time, I enjoy playing poker, programming simple games, and binge eating chips and salsa.",
@@ -152,6 +152,9 @@ template_element = make("div", "col about-card-holder", [
   ]),
 ]);
 
+const officer_data_row1 = officer_data.slice(0, 4);
+const officer_data_row2 = officer_data.slice(4, 9);
+
 function populate_row_with_cards(node, card_data) {
   for (const data of card_data) {
     if (data.length == 6) {
@@ -195,5 +198,6 @@ function populate_row_with_cards(node, card_data) {
   }
 }
 
-populate_row_with_cards(document.getElementById("about-officer-row"), officer_data);
+populate_row_with_cards(document.getElementById("about-officer-row-1"), officer_data_row1);
+populate_row_with_cards(document.getElementById("about-officer-row-2"), officer_data_row2);
 populate_row_with_cards(document.getElementById("about-team-row"), team_data);

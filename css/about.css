@@ -206,7 +206,10 @@
     text-align: center;
 }
 
-#about-officer-row p {
+#about-officer-row-1 p {
+    --cols: 2;
+}
+#about-officer-row-2 p {
     --cols: 2;
 }
 #about-team-row p {
@@ -214,7 +217,10 @@
 }
 
 @media (min-width: 576px) { /* sm */
-    #about-officer-row p {
+    #about-officer-row-1 p {
+        --cols: 2;
+    }
+    #about-officer-row-2 p {
         --cols: 2;
     }
     #about-team-row p {
@@ -223,8 +229,11 @@
 }
 
 @media (min-width: 768px) { /* md */
-    #about-officer-row p {
+    #about-officer-row-1 p {
         --cols: 4;
+    }
+    #about-officer-row-2 p {
+        --cols: 5;
     }
 }
 
