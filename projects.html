@@ -178,76 +178,16 @@
         <h2>OUR PROJECTS</h2>
       </div>
     </div>
-    <footer>
-      <div class="footer-custom container-fluid text-dark">
-        <div class="row gx-3 pb-4 pt-4 text-center text-md-start">
-          <!-- first column -->
-          <div class="col-12 col-md-3 ps-md-3">
-            <a href="index.html"
-              ><img
-                src="images/cfglogo_transparent.png"
-                height="48"
-                alt="Code For Good"
-            /></a>
-            <p class="fs-6 fw-lighter mt-1">Code For Good © 2023</p>
-          </div>
-          <!-- second column -->
-          <div class="col-12 col-md-4 pt-4 pt-md-0 text-center">
-            <p class="fw-medium">Contact Us</p>
-            <div class="d-inline-flex">
-              <div class="px-3">
-                <a
-                  href="mailto:codeforgoodberkeley@gmail.com"
-                  class="fa-stack fa-1x ps-1 pe-3"
-                >
-                  <i class="fas fa-circle fa-stack-2x" style="color: grey"></i>
-                  <i
-                    class="fa fa-envelope fa-stack-1x"
-                    style="color: white"
-                  ></i>
-                </a>
-              </div>
-              <div class="px-3">
-                <a
-                  href="https://www.instagram.com/codeforgoodcal/?hl=en"
-                  class="fa-stack fa-1x ps-1 pe-3"
-                >
-                  <i class="fas fa-circle fa-stack-2x" style="color: grey"></i>
-                  <i
-                    class="fa fa-instagram fa-stack-1x"
-                    style="color: white"
-                  ></i>
-                </a>
-              </div>
-              <div class="px-3">
-                <a
-                  href="https://www.linkedin.com/company/code-for-good-berkeley/mycompany/"
-                  class="fa-stack fa-1x ps-1 pe-3"
-                >
-                  <i class="fas fa-circle fa-stack-2x" style="color: grey"></i>
-                  <i
-                    class="fa fa-linkedin fa-stack-1x"
-                    style="color: white"
-                  ></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- third column -->
-          <div
-            class="col-12 col-md-5 pt-5 pt-md-0 d-flex justify-content-center px-5 px-md-0 px-md-5"
-          >
-            <p class="fs-6 fw-lighter">
-              <span
-                >Code For Good is a student group acting independently of the
-                University of California. We take full responsibility for our
-                organization and this website.</span
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <!-- footer -->
+    <div id="footer"></div>
+    <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+    </script>
+
     <script
       src="https://kit.fontawesome.com/ee32c60bd9.js"
       crossorigin="anonymous"
@@ -262,6 +202,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="projects.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/footer.js"></script>
   </body>
 </html>
