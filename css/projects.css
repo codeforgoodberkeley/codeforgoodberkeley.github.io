@@ -232,13 +232,13 @@
 }
 
 #proj-carousels-section .carousel {
-    margin: 0 10% 5%;
+    margin: 0 10% 1%;
 }
 
 .carousel-item {
     background-color: #EEFEFC;
     border-radius: 8vw;
-    aspect-ratio: 2/1;
+    aspect-ratio: 2.4/1;
     overflow-x: visible;
     overflow-y: visible;
     padding: 1%;
@@ -288,7 +288,7 @@
     font-family: 'Source Sans Pro';
     font-weight: 700;
     font-size: 3vw;
-    top: 20%;
+    top: 16%;
     transform: translate(0%, -50%)
 }
 
