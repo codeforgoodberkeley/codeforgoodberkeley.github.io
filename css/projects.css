@@ -251,15 +251,15 @@
 }
 
 #proj-carousels-section .carousel .carousel-indicators button {
-    width: min(1.5vw, 12px);
-    height: min(1.5vw, 12px);
+    width: min(0.9vw, 11px);
+    height: min(0.9vw, 11px);
     border-radius: 50%;
     background-color: #797979;
 }
 
 #proj-carousels-section .carousel .carousel-indicators {
     margin-bottom: 1.5%;
-    bottom: 3%;
+    bottom: 1%;
 }
 
 #proj-carousels-section .carousel button {
