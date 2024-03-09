@@ -11,7 +11,7 @@ Add quotation marks onto the beginning and end of each new line and add commas t
 Make sure to add a comma to the string before the one(s) you pasted in.
 
 Go to the form's image folder in google drive (can be accessed through the form) and then download all images.
-Go to https://redketchup.io/bulk-image-resizer and resize all images to be no more than 200kb and redownload. This is to ensure that the website loads quickly.
+Go to https://redketchup.io/bulk-image-resizer and "Resize By File Size" to have "Max. File Size 200KB" and download all. This is to ensure that the website loads quickly.
 Upload all the images to the images/sp24team folder (respective semester's folder).
 
 If applicable, run any HEIC files through this converter:
