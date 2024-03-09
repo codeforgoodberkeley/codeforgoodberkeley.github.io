@@ -10,7 +10,9 @@ Add quotation marks onto the beginning and end of each new line and add commas t
     \-> this can be done in VSCode by selecting the start of the lines with Alt + click or Alt + Shift + click, and then getting to the end of the lines by navigating left and one down
 Make sure to add a comma to the string before the one(s) you pasted in.
 
-Go to the form's image folder in google drive (can be accessed through the form) and then copy all relevant images into the fa23team folder (the respective semester's folder).
+Go to the form's image folder in google drive (can be accessed through the form) and then download all images.
+Go to https://redketchup.io/bulk-image-resizer and resize all images to be no more than 200kb and redownload. This is to ensure that the website loads quickly.
+Upload all the images to the images/sp24team folder (respective semester's folder).
 
 If applicable, run any HEIC files through this converter:
 https://heictojpg.com/
@@ -18,9 +20,6 @@ Don't update the file names in the strings, this will be done automatically.
 
 If images are not centered, crop them to be centered around the face:
 https://imageresizer.com/crop-image
-
-If images are too large (>500 KB), resize to be around 1000x1000 or less:
-https://imageresizer.com/bulk-resize
 */
 
 data_strings = [
