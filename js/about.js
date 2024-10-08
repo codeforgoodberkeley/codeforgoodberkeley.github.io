@@ -1,87 +1,94 @@
 /*
-Instructions for adding team member data from the google form:
+Instructions for adding team member data from a google form:
 
-If not already done, select column O (picture link) of all new entries, right click, and select Smart Chips -> File.
-Select and copy the relevant rows for members to add from columns K-P (name to bio).
+We assume that the data is arranged in columns: Name | Email | LinkedIn | Role | Picture | Bio
 
-Paste in a new line inside the data_strings array. (Works best in my VSCode if this is pasted in a line with no indentation)
+If not already done, select the picture link of all new entries, right click, and select Smart Chips -> File.
 
-Add quotation marks onto the beginning and end of each new line and add commas to the ends (except the last element of the list).
+Select and copy the relevant rows for the aforementioned 6 columns (name to bio).
+
+Paste this data in a new line inside the data_strings array. (Works best in my VSCode if this is pasted in a line with no indentation)
+
+Add quotation marks onto the beginning and end of each new line and add commas to the ends of each line.
     \-> this can be done in VSCode by selecting the start of the lines with Alt + click or Alt + Shift + click, and then getting to the end of the lines by navigating left and one down
 Make sure to add a comma to the string before the one(s) you pasted in.
-
-Go to the form's image folder in google drive (can be accessed through the form) and then download all images.
-Go to https://redketchup.io/bulk-image-resizer and "Resize By File Size" to have "Max. File Size 200KB" and download all. This is to ensure that the website loads quickly.
-Upload all the images to the images/sp24team folder (respective semester's folder).
 
 If applicable, run any HEIC files through this converter:
 https://heictojpg.com/
 Don't update the file names in the strings, this will be done automatically. 
 
+Go to the form's image folder in google drive (can be accessed through the form) and then download all images.
+Go to https://redketchup.io/bulk-image-resizer and "Resize By File Size" to have "Max. File Size 200KB" and download all. This is to ensure that the website loads quickly.
+Upload all the images to the images/[SEMESTER]team folder (respective semester's folder).
+
 If images are not centered, crop them to be centered around the face:
 https://imageresizer.com/crop-image
 */
 
-data_strings = [
-  "Nathan Kim	n33937@berkeley.edu	https://www.linkedin.com/in/lnathankim/	Treasurer	nathankimpfp1 - Nathan Kim.jpg	Hi, I'm Nathan. I love exploring random hobbies, cafes, clothes, and cats (even though im allergic sadly).",
-  "Jun Hyung Lee	meatjun@berkeley.edu	https://www.linkedin.com/in/meatjun	Social Chair	Screenshot 2024-02-20 at 4.59.19 PM - Jun Hyung Lee.png	Hi, I'm Jun-Hyung! I love playing ukulele, bodysurfing, and playing board games with friends.",
-  "Sophie Tau	sophietau6@berkeley.edu	www.linkedin.com/in/sophie-tau-419350279	Recruitment Chair	Screen Shot 2024-02-07 at 8.58.27 AM - Sophie Tau.png	hi i'm sophie and i love lebron james, christopher nolan movies and long runs on the beach",
-  "Kevin Chandra	kepin@berkeley.edu	www.linkedin.com/in/kevin-chandraa	External Vice President	DSC05496 - Kevin Chandra.jpg	Hi I'm Kevin! I love playing badminton, basketball, scrolling through TikTok, going on spontaneous trips, and going to the gym (I bench 135 🫣).",
-  "Thomas Culhane	thomasjculhane@berkeley.edu	https://www.linkedin.com/in/tculhane/	President	thomas-culhane - Thomas James Culhane.jpg	Hi, I'm Thomas, a CS/Linguistics student from New Jersey! In my spare time, you can find me making bad jokes, eating too much cheese, or trying to talk like Tony Soprano.",
-  "Kelly Tang	ygtang@berkeley.edu	www.linkedin.com/in/kelly-yuguo-tang	Project Manager	pict - Kelly Tang.jpg	Hi, I'm Kelly:) I like traveling, dancing, musicals, and mystery movies. ",
-  "Neha Haresh	neha.haresh@berkeley.edu	https://www.linkedin.com/in/neha-haresh/	Curriculum Chair	IMG_0122 - Neha Haresh.jpg	hii, i'm neha - freshman majoring in cs! i <3 cats, going to concerts, baking for my friends & working in museums + curating art💌🖼️",
-  "Emi Sakamoto	esakamoto@berkeley.edu	https://www.linkedin.com/in/emi-sakamoto-113506271/	Project Manager	IMG_5511 - Emi Joelle Sakamoto.jpg	Hi I'm Emi! I love nice weather, friendly competition, and good food. ",
-  "Buvinnash Vinothasha	buvinnash@berkeley.edu	https://www.linkedin.com/in/buvinnash	Project Manager	IMG_0224 - Buvi Vinothasha.jpg	Hi, I’m Buvi! I love playing tennis, trying new food, travelling, going on late night drives, watching the Lakers, and hanging out with friends.",
-  "Eric Zeng	ciregenz@berkeley.edu	linkedin.com/in/eric-zeng-a3957a210/	Undergraduate Street Medicine Outreach	Headshot - Eric F Zeng.png	Hi I’m Eric! I like volleyball, gymming and “culinary-touring”. ",
-  "Arjun Lakhanpal	Alakhanpal@berkeley.edu	https://www.linkedin.com/in/arjun-lak/	Plastic Ocean Project	panda - Arjun Lakhanpal.jpg	Wsp I'm Arjun, I enjoy lifting and listening to music.",
-  "Pranitha Rao	pranitha_rao@berkeley.edu	https://www.linkedin.com/in/pranitharao/	General Member	IMG_2661 - Pranitha Rao.jpg	hi i'm Pranitha! in my free time i like watching basketball, crocheting, and cooking :)",
-  "Prisha Raj	merisa.prisha.raj@berkeley.edu	www.linkedin.com/in/prisharaj	Undergraduate Street Medicine Outreach	pic - Prisha Raj.jpg	Hi, I’m Prisha! I like journaling, collecting blind boxes, and reading!",
-  "Edward Zhang	edwardzhongweizhang@berkeley.edu	https://www.linkedin.com/in/edward-z-0b5995209/	Plastic Ocean Project	Edward_Picture_3 - Edward Zhongwei Zhang.jpg	Hi, I am Edward! I enjoy playing Go (a kind of chess), calligraphy, classical music, and flying airplanes as a pilot. ",
-  "Anshika Ojha	anshikaojha@berkeley.edu	https://www.linkedin.com/in/anshikaojha	Berkeley Free Clinic	IMG_0018 - Anshika Ojha.jpg	Hi, I’m Anshika! I like singing, dancing, and playing the guitar. I’m super extroverted and down for spontaneous adventures :)",
-  "Sophia Sung	Sophiasung@berkeley.edu	https://www.linkedin.com/in/sophiasung000	Social Chair	2B574489-555A-47E3-8EB2-2A1371F2A2B6 - Sophia Mei-En Sung.jpg	Hi, I'm Sophia! I love spontaneous adventures, skateboarding, traveling, drawing, and concerts.",
-  "Miranda Zhu	Mirandazhu@berkeley.edu	linkedin.com/in/zhu-miranda	Project Manager	IMG_0105 - Miranda Zhu.jpg	Hi I'm a sophomore in DS :). I like dancing, singing, listening to Kpop, and napping ofc. ",
-  "Sejal Bilwar	sejalbilwar@berkeley.edu	https://www.linkedin.com/in/sejal-bilwar/	Guide Dogs for the Blind	profile-pic - Sejal Bilwar.png	Hey, I'm Sejal! I love trying out new coffee shops and restaurants, spending time with friends, and dancing :)",
-  "Alex Luu	alexluu@berkeley.edu	https://www.linkedin.com/in/alexluu8/	Project Manager	IMG_3115 - Alex Luu.jpg	Hey there, I'm Alex! I enjoy camping, hiking, swimming, and being outdoors.",
-  "Calvin Duong	calvinduong11@berkeley.edu	https://www.linkedin.com/in/calvinduong11/	Guide Dogs for the Blind	calvin - Calvin T Duong.jpg	Hello, I'm Calvin ! I love going to the gym, spending time with friends, and playing ARAM.",
-  "Seungyeon Kim	sykim@berkeley.edu	https://www.linkedin.com/me?trk=p_mwlite_feed_updates-secondary_nav	Golden Gate Bird Alliance	Screenshot 2024-02-20 at 8.48.41 PM - Seungyeon Kim.png	Hi, I’m Kimmy! I’m a CogSci major studying data science and design. I like watching movies, cooking, and training my cat to do tricks!",
-  "Maixin Zhang	maixin77@berkeley.edu	https://www.linkedin.com/in/maixin-zhang/	Curriculum Member	IMG_9198 - Maixin Zhang.jpg	Hi, I'm Maixin!! I like makeup, pop music, and Thai food. Hit me up if you want to play Avalon or Mahjong!!",
-  "Esha Puri	eshapuri@berkeley.edu	https://www.linkedin.com/in/esha-puri	Senior Advisor	7614A71B-2FB2-4F77-AFAF-FF31F3608E8E - Esha Puri.jpg	Hi, I’m Esha! I love exploring cafes around Berkeley and spending time with friends.",
-  "Dhruv Chowdhary	dhruvchowdhary@berkeley.edu	https://www.linkedin.com/in/dhruv-chowdhary/	Senior Advisor	IMG_7842_Original - Dhruv Chowdhary.jpg	Hi, I'm Dhruv! I'm studying CS and DS, and I love playing pickleball, eating croutons, and exploring!",
-  "Cameron Leung	cameronleung@berkeley.edu	https://www.linkedin.com/in/cameron-leung-7a826717a/	Publicity Chair	IMG_2881 - Cameron M Leung.jpg	I'm Cameron! I love reading, fashion, and traveling 🤸🏻‍♀️🛩️🤠",
-  "Saarth Gaonkar	saarthgao@berkeley.edu	https://www.linkedin.com/in/saarth-gaonkar/	Linens N Love	profile - Saarth Gaonkar.jpg	Hi, I'm Saarth! I enjoy playing tennis, working out, listening to music, and hanging out with friends.",
-  "Juyeon Ma	jyma0218@berkeley.edu	https://www.linkedin.com/in/juyeon-ma-5652821b7/	Undergraduate Street Medicine Outreach	9F470E76-BA53-458D-A980-93CB93E1AB4A - Juyeon Ma.jpg	Hi, I’m Juyeon! I like writing and spacing out in a peaceful spot.",
-  "Alif Satyawan	alif.satyawan@berkeley.edu	linkedin.com/in/alifsatyawan	Plastic Ocean Project	linkedin3pic - Alif Pratama Satyawan.png	Hi, I'm Alif! And I like to Code For Good.",
-  "Jason Chan	jcshun@berkeley.edu	https://www.linkedin.com/in/jason-lok-c/	Linens N Love	jason - Jason Chan.jpg	Hey! I like listening to music, playing games, and trying out new places to eat!",
-  "Sofia Garcia	sofia.garcia@berkeley.edu	www.linkedin.com/in/sofia-valeria-garcia-quintana	Golden Gate Bird Alliance	IMG_3679 - Sofia Valeria Garcia.jpg	Hi! My favorite things in the world are podcasts, chocolate and music.",
-  "Garima Upadhyay	garimau@berkeley.edu	https://www.linkedin.com/in/garimaupadhyay35/	Project Manager	Garima_Upadhyay - Garima Upadhyay.png	Hey, I'm Garima! In my free time, I enjoy making niche playlists, reading, and trying out new food places with my friends. :D",
-  "Yixin Huang	yixinhuang1@berkeley.edu	https://www.linkedin.com/in/yixin-huang-91b7781aa/	Project Manager	my_photo - Yixin Huang.jpg	Hi, I am Yixin! I like traveling around random places in Berkeley and sf, drinking coffee(favorite is matcha latte), and trying out new food.",
-  "Tanya Agrawal	tanya.agrawal@berkeley.edu	 	Undergraduate Street Medicine Outreach	IMG_9237 - Tanya Agrawal.jpg	Hi, I'm Tanya! I enjoy solving puzzles, reading, and exploring new places. ",
-  "Shivan Patel	shivanpatel@berkeley.edu	www.linkedin.com/in/shivan-patel	Senior Advisor	DSC_8739 - Shivan Rahil Patel.jpg	hi, I'm Shivan! I love cats, sushi, and napping -- in no particular order :)",
-  "Reya Vir	reyavir@berkeley.edu	https://linkedin.com/in/reyavir	Linens N Love	DSC06913 copy - Reya Vir.jpg	hi, im reya! i like weightlifting, hanging out w friends, and visiting new places :)",
-  "Brittney Chan	brittneychan@berkeley.edu		Berkeley Free Clinic	IMG_4628 - Brittney Pui-Ting Chan.png	hi, i'm brittney!! i <3 cats, boba, spicy food, and rotting in bed :)",
-  "Vinay Vellore	vinay_vellore@berkeley.edu	https://www.linkedin.com/in/vinay-vellore-a017731bb/	Curriculum Member	0C0A1107 - Vinay Vellore.jpg	Hi, my name is Vinay and I'm a junior at Cal studying Data Science and Economics! In my free time, I enjoy golfing, snowboarding, and playing poker.",
-  "Boris Tomov	boristomov@berkeley.edu	https://www.linkedin.com/in/boris-tomov-b45a53238/	Internal Vice President	IMG_20230314_221740 - Boris Boyanov Tomov.jpg	Hello, hello! I am a third year CS & DS enthusiast from Bulgaria. I am passionate about playing the guitar, swimming and any sort of outdoor adventures!",
-  "Nazar Ospanov	nospanov@berkeley.edu	https://www.linkedin.com/in/nazar-ospanov-860694205	Project Manager	IMG_5693 - Nazar Niyazbekovich Ospanov.jpg	Hey hey, I’m Nazar!! I like playing music, sports, and love to go to the gym! ",
-  "Joanne Tran	tranjoanne@berkeley.edu	https://www.linkedin.com/in/tranjoanne/	General Member	joanne headshot - Joanne Tran.jpg	Hey hey! I'm Joanne and in my free time I love playing video games (e.g. League of Legends, VALORANT, Minecraft, etc..), grabbing food with friends, and djing.",
-  "David Xu	rav4@berkeley.edu		Undergraduate Street Medicine Outreach	1D9AD771-3435-4C0B-86D1-8550630E4C6D - David Xu.jpg	Hello, I’m David :D! I love music, cooking and sleeping 12 hours on weekends 🥰",
-  "Sunghyun Kim	andrew49875@berkeley.edu	https://www.linkedin.com/in/sunghyun-kim-24696229a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app	Curriculum Member	Sunghyun Kim.jpg	HELLO, I'm Sunghyun(Jason) Kim. I like playing sports such as bowling, table tennis, soccer and I love Korean BBQ!!",
-  "WenWen Gu	wenwengu@berkeley.edu	https://www.linkedin.com/in/wenwen-gu/	Guide Dogs for the Blind	IMG_6362 - WenWen Gu.jpg	Hi I am WenWen! I love to EAT EAT AND EAT. Aside from eating I love to SLEEP SLEEP AND SLEEP. Oh yes, I love to code as well!",
-  "Ivan Apodaca	ivanapodaca04@berkeley.edu	https://www.linkedin.com/in/ivanapodaca/	Guide Dogs for the Blind	IMG_7171 - Ivan Joseph Apodaca.jpg	Hi, I'm Ivan! I throughly enjoy going out with friends, listening to music, gaming, sports, and just existing on this Earth in general.",
-  "Stone Wu	yixuanstonewu@berkeley.edu	https://www.linkedin.com/in/yixuan-stone-wu-2b751025b/	Linens N Love	stone-wu - Stone Wu.png	A sophomore who loves love poems",
-  "Sara Jangid	sarajangid@berkeley.edu	https://www.linkedin.com/in/sara-jangid-62968b2b3/ 	Curriculum Member	IMG_5786 - Sara Jangid.jpg	Hii i’m Sara! I love watching sitcoms, listening to music and playing board/card games.",
-  "Nirali Shah	nirali.shah@berkeley.edu	https://www.linkedin.com/in/niralishah05/	Recruitment Chair	niralishah - Nirali Shah.jpg	Hi, I’m Nirali! I like working out, napping, and drinking coffee!",
-  "Riley Horita	rileyhorita@berkeley.edu	LinkedIn.com/rileyhorita	General Member	B9C39AFC-E2C6-4021-8546-1F862616F395 - Riley Linh Horita.jpg	HI, im Riley. I love cats, clothes, and chumming",
-  "Alex Pease	alexpease04@berkeley.edu	https://www.linkedin.com/in/alexpease04/	Curriculum Chair	20230829_194104 - Alex Pease.jpg	Hi, I'm Alex! I love singing, gaming, and finally not being the only member of CFG in the College of Chemistry!",
-  "Richard Yu	richardyu@berkeley.edu	https://www.linkedin.com/in/rrichardyu/	Linens N Love	IMG_0901 - Richard Yu.jpg	Hi, I'm Richard! I love cooking, trying out new restaurants, and going on hikes!",
-  "Johan Ko	drjoyo@berkeley.edu	linkedin.com/in/kojohan	Project Manager	IMG_1177 - Johan Youngchan Ko.jpg	Hi, I’m Johan. In my spare time, I enjoy playing poker, coding simple games, and binge eating chips and salsa.",
-  "Chami Sagara	chamisagara@berkeley.edu	https://www.linkedin.com/in/chamisagara	Golden Gate Bird Alliance	20221104_181844~4 - Chami Sagara.jpg	Hi, I'm Chami and in my free time I like to (attempt to) bake, watch movies, and sleep :)",
-  "Kristy Chu	kristyc@berkeley.edu	https://www.linkedin.com/in/kristy-chu-769a8b1b3/	Senior Advisor	7026949F-D54F-4089-A140-DC8604BA23AF_1_105_c - Kristy Chu.jpg	Hi, I'm Kristy. I love plants, my dog, and traveling! ",
-  "Richard Villagomez	richard.villagomez@berkeley.edu	https://www.linkedin.com/in/richardmvillagomez/	Project Manager	Screenshot 2024-02-13 at 5.17.05 PM - Richard Mafnas Villagomez.png	Hi, I'm Richard! I like cafe-hopping, shopping, and playing on my guitar.",
-  "Mira Ercingöz	dercingoz@berkeley.edu	https://www.linkedin.com/in/mira-ercing%C3%B6z-68518b248/	Recruitment Chair	4000X3000 - Mira Ercingoz.png	Hi, I'm Mira! I love experimental music and shows, anything related to the verb “making” (with some exceptions), and learning a new thing or two. I also like cats =^._.^= !!",
-];
+data_multiline_string = `Yixin Huang	yixinhuang1@berkeley.edu	https://www.linkedin.com/in/yixin-huang-91b7781aa/	Project Manager	my_photo - Yixin Huang.jpg	Hi, I am Yixin! I enjoy playing ping pong, jogging, trying out new food, and explore interesting places.
+Kelly Tang	ygtang@berkeley.edu	https://www.linkedin.com/in/kelly-yuguo-tang	Project Manager	27c14fb402ad28284c03863c05967afe - Kelly Tang.jpeg	Hi, I’m Kelly ;) I like dancing, anime, detective fictions, trying gooood fooooood, and traveling.
+Nathan Kim	n33937@berkeley.edu	https://www.linkedin.com/in/lnathankim/	Treasurer	IMG_1814 - Nathan Kim.jpeg	Hi, I'm Nathan! I love to hang out with friends, cook, and learn about all things tech and finance related. Feel free to reach out.
+Garima Upadhyay 	garimau@berkeley.edu	www.linkedin.com/in/garimaupadhyay35	Project Manager	Garima_Upadhyay - Garima Upadhyay.png	Hey, I'm Garima! In my free time, I enjoy making niche playlists, reading, and trying out new food places with my friends!
+Seungyeon Kim	sykim@berkeley.edu	https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav	Client Track Member	IMG_3695 - Seungyeon Kim.jpeg	hi call me Kimmy! I like to cook, solve puzzles, and annoy my cat :3
+Alex Luu	alexluu@berkeley.edu	https://www.linkedin.com/in/alexluu1	Project Manager	IMG_3115 - Alex Luu - Alex Luu.jpg	Hey there, I'm Alex! I enjoy camping, hiking, swimming, and being outdoors.
+Buvi Vinothasha	buvinnash@berkeley.edu	https://www.linkedin.com/in/buvinnash	Senior Advisor	IMG_0224 - Buvi Vinothasha.jpeg	Hi, I’m Buvi! I love playing tennis, going on late night drives, and watching the Lakers.
+Nirali Shah	nirali.shah@berkeley.edu	https://www.linkedin.com/in/nirali-shah-b23810221	Recruitment Chair	IMG_0094 - Nirali Shah.jpeg	Hi! My name is Nirali. I love coffee, baked goods, and watching New Girl!
+Cameron Leung	cameronleung@berkeley.edu	https://www.linkedin.com/in/cameron-leung-7a826717a	Publicity Chair	IMG_2134 - Cameron M Leung.heic	Hii, I’m Cameron :) I love traveling, hawaiin tropic sunscreen, and exploring SF
+Juyeon Ma	jyma0218@berkeley.edu	https://www.linkedin.com/in/juyeon-ma-5652821b7	Client Track Member	89EFC5E8-C33F-40B3-B45D-2433E831DB41 - Juyeon Ma.jpeg	Hi, I’m Juyeon! I like burgers from any brands.
+Edward  Zhang	edwardzhongweizhang@berkeley.edu	https://www.linkedin.com/in/edward-z-0b5995209	Client Track Member	27023b564a982bf1c860a8a968ce2da9 - Edward Zhongwei Zhang.jpeg	Hi, I am Edward! I enjoy playing Go (a kind of chess), calligraphy, classical music, and flying airplanes as a pilot.
+Maixin Zhang	maixin77@berkeley.edu	https://www.linkedin.com/in/maixin-zhang	Client Track Member	IMG_9782 - Maixin Zhang.jpeg	Hi, I'm Maixin!! I like makeup, pop music, and Thai food. Hit me up if you want to play Avalon or Mahjong!!
+Sejal Bilwar	sejalbilwar@berkeley.edu	https://www.linkedin.com/in/sejal-bilwar?trk=contact-info	Client Track Member	IMG_9938 - Sejal Bilwar.jpeg	Hey, I'm Sejal! I love trying out new coffee shops and restaurants, spending time with friends, and dancing :)
+Prisha Raj	merisa.prisha.raj@berkeley.edu	https://www.linkedin.com/in/prisharaj	Client Track Member	pic - Prisha Raj.heic	Hi, I’m Prisha! I like collecting smiskis, junk journaling, and baking!
+Miranda Zhu	mirandazhu@berkeley.edu	http://linkedin.com/in/zhu-miranda	Project Manager	IMG_4630 - Miranda Zhu.jpeg	Hi, I’m Miranda! I’m a junior studying Data Science and Stats. I like singing, dancing, napping and watching a lot of dramas.
+Emi Sakamoto	Esakamoto@berkeley.edu	https://www.linkedin.com/in/emi-sakamoto-113506271	Project Manager	IMG_1587 - Emi Sakamoto.jpeg	Hi I’m Emi! I like being outside, cats, and puzzles and trivia. 
+Nazar Ospanov	nospanov@berkeley.edu	https://www.linkedin.com/in/nazar-ospanov-860694205	Project Manager	IMG_0164 - Nazar Ospanov.jpeg	Can you guys keep my existing one please🙏🏼🙏🏼🙏🏼
+Alex Pease	alexpease04@berkeley.edu	https://www.linkedin.com/in/alexpease04	Curriculum Chair	DSC_1215 - Alexander Pease.JPG	Hi, I'm Alex! I like social and good and code, but my favorite part of CFG is For.
+David Xu	rav4@berkeley.edu		Client Track Member	IMG_0509 - David Xu.jpeg	Hello! Nice to meet you, my name is David. We’re big fans of cooking, taking long walks, and listening to good music :D
+Mikayla Acosta	macosta28@berkeley.edu	https://www.linkedin.com/in/mikayla-acosta-89636a247	Curriculum Member	IMG_3616 - Mikayla Acosta.jpeg	Hi, I’m Mikayla and I like to hang out with friends and eat lots of food!!
+Tyler Lam	tylerlam@berkeley.edu	https://www.linkedin.com/in/tylerlam	Client Track Member	IMG_2748 - Tyler Lam.jpeg	Hello everybody, I’m Tyler! I enjoy traveling, playing strategy games, and swimming.
+Sophia Sung	Sophiasung@berkeley.edu	https://www.linkedin.com/in/sophiasung000	Social Chair	11095DEA-06AB-4797-93D7-7FE376B7B800 - Sophia Mei-En Sung.jpeg	Hi :3 I’m Sophia! I like chilling with the homies and chilling by myself. 
+Ethan Jang	eef.jang@berkeley.edu	I dont have linkedin lmao	Curriculum Member	20240924_212416 - Ethan Jang.jpg	Hi, I'm Ethan! I like infodumping about things I learned off the Internet, singing, and believing in Java/JS supremacy even though Data C88C is making me learn Python!
+Divij Muthu 	divij_muthu@berkeley.edu	https://linkedin.com/in/divij-muthu-1a55b72aa/	Curriculum Member	Screenshot_2024-09-02_at_12.04.46_PM - Divij Muthu.png	Hey, I'm Divij! I enjoy playing badminton, video games, and trying new things.
+Terry Chen	Terrychen13@berkeley.edu	http://linkedin.com/in/chenterry	Client Track Member	Sharpen Upscale Terry - Terry Chen.jpeg	Hi I’m Terry. I like surfing, listening to music, eating, and sleeping
+Jun Hyung Lee	meatjun@berkeley.edu	https://www.linkedin.com/in/meatjun	Social Chair	IMG_2300 - Jun Hyung Lee.jpg	Hi I'm Jun-Hyung! I love jamming on my ukulele, playing board games, and bodysurfing.
+Clinton Nguyen	clintonnguyen@berkeley.edu	https://www.linkedin.com/in/clintondnguyen	Client Track Member	Screenshot_20240924-213032 - Clinton Nguyen.png	My name is Clinton. I like eating, whistling and playing games 0_0
+Yusrah Khan	yusrahk@berkeley.edu	https://www.linkedin.com/in/yusrah-khan	Client Track Member	IMG_6136 - Yusrah Khan.jpeg	Hi I’m Yusrah!! I love cats, binging kdramas and exploring new food places with my friends!
+Johan Ko	drjoyo@berkeley.edu	linkedin.com/in/kojohan	Project Manager	IMG_0387 - Johan Ko.jpeg	Hi, I’m Johan. I like playing poker and video games and unfortunately eating fried foods. 
+Daniel Lief	daniel_lief@berkeley.edu	https://www.linkedin.com/in/daniel-lief-356009314	Client Track Member	PXL_20240519_025556188 - Daniel W Lief.jpg	Hey, I'm Daniel! I like chess, games, and coding fun projects.
+Krithika Singh	krithikasingh@berkeley.edu	https://www.linkedin.com/in/krithikasingh	Curriculum Member	IMG_3454 - Krithika Singh.jpeg	Hi, I’m Krithika! I enjoy exploring new places, playing the clarinet, and going hiking. 
+Chase Graham	chase_graham@berkeley.edu		Client Track Member	IMG_2113 - Chase P Graham.jpeg	Hi, I’m Chase and I like playing guitar, eating ramen, hiking, and cats!
+Raghav Nautiyal	nautiyal@berkeley.edu	http://linkedin.com/in/raghavnautiyal	Client Track Member	IMG_6887 - raghav nautiyal.jpeg	I’m Raghav, I’m a second year EECS major. I like lifting and running.
+Shayla He	shaylahe@berkeley.edu	http://linkedin.com/in/shayla-he-70348b2b7	Client Track Member	IMG_5206 - Shayla He.jpeg	Hello, I'm Shayla! I really love singing, playing piano, making coffee, playing badminton, and getting food with friends :)
+Zoey Yang	zy2004@berkeley.edu	http://www.linkedin.com/in/zoey-yang-90b5b9286	Client Track Member	96612D5F-2EBE-49FE-BA35-D307BEF230DC - Zoey Yang.jpeg	Hi, I’m Zoey. I am a huge durian and tropical fruit lover!
+Stephen Park	s.park0@berkeley.edu	https://www.linkedin.com/in/stephen-s-park-53640332b/	Client Track Member	20240506_174449 - Stephen S Park.jpg	Hi, my name is Stephen! I enjoy archery, photography, and watching movies.
+Anirra Kutty	anirra_kutty@berkeley.edu		Client Track Member	IMG_0779_Original - Anirra Nitiya Kutty.jpeg	Hi, I’m Anirra! I love cats, trying new restaurants, and making book nooks!
+Hannah Dermawan	hannahdermawan@berkeley.edu	www.linkedin.com/in/hannah-dermawan	Curriculum Member	IMG_2307 - Hannah Dermawan.jpeg	Hi hi! I’m Hannah :) I love playing tennis, drinking boba, and going on spontaneous adventures! I also love good food so I’m always down to try out new restos!
+Gavin Hongchi Lai	glai@berkeley.edu	www.linkedin.com/in/gavin-lai-39940b32b	Curriculum Member	IMG_0305 - Gavin Lai.jpeg	I love swimming (like a lot a lot)!!! Math is cool, coding is rad, and I also like playing clash of clans.
+Shruti Vora	shruti.s.vora@berkeley.edu	https://www.linkedin.com/in/shruti-vora-bb8471241/	Client Track Member	IMG_5516 - Shruti Sujal Vora.jpeg	Hi, I am Shruti! I like baking/cooking, painting, traveling, spending time with family and friends, and love ice-cream!! :)
+Sarah Zhang	sarahzh@berkeley.edu	linkedin.com/in/sarahwzhang	Client Track Member	IMG_9263 - Sarah Zhang.jpeg	Hello! I’m Sarah, and I like cats, watching movies, and playing minesweeper ^_^
+Kuljit Uppal	kuljit@berkeley.edu	https://www.linkedin.com/in/kuljitu	Client Track Member	IMG_3589 - Kuljit Uppal.jpeg	Hey! My name is Kuljit and I like playing tennis, hiking, and watching movies.
+Alex Toohey	alex_toohey@berkeley.edu	www.linkedin.com/in/alex-toohey-5712a0305	Curriculum Member	CFG Website Pic - Alex Toohey.jpg	Hi, I'm Alex! I like playing tennis, hiking, skiing, and watching sports.
+Srikala Munukutla	srikala.v.munukutla@berkeley.edu	http://linkedin.com/in/srikala-munukutla-1229a626b	Curriculum Member	DSCN6745 - Srikala Munukutla.jpeg	Hey, I’m Srikala! I love singing, trying new food spots, hanging out with friends, and being spontaneous.
+Madeline Louise Agusalim	Maddy11@berkeley.edu	https://www.linkedin.com/in/madeline-louise-agusalim/	Client Track Member	IMG_0337 - Madeline Louise Agusalim.jpeg	Hey, I’m Madeline! I love singing, meeting awesome people, trying exciting things, traveling, going on nature walks, and creating fun events to bring everyone together!
+Ishanth Hombaiah	ihombaiah@berkeley.edu	https://www.linkedin.com/in/ishanth-hombaiah/	Curriculum Member	Ishanth_Picture - Ishanth Kiran Hombaiah.jpg	Hello, I'm Ishanth and I'm a freshman studying computer science. My hobbies are drawing, reading, and coding. 
+Kristy Chu	kristyc@berkeley.edu	https://www.linkedin.com/in/kristy-chu-769a8b1b3/	Senior Advisor	camera_2024_09_24_13_01 - Kristy Chu.jpg	Hi, I'm Kristy. I love plants, my dog, and traveling!
+Mohammed Alolefi	Mohammeda@berkeley.edu	https://www.linkedin.com/in/mohammed-alolefi/	Client Track Member	IMG_1787 - Mohammed Mohammed Alolefi.PNG	Hi, my name is Mohammed but you can also call me Moe. I really enjoy cooking and baking(especially cheesecake) and watching stand-up. 
+Sara Jangid	sarajangid@berkeley.edu	https://www.linkedin.com/in/sara-jangid-62968b2b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app	Client Track Member	IMG_9005 - Sara Jangid.jpg	Hii i’m Sara! I love watching sitcoms, listening to music and playing board/card games.
+Jannah Sheriff	Jannah.sheriff@berkeley.edu	https://www.linkedin.com/in/jannahsheriff?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app	Curriculum Member	sf_image_edited - Jannah Sheriff.jpeg	Hi, I’m Jannah! I’m super into the outdoors and sports, and I love to birdwatch and play with my cats. I also love studying history! 
+Thomas Culhane	thomasjculhane@berkeley.edu	https://www.linkedin.com/in/tculhane/	President	PXL_20211124_071143180 (1) - Thomas James Culhane.jpg	Hi, I'm Thomas, a CS/Linguistics student from New Jersey! In my spare time, you can find me making bad jokes, eating too much cheese, or trying to talk like Tony Soprano.
+Kate Chu	kate_chu@berkeley.edu	linkedin.com/in/kate-chu-37ab59327	Curriculum Member	IMG_5267 - Kate Chu.heic	Hi, I'm Kate! I love spending time in nature, both listening to and making music, and trying new coffee shops!
+Tanya Agrawal	tanya.agrawal@berkeley.edu	www.linkedin.com/in/tanya-agrawal-2b58b5214	Client Track Member	IMG_1622 - Tanya Agrawal.jpeg	Hi, I’m Tanya! I enjoy reading, watching sitcoms, solving puzzles and hiking!
+Brittney Chan	brittneychan@berkeley.edu	https://www.linkedin.com/in/brittney-chan/	Client Track Member	Brittney - Brittney Chan.JPG	Hi! I'm Brittney! I love love love cats, eating, and any spicy!
+Kevin Chandra	kepin@berkeley.edu	www.linkedin.com/in/kevin-chandraa	External Vice President	DSC05496 - Kevin Chandra.jpg	Hi I'm Kevin! I love playing badminton, basketball, scrolling through TikTok, going on spontaneous trips, and going to the gym (I bench 135 🫣).
+Boris Tomov	boristomov@berkeley.edu	https://www.linkedin.com/in/boris-tomov-b45a53238/	Internal Vice President	IMG_20230314_221740 - Boris Boyanov Tomov.jpg	Hello, hello! I am a third year CS & DS enthusiast from Bulgaria. I am passionate about playing the guitar, swimming and any sort of outdoor adventures!
+Esha Puri	eshapuri@berkeley.edu	https://www.linkedin.com/in/esha-puri	Senior Advisor	7614A71B-2FB2-4F77-AFAF-FF31F3608E8E - Esha Puri.jpg	Hi, I’m Esha! I love exploring cafes around Berkeley and spending time with friends.,
+Dhruv Chowdhary	dhruvchowdhary@berkeley.edu	https://www.linkedin.com/in/dhruv-chowdhary/	Senior Advisor	IMG_7842_Original - Dhruv Chowdhary.jpg	Hi, I'm Dhruv! I'm studying CS and DS, and I love playing pickleball, eating croutons, and exploring!
+Shivan Patel	shivanpatel@berkeley.edu	www.linkedin.com/in/shivan-patel	Senior Advisor	DSC_8739 - Shivan Rahil Patel.jpg	hi, I'm Shivan! I love cats, sushi, and napping -- in no particular order :)
+`;
+
+FOLDER_NAME = "fa24team"
 
 function shuffle(arr) {
-  //array,placeholder,placeholder,placeholder
   ct = arr.length;
   while (ct) {
     b = (Math.random() * ct--) | 0;
@@ -103,7 +110,6 @@ const officer_names = [
   "Nirali Shah",
   "Sophie Tau",
   "Nathan Kim",
-  "Buvinnash Vinothasha",
   "Nazar Ospanov",
   "Yixin Huang",
   "Alex Luu",
@@ -119,14 +125,20 @@ exec_data = []
 leadership_data = []
 team_data = []
 
+data_strings = data_multiline_string.split("\n")
 for (const data_string of data_strings) {
   split_data = data_string.split("\t");
+  if(split_data.length != 6) {
+    continue;
+  }
   if (split_data[4].includes(".heic") || split_data[4].includes(".HEIC")) {
     split_data[4] = split_data[4]
       .replace(".heic", ".jpg")
       .replace(".HEIC", ".jpg")
       .replaceAll(" ", "_");
   }
+  split_data[4] = split_data[4].replace(".jpeg", ".jpg")
+
   if (officer_names.includes(split_data[0])) {
     if(split_data[3].includes("President")) {
       exec_data.push(split_data)
@@ -228,7 +240,7 @@ function populate_row_with_cards(node, card_data) {
       }
 
       front_text_element.innerHTML = "<b>" + name + "</b> <br>" + title;
-      face_element.setAttribute("src", "images/sp24team/" + img_src);
+      face_element.setAttribute("src", "images/" + FOLDER_NAME + "/" + img_src);
       bio_element.innerHTML = bio;
       linkedin_element.setAttribute("href", linkedin);
       email_element.setAttribute("href", email);
@@ -240,7 +252,6 @@ function populate_row_with_cards(node, card_data) {
   }
 }
 
-populate_row_with_cards(document.getElementById("about-officer-row-1"), exec_data);
-// populate_row_with_cards(document.getElementById("about-officer-row-2"), officer_data_row2);
-populate_row_with_cards(document.getElementById("about-officer-row-3"), leadership_data);
+populate_row_with_cards(document.getElementById("about-exec-row"), exec_data);
+populate_row_with_cards(document.getElementById("about-officer-row"), leadership_data);
 populate_row_with_cards(document.getElementById("about-team-row"), team_data);

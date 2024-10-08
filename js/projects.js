@@ -15,6 +15,23 @@ Make sure there are commas between each semester entry and each project sublist.
 
 
 project_data = {
+  "Fall 2024": [
+    "The Bread Project",
+    "SNAPKids",
+    "Think of Us",
+    "Career Pathway Institute",
+    "Daly City Youth Health Center",
+    "Berkeley Art Center"
+  ],
+  "Spring 2023": [
+    "Linens and Love",
+    "Plastic Ocean Project",
+    "Golden Gate Bird Alliance",
+    "Berkeley Free Clinic",
+    "Undergraduate Street Medicine Outreach",
+    "Guide Dogs for the Blind"
+
+  ],
   "Fall 2023": [
     [
       "BABEC",

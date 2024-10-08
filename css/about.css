@@ -204,28 +204,22 @@
     text-align: center;
 }
 
-#about-officer-row-1 p {
-    --cols: 2;
+#about-exec-row p {
+    --cols: 3;
 }
-#about-officer-row-2 p {
-    --cols: 2;
-}
-#about-officer-row-3 p {
-    --cols: 2;
+#about-officer-row p {
+    --cols: 3;
 }
 #about-team-row p {
-    --cols: 2;
+    --cols: 4;
 }
 
 @media (min-width: 576px) { /* sm */
-    #about-officer-row-1 p {
-        --cols: 2;
+    #about-exec-row p {
+        --cols: 4;
     }
-    #about-officer-row-2 p {
-        --cols: 2;
-    }
-    #about-officer-row-3 p {
-        --cols: 2;
+    #about-officer-row p {
+        --cols: 4;
     }
     #about-team-row p {
         --cols: 4;
@@ -233,14 +227,14 @@
 }
 
 @media (min-width: 768px) { /* md */
-    #about-officer-row-1 p {
+    #about-exec-row p {
         --cols: 5;
     }
-    #about-officer-row-2 p {
+    #about-officer-row p {
         --cols: 5;
     }
-    #about-officer-row-3 p {
-        --cols: 6;
+    #about-team-row p {
+        --cols: 5;
     }
 }
 
