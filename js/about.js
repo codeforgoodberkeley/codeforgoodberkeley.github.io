@@ -137,7 +137,7 @@ for (const data_string of data_strings) {
       .replace(".HEIC", ".jpg")
       .replaceAll(" ", "_");
   }
-  split_data[4] = split_data[4].replace(".jpeg", ".jpg")
+  split_data[4] = split_data[4].replace(".jpeg", ".jpg").replace(".JPG", ".jpg").replace(".PNG", ".png")
 
   if (officer_names.includes(split_data[0])) {
     if(split_data[3].includes("President")) {
