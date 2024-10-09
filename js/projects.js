@@ -15,7 +15,7 @@ Make sure there are commas between each semester entry and each project sublist.
 
 
 project_data = {
-  "Fall 2024": [
+  /*"Fall 2024": [
     "The Bread Project",
     "SNAPKids",
     "Think of Us",
@@ -31,7 +31,7 @@ project_data = {
     "Undergraduate Street Medicine Outreach",
     "Guide Dogs for the Blind"
 
-  ],
+  ],*/
   "Fall 2023": [
     [
       "BABEC",
