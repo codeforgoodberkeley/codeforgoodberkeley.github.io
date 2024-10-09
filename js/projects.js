@@ -16,13 +16,49 @@ Make sure there are commas between each semester entry and each project sublist.
 
 project_data = {
   /*"Fall 2024": [
-    "The Bread Project",
-    "SNAPKids",
-    "Think of Us",
-    "Career Pathway Institute",
-    "Daly City Youth Health Center",
-    "Berkeley Art Center"
-  ],
+    [
+        "The Bread Project",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [ 
+        "SNAPKids",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [ 
+        "Think of Us",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [ 
+        "Career Pathway Institute",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [ 
+        "Daly City Youth Health Center",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [ 
+        "Berkeley Art Center",
+        "",
+        "",
+        "",
+        ""
+    ]
+  ],*/
   "Spring 2023": [
     "Linens and Love",
     "Plastic Ocean Project",
@@ -31,57 +67,57 @@ project_data = {
     "Undergraduate Street Medicine Outreach",
     "Guide Dogs for the Blind"
 
-  ],*/
+  ],
   "Fall 2023": [
     [
       "BABEC",
-      "/images/projects/fa23/babec1.jpg",
-      "/images/projects/fa23/babec2.png",
-      "/images/projects/fa23/babec3.png",
+      "babec1.jpg",
+      "babec2.png",
+      "babec3.png",
       "BABEC is a Bay Area-based nonprofit focused on providing lab equipment and biotech curricula to schools all around the country. We helped them rebuild a website and database to track and display student-gathered data from their Wolbachia PCR lesson.",
     ],
     [
       "Beat The Streets",
-      "/images/projects/fa23/beatthestreets1.jpg",
-      "/images/projects/fa23/beatthestreets2.jpg",
-      "/images/projects/fa23/beatthestreets3.jpg",
+      "beatthestreets1.jpg",
+      "beatthestreets2.jpg",
+      "beatthestreets3.jpg",
       "Beat The Streets is a non-profit organization created to guide and motivate youth people to achieve personal goals and find success in their professional life. In order to help their cause, we developed a web platform for mental health assessment, which will be essential in bridging the communication gap between incoming members and their mentors.",
     ],
     [
       "Strength ’N Me",
-      "/images/projects/fa23/snm1.png",
-      "/images/projects/fa23/snm2.png",
-      "/images/projects/fa23/snm3.png",
+      "snm1.png",
+      "snm2.png",
+      "snm3.png",
       "Strength ’N Me Community Project, located in the Bay Area, provides essential items like clothing, food, and toiletries for free to families in need and the unhoused. Our work included a comprehensive redesign of their logo and the creation of their website, focusing on functionality and usability to effectively connect with their intended audience.",
     ],
     [
       "Artist Magnet",
-      "/images/projects/fa23/am1.png",
-      "/images/projects/fa23/am2.png",
-      "/images/projects/fa23/am3.jpg",
+      "am1.png",
+      "am2.png",
+      "am3.jpg",
       "Artist Magnet is a web service that provides resume-building and social media tools to artists of all stripes, connecting them to each other and to local opportunities. We provided much-needed technical fixes and a sleek, cohesive design upgrade to hopefully expand the site's reach and efficacy.",
     ],
   ],
   "Spring 2023": [
     [
       "MESA",
-      "/images/projects/sp23/mesa1.png",
-      "/images/projects/sp23/mesa2.png",
-      "/images/projects/sp23/mesa3.png",
+      "mesa1.png",
+      "mesa2.png",
+      "mesa3.png",
       "Year-round, MESA sponsors international trainees (“Stewards”) to learn and share sustainable agriculture practices with U.S. Host mentors. MESA matches Stewards with suitable U.S. hosts to create unique experiences. To help with this application matchmaking process, we built and integrated two features: an interview scheduler and a steward-host express interest option.",
     ],
     [
       "OneSky",
-      "/images/projects/sp23/onesky1.jpg",
-      "/images/projects/sp23/onesky2.jpg",
-      "/images/projects/sp23/onesky3.jpg",
+      "onesky1.jpg",
+      "onesky2.jpg",
+      "onesky3.jpg",
       "OneSky is an international nonprofit that envisions a world where every young child has access to quality care and education. OneSky partners with communities and caregivers to provide nurturing responsive care and early education that unlocks the vast hidden potential in our world’s vulnerable children. We redesigned and updated their website to improve overall usability  and navigation.",
     ],
     [
       "SF Symphony Youth Orchestra",
-      "/images/projects/sp23/sfsyo1.png",
-      "/images/projects/sp23/sfsyo2.png",
-      "/images/projects/sp23/sfsyo3.png",
+      "sfsyo1.png",
+      "sfsyo2.png",
+      "sfsyo3.png",
       "The SFSYO provides pre-professional training to Bay Area’s most talented young musicians free of cost. The ensemble has toured around the world, from Berlin’s Philharmonie to Amsterdam’s Concertgebouw. We assisted them by building an internal platform for rehearsal and concert calendars, video audition submissions, and orchestra policies.",
     ],
   ],
@@ -186,18 +222,19 @@ project_item_template = make("div", "carousel-item", [
 
 ])
 
-function make_project_item(project_data) {
+function make_project_item(project_data, semester) {
+    console.log(semester)
     element = project_item_template.cloneNode(true);
     let left = element.getElementsByClassName("proj-item-left")[0]
     left.children[0].innerHTML = project_data[0]
     left.children[1].innerHTML = project_data[4]
     let right = element.getElementsByClassName("proj-item-right")[0]
-    right.children[1].style.backgroundImage = "url('" + project_data[1] + "')"
-    right.children[2].style.backgroundImage = "url('" + project_data[2] + "')"
-    right.children[3].style.backgroundImage = "url('" + project_data[3] + "')"
-    right.children[1].style.backgroundPosition = "center"
-    right.children[2].style.backgroundPosition = "center";
-    right.children[3].style.backgroundPosition = "center";
+    let shortSemester = semester.slice(0, 2) + semester.slice(-2)
+    let prefix = "images/projects/" + shortSemester + "/"
+    for (let i = 1; i <= 3; i++) {
+        right.children[i].style.backgroundImage = "url('" + prefix + project_data[i] + "')"
+        right.children[i].style.backgroundPosition = "center"
+    }
     return element
 }
 
@@ -259,7 +296,7 @@ next.children[1].innerHTML = "Next";
 
 var idNum = 0;
 
-function make_semester_carousel(semester_data) {
+function make_semester_carousel(semester_data, semester) {
     carousel = carousel_template_element.cloneNode(true);
 
     carousel_id = "proj-carousel-" + idNum;
@@ -269,7 +306,7 @@ function make_semester_carousel(semester_data) {
 
     inner = carousel.getElementsByClassName("carousel-inner")[0];
     for(proj of semester_data) {
-        inner.appendChild(make_project_item(proj))
+        inner.appendChild(make_project_item(proj, semester))
     }
     inner.children[0].className += " active"
 
@@ -300,10 +337,11 @@ function make_semester_carousel(semester_data) {
 }
 
 carousels_section = document.getElementById("proj-carousels-section")
-for(semester in project_data) {
+for(var semester in project_data) {
+    console.log(semester)
     semester_data = project_data[semester]
     title_text = make("p", "carousel-title hidden-fast")
     title_text.innerHTML = semester
     carousels_section.appendChild(title_text)
-    carousels_section.appendChild(make_semester_carousel(semester_data))
+    carousels_section.appendChild(make_semester_carousel(semester_data, semester))
 }
