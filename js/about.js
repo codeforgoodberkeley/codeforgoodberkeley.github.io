@@ -84,6 +84,8 @@ Boris Tomov	boristomov@berkeley.edu	https://www.linkedin.com/in/boris-tomov-b45a
 Esha Puri	eshapuri@berkeley.edu	https://www.linkedin.com/in/esha-puri	Senior Advisor	7614A71B-2FB2-4F77-AFAF-FF31F3608E8E - Esha Puri.jpg	Hi, I’m Esha! I love exploring cafes around Berkeley and spending time with friends.,
 Dhruv Chowdhary	dhruvchowdhary@berkeley.edu	https://www.linkedin.com/in/dhruv-chowdhary/	Senior Advisor	IMG_7842_Original - Dhruv Chowdhary.jpg	Hi, I'm Dhruv! I'm studying CS and DS, and I love playing pickleball, eating croutons, and exploring!
 Shivan Patel	shivanpatel@berkeley.edu	www.linkedin.com/in/shivan-patel	Senior Advisor	DSC_8739 - Shivan Rahil Patel.jpg	hi, I'm Shivan! I love cats, sushi, and napping -- in no particular order :)
+Sophie Tau	sophietau6@berkeley.edu	https://www.linkedin.com/in/sophie-tau-419350279/	Recruitment Chair	IMG_9456 - Sophie Tau.HEIC	hi i'm sophie and i love morning runs, freshroll and JPEGMAFIA  
+Neha Haresh	neha.haresh@berkeley.edu	www.linkedin.com/in/neha-haresh	Curriculum Chair	IMG_0122 3 - Neha Haresh.HEIC	hii, i'm neha! i'm studying cs+cog sci n i love cats, concert dates, and playing badminton :)
 `;
 
 FOLDER_NAME = "fa24team"
