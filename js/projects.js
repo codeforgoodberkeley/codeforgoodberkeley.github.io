@@ -18,56 +18,92 @@ project_data = {
   /*"Fall 2024": [
     [
         "The Bread Project",
-        "",
-        "",
-        "",
+        "tbp1.jpg",
+        "tbp2.jpg",
+        "tbp3.jpg",
         ""
     ],
     [ 
         "SNAPKids",
-        "",
-        "",
-        "",
+        "snap1.png",
+        "snap2.jpg",
+        "snap3.jpg",
         ""
     ],
     [ 
         "Think of Us",
-        "",
-        "",
-        "",
+        "tou1.jpg",
+        "tou2.jpg",
+        "tou3.jpg",
         ""
     ],
     [ 
         "Career Pathway Institute",
-        "",
-        "",
-        "",
+        "cpi1.jpg",
+        "cpi2.jpg",
+        "cpi3.jpg",
         ""
     ],
     [ 
         "Daly City Youth Health Center",
-        "",
-        "",
-        "",
+        "dcyhc1.jpg",
+        "dcyhc2.jpg",
+        "dcyhc3.jpg",
         ""
     ],
     [ 
         "Berkeley Art Center",
-        "",
-        "",
-        "",
-        ""
+        "bac1.jpg",
+        "bac2.jpg",
+        "bac3.jpg",
+        "Berkeley Art Center supports and showcases Bay Area artists through accessible exhibitions, events, and programs, while promoting equity, inclusivity, and social change through art. We are automating the updating of their Member Artist Directory and newsletter platform, and updating their front-end design to maximize their reach."
     ]
-  ],*/
-  "Spring 2023": [
-    "Linens and Love",
-    "Plastic Ocean Project",
-    "Golden Gate Bird Alliance",
-    "Berkeley Free Clinic",
-    "Undergraduate Street Medicine Outreach",
-    "Guide Dogs for the Blind"
-
   ],
+  "Spring 2024": [
+    [ 
+        "Linens and Love",
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "description"
+    ],
+    [ 
+        "Plastic Ocean Project",
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "description"
+    ],
+    [ 
+        "Golden Gate Bird Alliance",
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "description"
+    ],
+    [ 
+        "Berkeley Free Clinic",
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "description"
+    ],
+    [ 
+        "Undergraduate Street Medicine Outreach",
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "description"
+    ],
+    [ 
+        "Guide Dogs for the Blind",
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "description"
+    ]
+
+  ],*/
   "Fall 2023": [
     [
       "BABEC",
@@ -230,7 +266,7 @@ function make_project_item(project_data, semester) {
     left.children[1].innerHTML = project_data[4]
     let right = element.getElementsByClassName("proj-item-right")[0]
     let shortSemester = semester.slice(0, 2) + semester.slice(-2)
-    let prefix = "images/projects/" + shortSemester + "/"
+    let prefix = "images/projects/" + shortSemester.toLowerCase() + "/"
     for (let i = 1; i <= 3; i++) {
         right.children[i].style.backgroundImage = "url('" + prefix + project_data[i] + "')"
         right.children[i].style.backgroundPosition = "center"
