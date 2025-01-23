@@ -15,13 +15,16 @@ Make sure there are commas between each semester entry and each project sublist.
 
 
 project_data = {
-  /*"Fall 2024": [
+  /*"Spring 2025": [
+
+  ],
+  "Fall 2024": [
     [
         "The Bread Project",
         "tbp1.jpg",
         "tbp2.jpg",
         "tbp3.jpg",
-        ""
+        "The Bread Project is a non-profit organization that aims to train low/no-income Californians the skills needed to start a career in the food industry. To help them improve outreach, we designed and implemented a new website that allowed their staff to easily make updates. This new website will boost user engagement, allowing for more applicants and volunteers."
     ],
     [ 
         "SNAPKids",
@@ -62,44 +65,44 @@ project_data = {
   "Spring 2024": [
     [ 
         "Linens and Love",
-        "1.jpg",
-        "2.jpg",
-        "3.jpg",
+        "lal1.jpg",
+        "lal2.jpg",
+        "lal3.jpg",
         "description"
     ],
     [ 
         "Plastic Ocean Project",
-        "1.jpg",
-        "2.jpg",
-        "3.jpg",
-        "description"
+        "pop1.jpg",
+        "pop2.jpg",
+        "pop3.jpg",
+        "The Plastic Ocean Project is a nonprofit organization focused on removing pollution from the ocean. We created a website for the Plastic Ocean Project's new documentary, 356, about the effects of plastics had on killing a baby whale. They are still working on getting the documentary finished up, but when they do our website will serve as a space for their trailer, credits, and any announcements or release information."
     ],
     [ 
         "Golden Gate Bird Alliance",
-        "1.jpg",
-        "2.jpg",
-        "3.jpg",
+        "ggba1.jpg",
+        "ggba2.jpg",
+        "ggba3.jpg",
         "description"
     ],
     [ 
         "Berkeley Free Clinic",
-        "1.jpg",
-        "2.jpg",
-        "3.jpg",
+        "bfc1.jpg",
+        "bfc2.jpg",
+        "bfc3.jpg",
         "description"
     ],
     [ 
         "Undergraduate Street Medicine Outreach",
-        "1.jpg",
-        "2.jpg",
-        "3.jpg",
+        "usmo1.jpg",
+        "usmo2.jpg",
+        "usmo3.jpg",
         "description"
     ],
     [ 
         "Guide Dogs for the Blind",
-        "1.jpg",
-        "2.jpg",
-        "3.jpg",
+        "gdfb1.jpg",
+        "gdfb2.jpg",
+        "gdfb3.jpg",
         "description"
     ]
 
