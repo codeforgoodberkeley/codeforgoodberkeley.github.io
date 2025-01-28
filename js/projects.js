@@ -16,8 +16,14 @@ Make sure there are commas between each semester entry and each project sublist.
 
 project_data = {
   /*"Spring 2025": [
-
-  ],
+    [
+        "Think of Us",
+        ".jpg",
+        ".jpg",
+        ".jpg",
+        "description"
+    ],
+  ], */
   "Fall 2024": [
     [
         "The Bread Project",
@@ -31,28 +37,21 @@ project_data = {
         "snap1.png",
         "snap2.jpg",
         "snap3.jpg",
-        ""
+        "SNAPkids empowers children with special needs to exercise and interact with others through swimming. We deployed a new site that provided a centralized program for volunteer resources and automated the volunteer registration and assignment processes."
     ],
     [ 
         "Think of Us",
         "tou1.jpg",
         "tou2.jpg",
         "tou3.jpg",
-        ""
-    ],
-    [ 
-        "Career Pathway Institute",
-        "cpi1.jpg",
-        "cpi2.jpg",
-        "cpi3.jpg",
-        ""
+        "Think of Us researches and designs solutions for child welfare and attempts to rethink foster care at local, state, and federal levels. CFG developed a web app to ease communication between Think of Us and its partners through a web based organization and information system."
     ],
     [ 
         "Daly City Youth Health Center",
         "dcyhc1.jpg",
         "dcyhc2.jpg",
         "dcyhc3.jpg",
-        ""
+        "DCYHC provides healthcare, substance use prevention, and health education for youth and their families. To help them better support young people, we helped them redesign their external website for improved user experience. We also created an organized internal website to make their resources and documents more easily accessible for the team."
     ],
     [ 
         "Berkeley Art Center",
@@ -61,14 +60,14 @@ project_data = {
         "bac3.jpg",
         "Berkeley Art Center supports and showcases Bay Area artists through accessible exhibitions, events, and programs, while promoting equity, inclusivity, and social change through art. We are automating the updating of their Member Artist Directory and newsletter platform, and updating their front-end design to maximize their reach."
     ]
-  ],
+  ], /*
   "Spring 2024": [
     [ 
         "Linens and Love",
         "lal1.jpg",
         "lal2.jpg",
         "lal3.jpg",
-        "description"
+        "Linens and Love collects linens from hotels and reuses them by donating them to homeless families, low income households, and animal shelters. We developed a web platform to manage volunteers, hotel connections, donations, and delivery processes."
     ],
     [ 
         "Plastic Ocean Project",
@@ -120,7 +119,7 @@ project_data = {
       "beatthestreets1.jpg",
       "beatthestreets2.jpg",
       "beatthestreets3.jpg",
-      "Beat The Streets is a non-profit organization created to guide and motivate youth people to achieve personal goals and find success in their professional life. In order to help their cause, we developed a web platform for mental health assessment, which will be essential in bridging the communication gap between incoming members and their mentors.",
+      "Beat The Streets is a non-profit organization created to guide and motivate youth people to achieve personal goals and find success in their professional life. We developed a web platform for mental health assessment, which will be essential in bridging the communication gap between incoming members and their mentors.",
     ],
     [
       "Strength ’N Me",
