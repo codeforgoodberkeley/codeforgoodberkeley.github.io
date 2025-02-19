@@ -17,11 +17,27 @@ Make sure there are commas between each semester entry and each project sublist.
 project_data = {
   /*"Spring 2025": [
     [
+        "1951 Coffee Company",
+        "19511.jpg",
+        "19512.jpg",
+        "19513.jpg",
+        "1951 Coffee Company is a "
+
+    ],
+    [
+        "Planned Parenthood League of Massachusetts",
+        "pplm1.jpg",
+        "pplm2.jpg",
+        "pplm3.jpg",
+        "Planned Parenthood is a national nonprofit that ..."
+    ],
+    [
         "Think of Us",
         ".jpg",
         ".jpg",
         ".jpg",
-        "description"
+        "Think of Us researches and designs solutions for child welfare and attempts to rethink foster care at local, state, and federal levels. CFG will build on the platform they built last semester,
+        adding ... [UPDATE]"
     ],
   ], */
   "Fall 2024": [
