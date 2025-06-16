@@ -15,31 +15,51 @@ Make sure there are commas between each semester entry and each project sublist.
 
 
 project_data = {
-  /*"Spring 2025": [
+  "Spring 2025": [
     [
         "1951 Coffee Company",
-        "19511.jpg",
+        "19511.png",
         "19512.jpg",
-        "19513.jpg",
-        "1951 Coffee Company is a "
+        "19513.png",
+        "1951 Coffee Company is a cafe in Berkeley, CA that promotes the well-being of the refugee community and educates the local community about refugee life issues. We developed a web application to streamline inventory management, so they can easily track cafe supplies, analyze cost fluctuations of ingredients, and monitor the profitability of their menu."
 
     ],
     [
-        "Planned Parenthood League of Massachusetts",
-        "pplm1.jpg",
+        "Planned Parenthood League of MA",
+        "pplm1.png",
         "pplm2.jpg",
         "pplm3.jpg",
-        "Planned Parenthood is a national nonprofit that ..."
+        "Planned Parenthood is a non-profit that provides reproductive health care across the US. We used microsoft suite and a sentiment analysis ML model to streamline patient feedback processing at five clinics across Massachusetts."
+    ],
+    [
+        "Career Village",
+        "careervillage1.png",
+        "careervillage2.png",
+        "careervillage3.jpeg",
+        "CareerVillage.org is a non-profit organization focused on democratizing access to career information and advice, particularly for underrepresented youth. We created a dashboard meant to make visualizations of open GitHub pull requests and reviews to provide insight on Career Village's internal developer experience metrics."
     ],
     [
         "Think of Us",
-        ".jpg",
-        ".jpg",
-        ".jpg",
-        "Think of Us researches and designs solutions for child welfare and attempts to rethink foster care at local, state, and federal levels. CFG will build on the platform they built last semester,
-        adding ... [UPDATE]"
+        "thinkofus1.png",
+        "thinkofus2.jpg",
+        "thinkofus3.jpeg",
+        "Think of Us researches and designs solutions for child welfare and attempts to rethink foster care at local, state, and federal levels. Continuing from last semester, we created additional functionalities and UI/UX improvements."
     ],
-  ], */
+    [
+        "The Roxie",
+        "roxie3.jpeg",
+        "roxie1.png",
+        "roxie2.webp",
+        "The Roxie is a nonprofit theater in San Francisco, and is one of the oldest continuously operating cinemas in the U.S. They focus on supporting local independent cinema and creating an inclusive community environment. We created an archive on their website to track previous festivals and showings, allowing the rich history of the theater to be preserved."
+    ],
+    [
+        "Tukuypaj",
+        "research1.png",
+        "research2.jpg",
+        "research3.jpeg",
+        "Tukuypaj is a Chilean nonprofit helping quadriplegic individuals. We worked on a research project to assemble a pair of 3d printed robotic arms to teach the robo-arm how to execute feeding motions to help these individuals feed themselves."
+    ]
+  ], 
   "Fall 2024": [
     [
         "The Bread Project",
