@@ -15,6 +15,36 @@ Make sure there are commas between each semester entry and each project sublist.
 
 
 project_data = {
+  "Fall 2025": [
+    [
+        "Alameda County Public Health Dept",
+        "alameda1.jpeg",
+        "alameda2.jpeg",
+        "alameda3.jpeg",
+        "We created a streamlined and accessible way to visualize the accreditation process across domains, measures, and standards, including submission status and completion progress, using existing spreadsheet and Microsoft Suite visualization tools."
+    ],
+    [
+        "Wadhwani AI",
+        "wadhwani1.png",
+        "wadhwani2.jpeg", 
+        "wadhwani3.png",
+        "We created a guided, teacher-assisted digital Early Grade Reading Assessment platform which records a child’s oral reading, performs cloud-based speech-to-text and alignment to automatically compute Early Grade Reading metrics, and provides instant results to teachers and dashboards to administrators."
+    ], 
+    [
+        "SJ Museum of Art",
+        "sj1.jpg",  
+        "sj2.jpeg",
+        "sj3.jpeg",
+        "We built an automated photo tagging system that makes the museum’s image library searchable, turning thousands of previously unorganized files into an easily accessible system. We also created a centralized dashboard that pulls analytics from Meta, YouTube, and Google Analytics into one place, to allow the team to view social and web performance."    
+    ],
+    [
+        "Research",
+        "research1.png",
+        "research2.jpg",
+        "research3.jpeg",
+        "This was a machine learning and robotics project continued from last semester to employ reinforcement learning to move robotic arms around. We built two arms from the existing open source SO-101 design. We then used a transformer based training policy (action-chunking with transformers) to train the arms to perform various simple motions with the goal of creating more complex motions."
+    ]
+  ],
   "Spring 2025": [
     [
         "1951 Coffee Company",

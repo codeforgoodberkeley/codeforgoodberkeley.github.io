@@ -158,16 +158,13 @@ Sejal Bilwar	sejalbilwar@berkeley.edu	https://www.linkedin.com/in/sejal-bilwar/	
 `; */
 
 const cards_table_string = `
-Shruti Vora	Shruti.s.vora@berkeley.edu	https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav	Project Manager	IMG_3826 - Shruti Sujal Vora.jpg	hi! I am Shruti! I really enjoy baking, cooking, traveling, and spending time with family and friends! 
 Aadhi Balasubramanian	aadhibala10@gmail.com	https://www.linkedin.com/in/adhitya-balasubramanian-074949231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app	Recruitment Chair	CE6D5FC2-F7C7-4F83-BF81-9074DAAD743B - Aadhi Balasubramanian.jpeg	Hey, I’m Aadhi!! I like hiking, rating restaurants on Beli, traveling, and watching Bollywood movies. 
 Divij Muthu	divij_muthu@berkeley.edu	https://www.linkedin.com/in/divij-muthu/	Project Manager	Screenshot_2024-09-02_at_12.04.46_PM - Divij Muthu.png	Hi, I'm Divij! I enjoy playing board games, video games, and exploring new places.
 Michelle Bao	michelle_bao@berkeley.edu	www.linkedin.com/in/michelle-bao-566a99320	New Member Program Head	CFGProfile-Michelle.jpg	hii, I'm Michelle! I like traveling, hiking, petting cute dogs and hanging out with friends. I also like drinking boba/matcha and finding good food places! :)
 Yusrah Khan	yusrahk@berkeley.edu	https://www.linkedin.com/in/yusrah-khan/	Internal Vice President	IMG_6136 - Yusrah Khan.jpeg	hii im Yusrah, i love binging tv shows, exploring cute shops and hanging out with friends! 
 Nirali Shah	nirali.shah@berkeley.edu	https://www.linkedin.com/in/niralishah05/	President	C0308A27-1E24-4CF1-BFEE-EC31D010415C - Nirali Shah.JPG	Hi, I'm Nirali! I really like coffee, watching Netflix, and trying new foods!
 Shayla He	shaylahe@berkeley.edu	https://www.linkedin.com/in/shayla-he-70348b2b7/	External Vice President	IMG_7104 - Shayla He.jpg	Hi, I'm Shayla! I love to sing, dance, play badminton, and get food/boba/dessert with friends :)
-Shreya Vora	shreya.sm.vora@berkeley.edu	https://www.linkedin.com/in/shreya-s-vora/	Project Manager	Screenshot 2025-02-11 at 7.55.07 PM - Shreya Sujal Vora.png	Hi, I'm Shreya! I am a sophomore studying data science and cognitive science. I like baking, reading, spending time with family, and binging tv shows.
 Stephen Park	s.park0@berkeley.edu	https://www.linkedin.com/in/stephen-park-53640332b/	Project Manager	headshot - Stephen S Park.jpg	Hi I'm Stephen an EECS student at Cal! I like watching movies, playing video games, reading books, photography, and playing video games. I also have two (idiot) cats!
-Sejal Bilwar	sejalbilwar@berkeley.edu	https://www.linkedin.com/in/sejal-bilwar/	Project Manager	Sejal Bilwar - Photo - Sejal Bilwar.png	Hey, I'm Sejal! I love trying out new coffee shops and restaurants, spending time with friends, and dancing :)
 Mikayla Acosta	macosta28@berkeley.edu	http://linkedin.com/in/mikaylagacosta	Project Manager	100_0574 - Mikayla Gu Acosta.jpeg	hi everyone!! my name is mikayla and i love to cook, have picnics on the glade, hang out with my friends and also make new ones!!
 Anirra Kutty	anirra_kutty@berkeley.edu	https://www.linkedin.com/in/anirra-kutty-b8b938347/	Project Manager	2025FallData8ProfileImage - Anirra Nitiya Kutty.jpg	Hi, I'm Anirra! I love cats, cooking, finding new places to eat, and trying literally anything!
 Beste Karatas	bestekaratas@berkeley .edu 	https://www.linkedin.com/in/beste-karatas-a0b826290/	Project Manager	IMG_4210-2-Beste.jpg	Hi, I'm Beste! I love taking long walks in nature, beach trips, thrifting, trying new restaurants, and reading! 
@@ -177,6 +174,7 @@ Aryan Das	aryandas@berkeley.edu	https://www.linkedin.com/in/aryan-das-058732251/
 Ishanth Hombaiah	ihombaiah@berkeley.edu	https://www.linkedin.com/in/ishanth-hombaiah/	Project Manager	Ishanth_Picture - Ishanth Kiran Hombaiah.png	Hello, I'm Ishanth and I'm a sophomore studying computer science. My hobbies are hiking, reading, and drawing.
 Bryce Lim	brycelim@berkeley.edu	https://www.linkedin.com/in/bryce-lim-b78148281/	New Member Program Head	CFGCoffeeChat (1) - Bryce Lim.jpg	Hey, I'm Bryce, a current sophomore studying EECS! This fall will be my 2nd semester in Code for Good. 
 Edwin Lee	jlee121@berkeley.edu	https://www.linkedin.com/in/edwin-lee-b93203381/	Treasurer	EdwinLeePic - Junmyeong Lee.jpg	Hi, I'm Edwin! I'm studying Data Science, and I like cooking, doing fun projects, hanging out, and trying out new things!
+Sara Jangid	sarajangid@berkeley.edu	https://www.linkedin.com/in/sara-jangid/	Project Manager	IMG_9502 - Sara Jangid.jpeg	Hi! I’m Sara, a junior studying Computer Science. I love watching tv shows, playing board/card games and chipotle!
 `;
 
 
@@ -191,12 +189,10 @@ const officer_names = [
   "Ariana Ghimire",
   "Edwin Lee",
   "Anirra Kutty",
-  "Shruti Vora",
-  "Sejal Bilwar",
   "Aniket Gupta",
   "Beste Karatas",
   "Divij Muthu",
-  "Shreya Vora",
+  "Sara Jangid",
   "Stephen Park", 
   "Mikayla Acosta",
   "Ishanth Hombaiah",
