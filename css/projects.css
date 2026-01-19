@@ -7,7 +7,7 @@
 #proj-title {
     position: relative;
     width:100%;
-    aspect-ratio: 3/1;
+    aspect-ratio: 2.5/1;
     background-image: url("../images/projects-banner.jpg");
     background-size: 100%;
 }

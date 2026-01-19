@@ -2,9 +2,11 @@
 #apply-title {
   position: relative;
   width: 100%;
-  aspect-ratio: 3/1;
-  background-image: url("../images/apply-banner.jpg");
+  aspect-ratio: 2.5/1;
+  background-image: url("../images/fa25hearts.jpg");
   background-size: 100%;
+  background-position: center 40%;
+
 }
 
 #apply-title-overlay {
