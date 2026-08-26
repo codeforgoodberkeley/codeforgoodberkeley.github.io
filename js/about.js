@@ -32,7 +32,8 @@ const team = [
     name: "Saanvi Deb",
     role: "Recruitment Chair",
     photo: "images/team/saanvi-deb.jpg",
-    message: "",
+    message:
+      "I enjoy watching movies with friends, taking walks on the beach, spending time with my family, and cooking with my roommates.",
     linkedin: "https://www.linkedin.com/in/saanvideb/",
     email: "saanvi.deb@gmail.com",
   },
