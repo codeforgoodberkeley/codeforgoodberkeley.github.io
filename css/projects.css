@@ -359,6 +359,93 @@
     background-color: white;
 }
 
+.proj-item-img1 img,
+.proj-item-img2 img,
+.proj-item-img3 img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.proj-tile-logo {
+    object-fit: contain;
+    object-position: center;
+    padding: 18%;
+    background: #ffffff;
+}
+
+.proj-tile-photo {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Spring 2026: tighter default logo inset, plus per-image fit overrides. */
+#proj-carousels-section .carousel[data-semester="Spring 2026"] .proj-tile-logo {
+    padding: 8%;
+    transform: none;
+}
+
+#proj-carousels-section .carousel[data-semester="Spring 2026"] .proj-tile-hot-logo {
+    padding: 9%;
+    transform: none;
+}
+
+#proj-carousels-section .carousel[data-semester="Spring 2026"] .proj-tile-hot-cloud {
+    object-fit: contain;
+    object-position: center;
+    padding: 14%;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+}
+
+#proj-carousels-section .carousel[data-semester="Spring 2026"] .proj-tile-hot-pothole {
+    object-fit: cover;
+    object-position: 58% 48%;
+    padding: 0;
+}
+
+#proj-carousels-section .carousel[data-semester="Spring 2026"] .proj-tile-bacweb-browser {
+    padding: 6%;
+    transform: none;
+}
+
+#proj-carousels-section .carousel[data-semester="Spring 2026"] .proj-tile-bac-mark {
+    object-position: center;
+    padding: 14%;
+    transform: none;
+}
+
+#proj-carousels-section .carousel[data-semester="Spring 2026"] .proj-tile-bac-layers {
+    padding: 6%;
+    transform: none;
+}
+
+#proj-carousels-section .carousel[data-semester="Spring 2026"] img[src$="efe-pic2.jpg"] {
+    object-fit: contain;
+    object-position: center;
+    padding: 0;
+    inset: auto;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    height: 85%;
+    max-width: 85%;
+    max-height: 85%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+}
+
+#proj-carousels-section .carousel[data-semester="Spring 2026"] img[src$="bacweb-pic2.jpg"] {
+    object-fit: cover;
+    object-position: 72% 40%;
+    padding: 0;
+}
+
 #mesa .proj-item-img1 {
     background-image: url("../images/projects/mesa1.png");
 }
@@ -388,4 +475,36 @@
 }
 #sfsyo .proj-item-img3 {
     background-image: url("../images/projects/sfsyo3.png");
+}
+
+/* Spring 2026 cards: stack title above description so longer copy doesn't overlap. */
+#proj-carousels-section .carousel[data-semester="Spring 2026"] .carousel-item {
+    aspect-ratio: 2.05 / 1;
+}
+
+#proj-carousels-section .carousel[data-semester="Spring 2026"] .proj-item-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 7%;
+    padding-bottom: 9%;
+}
+
+#proj-carousels-section .carousel[data-semester="Spring 2026"] .proj-item-left h1 {
+    position: relative;
+    top: auto;
+    transform: none;
+    font-size: 2.2vw;
+    line-height: 1.15;
+    margin: 0 0 0.8vw;
+}
+
+#proj-carousels-section .carousel[data-semester="Spring 2026"] .proj-item-left p {
+    position: relative;
+    top: auto;
+    transform: none;
+    font-size: 1.15vw;
+    line-height: 1.35;
+    margin: 0;
 }

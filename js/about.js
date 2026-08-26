@@ -32,7 +32,8 @@ const team = [
     name: "Aashi Malik",
     role: "New Member Program Head",
     photo: "images/team/aashi-malik.jpg",
-    message: "",
+    message:
+      "Hi! I’m Aashi, a sophomore studying Data Science! I’m the NMP Lead this semester, and I’m so excited to meet all of our new members! I love reading, painting, and traveling. Feel free to sign up for a coffee chat.",
     linkedin: "https://www.linkedin.com/in/aashi-malik07/",
     email: "aashimalik07@gmail.com",
   },
@@ -164,7 +165,7 @@ const team = [
     name: "Takenosuke Nagata",
     role: "Outreach Chair",
     photo: "images/team/takenosuke-nagata.jpg",
-    message: "",
+    message: "Hi, I’m Take! I like coffee and matcha and I also love startups",
     linkedin: "https://www.linkedin.com/in/takenagata/",
     email: "takenagata@berkeley.edu",
   },
@@ -172,7 +173,8 @@ const team = [
     name: "Manasi Narsina",
     role: "Publicity Chair",
     photo: "images/team/manasi-narsina.jpg",
-    message: "",
+    message:
+      "Hi, I'm Manasi! I love to dance, cook, travel, thrift, and trying new food & recipes.",
     linkedin: "https://www.linkedin.com/in/manasi-narsina-24b406261/",
     email: "mnarsina@berkeley.edu",
   },

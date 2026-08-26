@@ -6,8 +6,10 @@ Add another entry into the project_data dictionary with the semester name as the
     e.g. add "Fall 2024": []
 
 For each project, add a sublist. Each list is of the form:
-    [Project Name, Image URL 1, Image URL 2, Image URL 3, Description]
-    Each entry is a string. Do not include the url() css command.
+    [Project Name, Image 1, Image 2, Image 3, Description]
+    The name and description are strings. Do not include the url() css command.
+    Each image may be a filename string or { src: "file.png", type: "logo"|"photo" }.
+    Strings default to logo for image 1 and photo for images 2 and 3.
 
 Make sure there are commas between each semester entry and each project sublist.
 
@@ -15,6 +17,43 @@ Make sure there are commas between each semester entry and each project sublist.
 
 
 project_data = {
+  "Spring 2026": [
+    [
+        "Education For Employment",
+        { src: "efe-pic1.jpg", type: "logo" },
+        { src: "efe-pic2.jpg", type: "photo" },
+        { src: "efe-pic3.png", type: "photo" },
+        "Built an automated web scraper that monitors 8+ grant websites to identify funding opportunities relevant to EFE's mission, using AI to generate concise summaries and extract key grant statistics. The results will be organized into an Excel spreadsheet, making it easy for EFE to review, compare, and prioritize potential funding opportunities."
+    ],
+    [
+        "Humanitarian Open Street Map (Computer Vision Proj.)",
+        { src: "hot-pic1.png", type: "logo", fit: "proj-tile-hot-logo" },
+        { src: "hot-pic2.png", type: "photo", fit: "proj-tile-hot-pothole" },
+        { src: "hot-pic3.png", type: "photo" },
+        "We worked with the Humanitarian OpenStreetMap Team (HOT) on a research-focused project exploring how computer vision and vision-language models (VLMs) could improve humanitarian mapping and support emergency disaster relief efforts. Using Python, YOLOv8, Ultralytics, and other CV/ML tools, one team developed models for detecting infrastructure like electrical poles and towers, while the other explored VLM-based methods for identifying road surfaces and conditions and converting them into structured OpenStreetMap tags."
+    ],
+    [
+        "Humanitarian Open Street Map (Uploader Proj.)",
+        { src: "hotuploader-pic1.png", type: "logo", fit: "proj-tile-hot-logo" },
+        { src: "hotuploader-pic2.png", type: "logo", fit: "proj-tile-hot-cloud" },
+        { src: "hotuploader-pic3.png", type: "photo" },
+        "We worked with the Humanitarian Open Street Map Team on their image uploading portal and data processing pipeline. Our goal was to create a resilient and scalable pipeline (error handling leading to retrying or termination, and capable of handling potentially many large data processing requests at once). Key technologies include Docker, Kubernetes, and Argo Workflows. Code was mostly written in Python."
+    ],
+    [
+        "Berkeley Art Center (Artist Dashboard)",
+        { src: "bac-pic1.png", type: "logo", fit: "proj-tile-bac-mark" },
+        { src: "bac-pic2.png", type: "logo", fit: "proj-tile-bac-layers" },
+        { src: "bac-pic3.png", type: "photo" },
+        "Berkeley Art Center is a nonprofit contemporary art gallery and community hub in Berkeley, CA. We worked towards building a full-stack artist dashboard and bulletin board using HTML, CSS, JavaScript, Node.js, and MongoDB, allowing BAC members to create profiles, showcase their artwork, and post community announcements."
+    ],
+    [
+        "Berkeley Art Center (Website Redesign)",
+        { src: "bacweb-pic1.png", type: "photo" },
+        { src: "bacweb-pic2.jpg", type: "photo" },
+        { src: "bacweb-pic3.jpg", type: "logo", fit: "proj-tile-bacweb-browser" },
+        "Our team was assigned to work on redesigning the Berkeley Art Center's website. We worked with the client to improve the landing page flow and ensure that visitors could easily navigate the various exhibits and services offered by the center."
+    ]
+  ],
   "Fall 2025": [
     [
         "Alameda County Public Health Dept",
@@ -326,6 +365,17 @@ project_item_template = make("div", "carousel-item", [
 
 ])
 
+function projectImageSpec(raw, slotIndex) {
+    if (typeof raw === "string") {
+        return { src: raw, type: slotIndex === 1 ? "logo" : "photo", fit: "" };
+    }
+    return {
+        src: raw.src,
+        type: raw.type === "logo" ? "logo" : "photo",
+        fit: raw.fit || ""
+    };
+}
+
 function make_project_item(project_data, semester) {
     console.log(semester)
     element = project_item_template.cloneNode(true);
@@ -336,8 +386,15 @@ function make_project_item(project_data, semester) {
     let shortSemester = semester.slice(0, 2) + semester.slice(-2)
     let prefix = "images/projects/" + shortSemester.toLowerCase() + "/"
     for (let i = 1; i <= 3; i++) {
-        right.children[i].style.backgroundImage = "url('" + prefix + project_data[i] + "')"
-        right.children[i].style.backgroundPosition = "center"
+        const spec = projectImageSpec(project_data[i], i)
+        const img = document.createElement("img")
+        img.src = prefix + spec.src
+        img.alt = ""
+        img.className = spec.type === "logo" ? "proj-tile-logo" : "proj-tile-photo"
+        if (spec.fit) {
+            img.className += " " + spec.fit
+        }
+        right.children[i].appendChild(img)
     }
     return element
 }
@@ -407,6 +464,7 @@ function make_semester_carousel(semester_data, semester) {
     idNum++;
 
     carousel.id = carousel_id;
+    carousel.setAttribute("data-semester", semester);
 
     inner = carousel.getElementsByClassName("carousel-inner")[0];
     for(proj of semester_data) {
