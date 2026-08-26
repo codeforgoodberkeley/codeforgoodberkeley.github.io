@@ -29,6 +29,22 @@ const team = [
     email: "julianna.jolynn@berkeley.edu",
   },
   {
+    name: "Aashi Malik",
+    role: "New Member Program Head",
+    photo: "images/team/aashi-malik.jpg",
+    message: "",
+    linkedin: "https://www.linkedin.com/in/aashi-malik07/",
+    email: "aashimalik07@gmail.com",
+  },
+  {
+    name: "Winston Ling",
+    role: "New Member Program Head",
+    photo: "images/team/winston-ling.jpg",
+    message: "",
+    linkedin: "https://www.linkedin.com/in/winston-ling-083o/",
+    email: "winston.ling0830@gmail.com",
+  },
+  {
     name: "Saanvi Deb",
     role: "Recruitment Chair",
     photo: "images/team/saanvi-deb.jpg",
@@ -136,6 +152,15 @@ const team = [
     email: "srikala.v.munukutla@berkeley.edu",
   },
   {
+    name: "Edwin Lee",
+    role: "Finance Chair",
+    photo: "images/team/edwin-lee.jpg",
+    message:
+      "Hi, I'm Edwin! I'm studying Data Science, and I like cooking, doing fun projects, hanging out, and trying out new things!",
+    linkedin: "https://www.linkedin.com/in/edwin-j-lee/",
+    email: "jlee121@berkeley.edu",
+  },
+  {
     name: "Takenosuke Nagata",
     role: "Outreach Chair",
     photo: "images/team/takenosuke-nagata.jpg",
@@ -150,30 +175,6 @@ const team = [
     message: "",
     linkedin: "https://www.linkedin.com/in/manasi-narsina-24b406261/",
     email: "mnarsina@berkeley.edu",
-  },
-  {
-    name: "Edwin Lee",
-    role: "Finance Chair",
-    photo: "images/team/edwin-lee.jpg",
-    message: "",
-    linkedin: "https://www.linkedin.com/in/edwin-j-lee/",
-    email: "jlee121@berkeley.edu",
-  },
-  {
-    name: "Aashi Malik",
-    role: "NMP Lead",
-    photo: "images/team/aashi-malik.jpg",
-    message: "",
-    linkedin: "https://www.linkedin.com/in/aashi-malik07/",
-    email: "aashimalik07@gmail.com",
-  },
-  {
-    name: "Winston Ling",
-    role: "NMP Head",
-    photo: "images/team/winston-ling.jpg",
-    message: "",
-    linkedin: "https://www.linkedin.com/in/winston-ling-083o/",
-    email: "winston.ling0830@gmail.com",
   },
 ];
 
