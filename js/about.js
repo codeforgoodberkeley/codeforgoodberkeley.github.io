@@ -24,7 +24,8 @@ const team = [
     name: "Julianna Martinez",
     role: "External Vice President",
     photo: "images/team/julianna-martinez.jpg",
-    message: "",
+    message:
+      "Hi!! I’m Julianna :) I love coffee, reading, writing, binging tv/movies, and exploring new places <3",
     linkedin: "https://www.linkedin.com/in/julianna-jolynn-martinez-ab7a22350/",
     email: "julianna.jolynn@berkeley.edu",
   },
@@ -41,7 +42,8 @@ const team = [
     name: "Winston Ling",
     role: "New Member Program Head",
     photo: "images/team/winston-ling.jpg",
-    message: "",
+    message:
+      "Hi, I'm Winston! I love basketball, lifting, eating My Oh My, watching movies, listening to music, and playing videogames (notably Aram Mayhem)",
     linkedin: "https://www.linkedin.com/in/winston-ling-083o/",
     email: "winston.ling0830@gmail.com",
   },
